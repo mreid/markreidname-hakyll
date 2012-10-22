@@ -1,0 +1,51 @@
+/* Special notes revealed by jQuery calls 
+ * Used in:
+ *    `/work/pubs.html`
+ *    `/work/vita.html`
+ */
+.annote, .abstract, .bibtex { display: none; }
+.annote p, .details p {
+	margin: 0 0 1em 0;
+	font-size: 0.875em;
+	color: #444444;
+	line-height: 1.3em;
+}
+.abstract p {
+	margin: 0 0 1em 0;
+	font-size: 0.875em;
+	line-height: 1.3em;
+}
+.note {
+	padding-top: 0.5em; 
+	background-color: #fafaff;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+.details { margin-top: -1.14em; margin-left: -1em; border-left: 1px solid #eeeeee; padding-left: 1em; }
+.toggle.hide + .toggleable { display: none; }
+/* The show/hide widget - Generic behaviour */
+.showhide, .all { display:none; color: gray; }
+.showhide:hover, .all:hover { color: #772222; cursor: pointer; }
+.showhide:before { content: '☓'; } 
+.hide .showhide:before { content: '☞'; }
+.hide .showhide:hover:before { content: '☟'; }
+
+.showhide.left { margin-left: -2.5ex; }
+
+/* The all-details widget */
+.all:after { content: '✎'; }
+.all.show:after { content: '✄'; }
+
+/* Header behaviour */
+h2.toggle { margin-left: -2em; padding-left: 2em; }
+h2.hide { color: gray; }
+h2.hide .showhide { display: inline; }
+h2.toggle:hover .showhide { display: inline; }
+h2.toggle:hover .all { display: inline; }
+h1:hover .all { display: inline; }
+.hide .all { display: none; }
+
+/* Reveal widgets when hovering over a section */
+.section:hover .showhide { display: inline; }
+p .showhide {  padding-left: 1ex; line-height: 1ex; }
+

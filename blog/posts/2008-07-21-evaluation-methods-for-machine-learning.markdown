@@ -1,4 +1,4 @@
---- 
+---
 title: Evaluation Methods for Machine Learning
 excerpt: Some thoughts on the workshop on evaluation methods that I attended as part of ICML 2008 in Helsinki.
 location: Canberra, Australia

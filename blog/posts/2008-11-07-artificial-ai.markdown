@@ -1,4 +1,4 @@
---- 
+---
 title: Artificial AI
 location: Canberra, Australia
 excerpt: Present the results for my latest and greatest attempt at creating an intelligent machine. 

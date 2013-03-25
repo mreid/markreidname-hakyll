@@ -1,4 +1,4 @@
---- 
+---
 title: Prediction and the Axiom of Choice
 excerpt: Some thoughts on Hardin and Taylor's paper "A Peculiar Connection Between the Axiom of Choice and Predicting the Future".
 location: Canberra, Australia

@@ -1,8 +1,5 @@
 ---
-top: Inductio Ex Machina
 title: Home
-section: Home
-keywords: Machine Learning, Statistics, Blog, Research, Academia
 ---
 
 Thoughts on Machine Learning and Inference
@@ -17,13 +14,12 @@ available via links at the top of the page.
 
 A [feed][] of the most recent posts is also available.
 
-[feed]: /iem/atom.xml
+[feed]: /blog/atom.xml
 
 Recent Posts
 ------------
 
-$recentposts$
+\$recentposts\$
 
 [Older Posts &rarr;](past.html)
 
-$disquscounts$

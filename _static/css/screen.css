@@ -119,7 +119,7 @@ sup { line-height: 1ex; }
 .inset { 
 	border: 1px solid silver; 
 	padding: 2px;
-	margin: 0em 0.8em 0.8em 0.8em;
+	margin: 0em 1em 0.8em 1em;
 }
 .right.inset { margin-right: 0 !important; }
 .left.inset { margin-left: 0 !important; }
@@ -256,6 +256,7 @@ body#Work #header a.work,
 body#Home #header a.home, 
 body#Play #header a.play,
 body#Info #header a.info,
+body#Blog #header a.blog,
 body#Code #header a.code,
 body#Past #header a.past,
 body#Kith #header a.kith

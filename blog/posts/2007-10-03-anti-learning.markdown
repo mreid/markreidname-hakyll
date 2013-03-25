@@ -1,4 +1,4 @@
---- 
+---
 layout: iem-post
 title: Anti-Learning
 location: Canberra, Australia

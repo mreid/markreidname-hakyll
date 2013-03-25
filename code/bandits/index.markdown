@@ -1,6 +1,4 @@
 ---
-top: Code &larr; Mark Reid
-section: Code
 title: Bandits Demo
 ---
 
@@ -54,11 +52,11 @@ grey, agents are in colour and are listed in the plot's legend. (The "Averages"
 check box determines whether running totals or averages are displayed).
 
 <div>
-<script src="js/lib/jQuery.js" type="text/javascript"> </script>
-<script src="js/lib/jquery.flot.min.js" type="text/javascript"> </script>
-<script src="js/bandits.js" type="text/javascript"> </script>
-<script src="js/agents.js" type="text/javascript"> </script>
-<script src="js/ui.js" type="text/javascript"> </script>
+<script src="/js/jquery.js" type="text/javascript"> </script>
+<script src="/js/jquery.flot.min.js" type="text/javascript"> </script>
+<script src="/js/bandits/bandits.js" type="text/javascript"> </script>
+<script src="/js/bandits/agents.js" type="text/javascript"> </script>
+<script src="/js/bandits/ui.js" type="text/javascript"> </script>
 
 <script type="text/javascript">
 $(document).ready(function(){        

@@ -1,4 +1,4 @@
---- 
+---
 title: A Year of Research Blogging
 excerpt: Looking back on a year of research blogging about machine learning.
 location: Canberra, Australia

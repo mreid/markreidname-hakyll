@@ -1,6 +1,6 @@
---- 
-layout: iem-post
+---
 title: Introducing <i>Inductio Ex Machina</i>
+layout: iem-post
 location: Canberra, Australia
 excerpt: A short post describing what I intend for my new research blog.
 ---

@@ -1,4 +1,4 @@
---- 
+---
 title: Research-Changing Books
 excerpt: In response to a post by Peter Turney, I list the books I feel shaped my research career.
 layout: iem-post

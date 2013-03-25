@@ -1,6 +1,4 @@
 ---
-layout: name
-section: Code
 title: Feed Bag - A Simple RSS Archiver
 ---
 

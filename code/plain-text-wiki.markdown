@@ -1,6 +1,4 @@
 ---
-top: Code &larr; Mark Reid
-section: Code
 title: Plain Text Wiki
 ---
 Plain Text Wiki 

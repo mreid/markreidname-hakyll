@@ -1,7 +1,5 @@
 ---
 title: Colophon
-top: Mark Reid
-section: Info
 ---
 
 Colophon
@@ -53,21 +51,39 @@ you can have a look at the [stylesheet][].
 The Mechanics
 -------------
 
-The content of this site begins life as a directory full of text files on my [iMac](http://www.apple.com/imac/) written using the editor [TextMate](http://macromates.com/) in a format called  [Markdown](http://daringfireball.net/projects/markdown/). 
+The content of this site begins life as a directory full of text files on my
+computer in a format called
+[Markdown](http://daringfireball.net/projects/markdown/). 
 
-The stylesheet I use for the site was built with the help of [CSSEdit](http://macrabbit.com/cssedit/). When I do create diagrams for my posts these are invariably made with [OmniGraffle](http://www.omnigroup.com/applications/OmniGraffle/). I push all of these out to my [GitHub repository](http://github.com/mreid/mark.reid.name/tree/master) using the version control system [git](http://code.google.com/p/git-osx-installer/).
+The stylesheet I use for the site was built with the help of
+[CSSEdit](http://macrabbit.com/cssedit/). When I do create diagrams for my
+posts these are invariably made with
+[OmniGraffle](http://www.omnigroup.com/applications/OmniGraffle/). I push all
+of these out to my [GitHub
+repository](http://github.com/mreid/mark.reid.name/tree/master) using the
+version control system [git](http://code.google.com/p/git-osx-installer/).
 
-To update the site, the text files are first transformed into HTML by [Maruku](http://maruku.rubyforge.org/) with [blahtex](http://gva.noekeon.org/blahtexml/) helping by rendering LaTeX equations into images. [Jekyll](http://jekyllrb.com) orchestrates the whole process, adding headers, navigation bars and the like, creating a directory full of static HTML ready to be served.  
+To update the site, the text files are first transformed into HTML by
+[Pandoc](http://johnmacfarlane.net/pandoc/) with
+[MathJax](http://www.mathjax.org) looking after the LaTeX equation rendering.
+[Hakyll](http://jaspervdj.be/hakyll/) orchestrates the whole process, adding
+headers, navigation bars and the like, creating a directory full of static HTML
+ready to be served.  
 
-Finally, I then [rsync](http://www.samba.org/rsync/) the newly created site to my shared server run by the good folk at [HostingRails](http://www.hostingrails.com/).
+Finally, I then simply [rsync](http://www.samba.org/rsync/) the newly created
+site to my server. 
 
 Licence
 -------
 
-Unless specified otherwise, all design and content within this site is 
-licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License</a>.
+Unless specified otherwise, all design and content within this site is licensed
+under a <a rel="license"
+href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons
+Attribution-Noncommercial-Share Alike 3.0 Unported License</a>.
 
-What this means is you are free to use my design and content non-commercially provided you don't try to pass it off as your own. A simple link back to [my site](/) with an attribution is enough, like these fine people have done.[^2]
+What this means is you are free to use my design and content non-commercially
+provided you don't try to pass it off as your own. A simple link back to [my
+site](/) with an attribution is enough, like these fine people have done.[^2]
 
 * [Brian McCallister](http://skife.org/about.html)
 * [Dumitru Erhan](http://www-etud.iro.umontreal.ca/)
@@ -91,9 +107,11 @@ What this means is you are free to use my design and content non-commercially pr
 * [Piotr Kaźmierczak](http://soundandcomplete.com/)
 * [Dominik Bruhn](http://www.dbruhn.de/)
 
-I was recently pleased to discover that my design was included in the [jekyll bootstrap](http://jekyllbootstrap.com/) project as one of the themes.
+I was recently pleased to discover that my design was included in the 
+[jekyll bootstrap](http://jekyllbootstrap.com/) project as one of the themes.
 
-If you also use some of my stuff [let me know](mailto:mark@reid.name) and I'll add you to this list.
+If you also use some of my stuff [let me know](mailto:mark@reid.name) and I'll
+add you to this list.
 
 [^2]: Some people may have since changed their design, I don't keep track
 	on a regular basis.

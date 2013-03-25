@@ -1,4 +1,4 @@
---- 
+---
 title: ICML Discussion Site
 excerpt: A brief note describing the site I set up for ICML 2008.
 location: Canberra, Australia

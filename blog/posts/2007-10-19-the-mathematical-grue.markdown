@@ -1,4 +1,4 @@
---- 
+---
 layout: iem-post
 title: The Mathematical Grue
 location: Canberra, Australia

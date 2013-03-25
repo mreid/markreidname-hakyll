@@ -1,4 +1,4 @@
---- 
+---
 title: The Earth Is Round (p &lt; 0.05)
 excerpt: Some sage advice by Jacob Cohen on hypothesis testing and p-values.
 location: Canberra, Australia

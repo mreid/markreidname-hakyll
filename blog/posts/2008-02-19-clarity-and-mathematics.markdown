@@ -1,4 +1,4 @@
---- 
+---
 layout: iem-post
 title: Clarity and Mathematics
 location: Canberra, Australia

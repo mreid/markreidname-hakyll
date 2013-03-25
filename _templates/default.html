@@ -20,19 +20,10 @@
    <link rel="stylesheet" href="/css/widgets.css" type="text/css" media="all" />
    <link rel="stylesheet" href="/css/print.css" type="text/css" media="print" />
 
-   <!-- Optional Fields-->
-   <meta name="keywords" content="$keywords$">
-
-   $feed$
-
-   $mathjax$
-
 </head>
 
 <body id="$section$">
 <div id="site">
-
-  $navigation$
 
   $body$
 
@@ -51,6 +42,21 @@
 	</address>
   </div>
 </div>
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		extensions: ["tex2jax.js"],
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ["\\(","\\)"] ],
+			displayMath: [ ["\\[","\\]"] ],
+			processEscapes: true
+		},
+		"HTML-CSS": { availableFonts: ["TeX"] }
+	});
+</script>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
 
 <!-- Google Analytics script goes here -->
 <script type="text/javascript">

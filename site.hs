@@ -1,161 +1,187 @@
+--------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
--- Hakyll Configuration for http://mark.reid.name
---
--- AUTHOR: 	Mark Reid <mark@reid.name>
--- CREATED: 2012-10-17
-module Main where
-
-import Prelude hiding (id)
-import Control.Category (id)
-import Control.Arrow ((>>>), (***), arr)
-import Control.Monad(forM_)
-import Data.Monoid (mempty, mconcat)
+import           Control.Applicative ((<$>), empty)
+import           Data.Monoid         (mappend)
+import           Hakyll
 
 import Text.Pandoc.Shared
+import Text.Pandoc.Options
 
-import Hakyll
+--------------------------------------------------------------------------------
+destDir = "/Users/mreid/Sites/hakylltest/"
+remote = "confla@conflate.net:www/name" 
+siteConfig = defaultConfiguration
+  { destinationDirectory  = destDir,
+    storeDirectory        = "/tmp/hakyll_cache/mark.reid.name/",
+    deployCommand         = "rsync -ave ssh " ++ destDir ++ " " ++ remote 
+  }
 
--- Set up custom configuration
--- 	Cache in /tmp ; Compiled site in ~/Sites/ ; Deploy to conflate.net
-siteConfig = defaultHakyllConfiguration 
-	{	destinationDirectory 	= destDir,
-		storeDirectory 			= "/tmp/hakyll_cache/mark.reid.name/",
-		deployCommand 			= "rsync -ave ssh " ++ destDir 
-									++ " confla@conflate.net:www/name" }
-	where
-   		destDir = "/Users/mreid/Sites/hakylltest/"
+feedConfig = FeedConfiguration
+    { feedTitle       = "Inductio Ex Machina"
+    , feedDescription = "Thoughts on Machine Learning and Inference"
+    , feedAuthorName  = "Mark Reid"
+    , feedAuthorEmail = "mark@reid.name"
+    , feedRoot        = "http://mark.reid.name"
+    }
 
-feedConfig = FeedConfiguration 
-	{ 	feedTitle		= "Inductio Ex Machina",
-		feedDescription = "A research blog on machine learning.",
-		feedAuthorName	= "Mark Reid",
-		feedAuthorEmail	= "mark@reid.name",
-		feedRoot		= "http://mark.reid.name/blog/" }
-
--- Run the compilation process
+--------------------------------------------------------------------------------
 main :: IO ()
 main = hakyllWith siteConfig $ do
-    -- Read includes
-	match "_includes/**" $ compile readPageCompiler
+  -----------------
+  -- Templates
+  match "_templates/**" $ compile templateCompiler
+  
 
-    -- Read templates
-	match "_templates/**" $ compile templateCompiler
-	
-	-- Copy all static files (e.g., images, css, javascript)
-	-- and remove the leading `static` directory from each path
-	match "_static/**" $ do
-	    route 	$ gsubRoute "_static/" (const "")
-	    compile	$ copyFileCompiler	
+  -----------------
+  -- CSS
+  match "_static/css/*" $ do
+    route   $ gsubRoute "_static/" (const "")
+    compile $ compressCssCompiler
 
-	-- Main
-	match "index.markdown" $ do
-		route	$ setExtension ".html"
-		compile	$ recentPostsCompiler (Just 3) "short" 
-			>>> outerCompiler "nav"
+  -----------------
+  -- Static Content
+  match ".htaccess" $ do
+    route   $ idRoute
+    compile $ copyFileCompiler
 
-	-- Info
-	match "info/*.markdown" $ do
-		route   $ setExtension ".html"
-		compile $ pageCompiler >>> outerCompiler "nav"
+  match "_static/images/**" $ do
+    route   $ gsubRoute "_static/" (const "")
+    compile $ copyFileCompiler
 
-	-- Code: text
-	match "code/***.markdown" $ do
-		route	$ setExtension ".html"
-		compile	$ pageCompiler >>> outerCompiler "nav"
+  match "_static/js/**" $ do
+    route   $ gsubRoute "_static/" (const "")
+    compile $ copyFileCompiler
 
-	-- Code: files
-	match "code/**/*.js" $ do
-		route	$ idRoute
-		compile	$ copyFileCompiler
-	
-	----------	
-	-- Inductio Ex Machina 
-	
-	-- Create IEM index
-	match "blog/index.markdown" $ do
-		route	$ setExtension ".html"
-		compile	$ recentPostsCompiler (Just 5) "excerpt" 
-			>>> outerCompiler "iem-nav"
-	
-	-- Create IEM archive page
-	match "blog/past.markdown" $ do
-		route	$ setExtension ".html"
-		compile	$ recentPostsCompiler Nothing "excerpt" 
-			>>> outerCompiler "iem-nav"
-	
-	-- Create other IEM pages
-	forM_ ["blog/info.markdown", "blog/kith.markdown"] $ \p ->
-		match p $ do
-            route   $ setExtension ".html"
-            compile $ pageCompiler >>> outerCompiler "iem-nav"
-	
-    -- Render posts
-	match "blog/posts/*" $ do
-        route   $ removePostDateRoute
-        compile $ postCompiler
-			>>> setFieldPage "mathjax" "_includes/mathjax.html"
-			>>> setFieldPage "navigation" "_includes/iem-nav.html"
-			>>> applyTemplateCompiler "_templates/post/full.html" 
-			>>> applyTemplateCompilerWith 
-					(const "") "_templates/default.html" 
-	
-	----------
-	-- Atom Feed
-	-- match 	"blog/atom.xml" $ route idRoute
-	-- create	"blog/atom.xml" $ 
-	-- 	requireAll_ "blog/posts/*" >>> renderAtom feedConfig
+  match "_static/guns/**" $ do
+    route   $ gsubRoute "_static/" (const "")
+    compile $ copyFileCompiler
 
--- Get the n most recent pages
-newest Nothing 	= recentFirst
-newest (Just n) = take n . recentFirst
+  -----------------
+  -- Home
+  match "index.markdown" $ do
+    route   $ setExtension "html"
+    compile $ blogRecentsCompiler (Just 3) "_templates/post/short.html"
+              >>= pageCompiler "Home"
+  
+  -----------------
+  -- Info
+  match "info/*.markdown" $ do
+    route   $ setExtension "html"
+    compile $ pandocCompiler >>= pageCompiler "Info"
 
--- Create a route without the date in the post filename
-removePostDateRoute = 
-	(gsubRoute "posts/[0-9]{4}-[0-9]{2}-[0-9]{2}-" (const "")) 
-	`composeRoutes` (setExtension ".html")
+  -----------------
+  -- Code
+  match "code/**.markdown" $ do
+    route   $ setExtension "html"
+    compile $ pandocCompiler >>= pageCompiler "Code"
+
+  -----------------
+  -- Work
+  match "work/index.markdown" $ do
+    route   $ setExtension "html"
+    compile $ pandocCompiler >>= pageCompiler "Work"
+
+  match "work/pubs/index.markdown" $ do
+    route   $ setExtension "html"
+    compile $ pandocCompiler >>= pageCompiler "Work"
+
+  -----------------
+  -- Blog
+  match "blog/index.markdown" $ do
+    route   $ setExtension "html"
+    compile $ blogRecentsCompiler (Just 5) "_templates/post/excerpt.html"
+              >>= blogPageCompiler
+
+  match "blog/past.markdown" $ do
+    route   $ setExtension "html"
+    compile $ blogRecentsCompiler Nothing "_templates/post/excerpt.html"
+              >>= blogPageCompiler
+
+  match (fromList ["blog/info.markdown", "blog/kith.markdown"]) $ do
+    route   $ setExtension "html"
+    compile $ pandocCompiler >>= blogPageCompiler
+
+  -- Posts
+  match "blog/posts/*" $ do
+    route   $ blogPostRoute
+    compile $ blogPostCompiler
+
+  create ["blog/atom.xml"] $ do
+    route   $ idRoute
+    compile $ do
+      let feedCtx = postCtx `mappend` bodyField "description"
+      posts <- recentFirst =<< loadAllSnapshots "blog/posts/*" "content"
+      renderAtom feedConfig feedCtx posts
+
+--------------------------------------------------------------------------------
+-- Main page
+pageCompiler section item =
+    loadAndApplyTemplate "_templates/page.html" homeCtx item
+    >>= loadAndApplyTemplate "_templates/nav/main.html" homeCtx
+    >>= loadAndApplyTemplate "_templates/default.html" homeCtx
+    >>= relativizeUrls
+    where
+      homeCtx = pageCtx section
+
+-- Blog posts
+-- Take out the post/YYYY-MM-DD part from the post URL
+blogPostRoute = 
+  gsubRoute "posts/[0-9]{4}-[0-9]{2}-[0-9]{2}-" (const "")
+  `composeRoutes` setExtension "html"
+
+-- Blog page compiler
+blogPageCompiler item = 
+    loadAndApplyTemplate "_templates/page.html" postCtx item
+    >>= loadAndApplyTemplate "_templates/nav/blog.html" postCtx
+    >>= loadAndApplyTemplate "_templates/disqus/counts.html" postCtx
+    >>= loadAndApplyTemplate "_templates/default.html" postCtx
+    -- >>= relativizeUrls
 
 
--- Compile the navigation and outer HTML around a page.
--- The @navigation@ parameter is an @Identifier@ for the navigation elements
--- to include.
-outerCompiler navigation =
-	setFieldPage "navigation" navTemplate
-	>>> applyTemplateCompiler "_templates/page.html"
-	>>> applyTemplateCompilerWith (const "") "_templates/default.html" 
-	where
-		navTemplate = parseIdentifier $ "_includes/" ++ navigation ++ ".html"
+-- Blog index compiler
+blogRecentsCompiler n templateID = do
+  let ids         = "blog/posts/*"
+  let recentCtx   = recentListField "recentposts" ids n templateID postCtx 
+ 
+  pandocCompiler >>= applyAsTemplate (recentCtx `mappend` defaultContext)
 
--- Compile posts
-postCompiler = readPageCompiler
-	>>> mathJaxRenderer
-	>>> addDefaultFields
-	>>> arr (setField "top" "Inductio Ex Machina") 
-    >>> arr (renderDateField "date" "%B %e, %Y" "Date unknown")
-	>>> arr (renderDateField "shortdate" "%e %b %y" "(No date)")
-	>>> arr applySelf 
-
--- Compile a page that includes a list of posts.
--- The resulting page has its @$recentposts$@ key replaced with @number@ 
--- recent blog posts rendered with the given pattern @kind@.
-recentPostsCompiler number kind =
-	readPageCompiler
-	>>> addDefaultFields
-	>>> setPageList "recentposts" number kind "blog/posts/*"
-	>>> setFieldPage "disquscounts" "_includes/disqus-count.html"
-	>>> arr (copyField "excerpt" "description")
-	>>> arr (setField "feed" 
-		"<link rel='alternate' type='application/atom+xml' href='/blog/atom.xml' title='RSS feed' />")
-	>>> arr applySelf
-	>>> pageRenderPandoc
-
--- Shorthand for setting a field with a list of posts 
-setPageList key number kind collection =
-	setFieldPageList (newest number) template key collection
-	where
-		template = parseIdentifier ("_templates/post/" ++ kind ++ ".html")
+-- Blog post compiler
+blogPostCompiler = mathJaxRenderer
+  >>= loadAndApplyTemplate "_templates/post/full.html" postCtx
+  >>= saveSnapshot "content"
+  >>= loadAndApplyTemplate "_templates/nav/blog.html" postCtx
+  >>= loadAndApplyTemplate "_templates/default.html" postCtx
+  >>= relativizeUrls
 
 -- Pandoc render with MathJax enabled
 mathJaxRenderer =
-	pageRenderPandocWith 
-		defaultHakyllParserState
-		defaultHakyllWriterOptions { writerHTMLMathMethod = MathJax "" }
+  pandocCompilerWith def def { writerHTMLMathMethod = MathJax "" }
+
+-- Set various fields for front pages
+pageCtx :: String -> Context String
+pageCtx section =
+  constField "top" "Mark Reid" `mappend`
+  constField "section" section `mappend`
+  defaultContext
+
+-- Set various fields for blog posts
+postCtx :: Context String
+postCtx =
+  dateField "date" "%B %e, %Y" `mappend`
+  dateField "shortdate" "%e %b %y" `mappend` 
+  constField "top" "Inductio Ex Machina &larr; Mark Reid" `mappend`
+  constField "section" "Blog" `mappend`
+  defaultContext
+
+--------------------------------------------------------------------------------
+-- Helper functions
+maybeTake Nothing  = id
+maybeTake (Just n) = fmap (take n)
+recentListField key ids n templateID context = 
+  Context $ \k _ -> 
+    if (k==key) then do
+      items     <- (maybeTake n) . recentFirst =<< loadAll ids
+      template  <- loadBody templateID
+      applyTemplateList template context items
+	else empty
+  

@@ -1,4 +1,4 @@
---- 
+---
 layout: iem-post
 title: A Cute Convexity Result
 location: Canberra, Australia

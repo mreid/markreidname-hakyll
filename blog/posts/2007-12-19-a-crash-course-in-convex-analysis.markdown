@@ -1,4 +1,4 @@
---- 
+---
 layout: iem-post
 title: A Crash Course in Convex Analysis
 location: Canberra, Australia

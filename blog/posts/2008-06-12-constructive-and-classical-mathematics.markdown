@@ -1,4 +1,4 @@
---- 
+---
 layout: iem-post
 title: Constructive and Classical Mathematics
 location: Canberra, Australia

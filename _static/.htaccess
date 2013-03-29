@@ -7,6 +7,7 @@ RedirectMatch 301 /iem/visualising-reading.html /iem/visualising-19th-century-re
 RedirectMatch 301 /iem/general/the-mathematical-grue/ /iem/the-mathematical-grue.html
 RedirectMatch 301 ^/iem/(.*)$ /blog/$1
 RedirectMatch 301 ^/sap/(.*)$ /blog/$1
+RedirectMatch 301 ^/files/(.*)$ /bits/$1
 
 RewriteRule ^/iem/(.*)/(.*)/(.*)/(.*)$ http://mark.reid.name/iem/$4.html [R=301,L]
 RewriteRule ^/iem/(.*)/(.*)/(.*)$ http://mark.reid.name/iem/$3.html [R=301,L]

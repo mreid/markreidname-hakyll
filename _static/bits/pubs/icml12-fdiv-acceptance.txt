@@ -1,0 +1,54 @@
+From: Program Chairs <icml2012.pc@gmail.com>
+Subject: ICML: Author notification
+Date: 1 May 2012 12:36:58 PM AEST
+To: <mark.reid@anu.edu.au>
+Reply-To: icml2012.pc@gmail.com
+
+Dear Mark Reid,
+
+Your paper, 361  Title: Tighter Variational Representations of f-Divergences via Restriction to Probability Measures
+has been accepted for presentation at the 29th International
+Conference on Machine Learning (ICML 2012) to be held in Edinburgh,
+Scotland, on June 26–July 1, 2012.  A total of 890 papers were
+submitted to the technical program.  The program committee selected 243
+of those for presentation at the conference (27.3% acceptance rate).
+
+Due to the very large increase in submissions, we need to alter the
+conference format.  An earlier survey ( http://www.icml2010.org/ReportAndSurvey/ICML2010ProcessAndSurvey.html )
+suggests poster-only papers are preferred.  However, we want to preserve
+the "everyone presents" tradition of ICML.  To do this, some of the papers
+will be presented as short (5min.) talks, while others will be presented
+as longer (20min.) talks.  All papers will also be presented as
+posters.  The short vs long talk assignments will be communicated to
+authors by May 13, along with the full program.  No distinction will
+be made in the conference proceedings based on the assigned
+presentation format.
+
+For those interested, a full description of the reviewing process
+will be posted shortly at http://hunch.net .
+
+You can log into CMT to see the reviews and meta-review(s) of your paper:
+
+https://cmt.research.microsoft.com/ICML2012
+
+The camera-ready version of your paper is due May 21.  Instructions
+will be sent shortly. Please carefully consider the program
+committee’s comments when preparing your final version.  Feel free to
+contact us for clarifications if necessary.
+
+Applications for student support (travel scholarships and volunteer
+positions) will be accepted until May 6:
+http://icml.cc/2012/scholarships/
+
+The early registration deadline and the hotel deadline are on May 13:
+http://icml.cc/2012/registration/
+http://icml.cc/2012/accommodation/
+
+Lots more information about the program (invited speakers, workshops,
+tutorials, social events, etc.) are available on the conference
+website:
+http://icml.cc/2012/
+
+We're looking forward to a great ICML.  See you in Edinburgh!
+John Langford and Joelle Pineau
+ICML 2012 program chairs

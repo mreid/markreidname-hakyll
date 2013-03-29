@@ -1,0 +1,447 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	Reviews For Paper
+</title>
+<style>
+body
+{
+	font-family:verdana,arial,helvetica;
+}
+#header
+{
+    width: 100%;
+    font-size: small;
+    background-color:#F7F7F7;
+}
+.headerSeparator
+{
+    background-color: #105586;
+}
+.printThemeText
+{
+    font-size:small;
+}
+.printThemeTable td
+{
+    vertical-align:top;
+}
+.printThemeGrid th
+{
+    color:white;
+    background:#5D7B9D;
+    font-weight:bold;
+}
+.printThemeGrid
+{
+    border-collapse:collapse;
+}
+.printThemeGrid td, .printThemeGrid th
+{
+    border:solid 1px #D6D3CE;
+    padding:4px 4px 4px 4px;
+}
+.printThemeGrid .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+.printThemeGrid .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+.cellprompt
+{
+	font-weight:bold;
+	white-space:nowrap;
+    width:100px;	
+}
+.paperHeader
+{
+    background-color:#dee3e7;
+    margin:5px 5px 15px 0px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.sectionHeader
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 0px;
+    width:99%;
+    text-decoration:underline;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+}
+.underlineheader
+{
+    text-decoration:underline;
+    font-weight:bold;
+    padding:5px 0px;
+}
+.response
+{
+    padding:5px 0px;
+}
+.reviewerlabel
+{
+    padding-right:20px;
+}
+.pageTitle
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    margin-top:10px;
+    width:99%;
+    font-family:Verdana;
+    font-size:medium;
+    font-weight:bold;
+}
+.submissionDetailsView
+{
+}
+.submissionDetailsView tr
+{
+    vertical-align:top;
+}
+.submissionDetailsView td.prompt
+{
+    font-weight:bold;
+}
+.submissionDetailsView tr.sectionSeparator
+{
+
+}
+.submissionDetailsView tr.sectionSeparator td
+{
+    background-color:#dee3e7;
+    padding:5px 5px 5px 5px;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+    color:Navy;
+}
+/*CSS Grid View General Definitions*/
+.CssGridView
+{
+    font-size:small; 
+}
+
+.CssGridView td, .CssGridView th
+{
+    padding:4px 4px 4px 4px;
+}
+
+/*CSS Compact Grid View General Definitions*/
+.CssGridViewCompact img
+{
+    border-style:none;
+    border-width:0px;
+}
+
+.CssGridViewCompact
+{
+    font-size:1em;
+    border-style:solid;
+    border-color:#D6D3CE;
+    border-width:1px;
+}
+
+.CssGridViewCompact .hrow a
+{
+    font-size:1em;
+}
+
+.CssGridViewCompact .row a, .CssGridViewCompact .altrow a
+{
+    font-size:0.8em;
+}
+
+.CssGridViewCompact .row .normal a, .CssGridViewCompact .row .normal, .CssGridViewCompact .altrow .normal a, .CssGridViewCompact .altrow .normal
+{
+    font-size:1em;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridView .hrow, .CssGridViewCompact .hrow
+{ 
+    background-color:#5D7B9D;
+    font-weight:bold;
+    color:White;
+}
+
+
+.CssGridViewCompact .hrow td
+{ 
+    border-bottom-width:0px;
+}
+
+.CssGridViewCompact .hrow th
+{ 
+    border-top-width:0px;
+    font-size:0.8em;
+    vertical-align:top;
+    border-left-width:0px;
+    border-right-width:0px;
+}
+
+.CssGridViewCompact .smaller
+{
+    font-size:0.8em;
+}
+
+/*CSS Grid View Row Styles*/
+.CssGridViewCompact .row, .CssGridViewCompact .altrow
+{
+    border-top-style:solid;
+    border-top-color:#D6D3CE;
+    border-top-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#D6D3CE;
+    border-bottom-width:1px;
+}
+
+/*CSS Grid View Header Styles*/
+.CssGridViewCompact .hrow .leftborder, .CssGridViewCompact .row .leftborder, .CssGridViewCompact .altrow .leftborder
+{
+    border-left-width:1px;
+    border-left-color:#D6D3CE;
+    border-left-style:solid;
+}
+
+.CssGridViewCompact .hrow .rightborder, .CssGridViewCompact .row .rightborder, .CssGridViewCompact .altrow .rightborder
+{
+    border-right-width:1px;
+    border-right-color:#D6D3CE;
+    border-right-style:solid;
+}
+
+.CssGridView .hrow a, .CssGridViewCompact .hrow a
+{ 
+    color:White;
+}
+ 
+.CssGridView .row, .CssGridViewCompact .row
+{ 
+    background-color:#F7F6F3;
+    color:#333333;
+    vertical-align:top;
+}
+
+.CssGridView .altrow, .CssGridViewCompact .altrow
+{ 
+    vertical-align:top;
+}
+
+.CssGridViewCompact .row td
+{ 
+    border-left-width:0px;
+    border-right-width:0px;
+}
+ 
+.CssGridViewCompact .altrow
+{ 
+    background-color:White;
+    color:#284775;
+    vertical-align:top;
+}
+
+.CssGridView .altrow tr, .CssGridViewCompact .altrow tr, .CssGridView .row tr, .CssGridViewCompact .row tr
+{ 
+    vertical-align:top;
+}
+</style>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="ViewReviewsForPaper.aspx?paperId=361" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAxNDM4ODU3Ng9kFgJmD2QWAgIDD2QWAmYPZBYCAgUPDxYCHgdWaXNpYmxlZ2QWBgIBD2QWAmYPZBYEAgMPDxYCHgRUZXh0BQMzNjFkZAIFDw8WAh8BBVxUaWdodGVyIFZhcmlhdGlvbmFsIFJlcHJlc2VudGF0aW9ucyBvZiBmLURpdmVyZ2VuY2VzIHZpYSBSZXN0cmljdGlvbiB0byBQcm9iYWJpbGl0eSBNZWFzdXJlc2RkAgMPDxYCHwBoZGQCBQ8WAh4LXyFJdGVtQ291bnQCAxYGZg9kFgYCAw9kFgJmDxUBFEFzc2lnbmVkX1Jldmlld2VyXzE3ZAIHDzwrAA0BAA8WBB4LXyFEYXRhQm91bmRnHwICBWQWAmYPZBYMAgEPZBYEZg8PFgIfAQUOT3ZlcmFsbCBSYXRpbmdkZAIBD2QWAmYPFQELV2VhayBhY2NlcHRkAgIPZBYEZg8PFgIfAQUTUmV2aWV3ZXIgY29uZmlkZW5jZWRkAgEPZBYCZg8VARVSZXZpZXdlciBpcyBhbiBleHBlcnRkAgMPZBYEZg8PFgIfAQUhRGV0YWlsZWQgY29tbWVudHMgZm9yIHRoZSBhdXRob3JzZGQCAQ9kFgJmDxUB7ghSZWNlbnRseSwgdGhlIHZhcmlhdGlvbmFsIHJlcHJlc2VudGF0aW9ucyBvZiBmLWRpdmVyZ2VuY2VzIGhhdmUgZ2FpbmVkIHBvcHVsYXJpdHkgaW4gdGhlIHByb2JsZW0gb2YgZXN0aW1hdGluZyBmLWRpdmVyZ2VuY2VzIGZyb20gdHdvIHNldHMgb2YgZmluaXRlIHNhbXBsZXMgZHJhd24gaWlkIGZyb20gdHdvIGRpc3RyaWJ1dGlvbnMuIEluIHRoaXMgcGFwZXIsIHRoZSBhdXRob3JzIGltcHJvdmVkIHRoZSBleGlzdGluZyBsb3dlciBib3VuZCBvbiB0aGVzZSB2YXJpYXRpb25hbCByZXByZXNlbnRhdGlvbnMsIGFuZCB0aGVuIGRlcml2ZWQgYSBSS0hTIGJhc2VkIGFsZ29yaXRobSB0byBlc3RpbWF0ZSB0aGUgZi1kaXZlcmdlbmNlIGJldHdlZW4gdHdvIGRpc3RyaWJ1dGlvbnMuIFdpdGggdGhlIGltcHJvdmVkIGxvd2VyIGJvdW5kLCB0aGUgYXV0aG9ycyBlbXBpcmljYWxseSBkZW1vbnN0cmF0ZWQgdGhhdCB0aGUgY29ycmVzcG9uZGluZyBlbXBpcmljYWwgZXN0aW1hdG9yIHBlcmZvcm1zIGJldHRlciB0aGFuIHRoZSBleGlzdGluZyBvbmVzLg08YnIgLz4NPGJyIC8+VGhlIHBhcGVyIGlzIHdlbGwtd3JpdHRlbiBhbmQgdGhlIHJlc3VsdHMgYXJlIGludGVyZXN0aW5nLCBleGNlcHQgZm9yIGZldyB0eXBvcyAoc2VlIGxpbmUgMjcyOiAyIHNob3VsZCBiZSB3cml0dGVuIGFzICgyKTsgbGluZSAyNzY6IHJlcGxhY2UgKDEuMikgYnkgKDIpOyBzZWUgdGhlIGRlcml2YXRpb24gb2YgXHBoaSoocikgb24gdGhlIHJpZ2h0IGNvbHVtbiBvZiBwYWdlIDQsIHdoZXJlIHRoZSBzaWducyBvZiB0aGUgc2Vjb25kIHRlcm1zIGluIGVhY2ggb2YgdGhlIGxpbmVzIGhhdmUgdG8gYmUgaW50ZXJjaGFuZ2VkLS1wbGVhc2UgY2hlY2spLiBUaGUgZGlzY3Vzc2luZyBvbiB0aGUgcmVsYXRpb24gdG8gTU1EIGlzIHZlcnkgaW50ZXJlc3RpbmcgYW5kIEkgYXBwcmVjaWF0ZSB0aGUgYXV0aG9ycyBmb3IgaGlnaGxpZ2h0aW5nIHRoaXMgY29ubmVjdGlvbi4gV2hpbGUgdGhlIGltcHJvdmVtZW50IGluIGVtcGlyaWNhbCByZXN1bHRzIGFyZSBtYXJnaW5hbCBvdmVyIHRoZSBleGlzdGluZyByZXN1bHRzLCB0aGUgcGFwZXIgaXMgb3ZlcmFsbCBpbnRlcmVzdGluZyBmcm9tIGEgdGhlb3JldGljYWwgcG9pbnQgb2Ygdmlldy5kAgQPZBYEZg8PFgIfAQU9U3VtbWFyeSBvZiBldmFsdWF0aW9uIC8gUGFwZXIncyBtYWluIHN0cmVuZ3RocyBhbmQgd2Vha25lc3Nlc2RkAgEPZBYCZg8VAfQDVGhlIGF1dGhvcnMgaW1wcm92ZWQgdGhlIGV4aXN0aW5nIGxvd2VyIGJvdW5kIG9uIHRoZSB2YXJpYXRpb25hbCByZXByZXNlbnRhdGlvbnMgb2YgZi1kaXZlcmdlbmNlcyBhbmQgdGhlbiBkZXJpdmVkIGFuIFJLSFMgYmFzZWQgYWxnb3JpdGhtIHRvIGVzdGltYXRlIHRoZSBmLWRpdmVyZ2VuY2UgYmV0d2VlbiB0d28gZGlzdHJpYnV0aW9ucyBmcm9tIGZpbml0ZSBzYW1wbGVzLiBUaGV5IGFsc28gZXN0YWJsaXNoZWQgYSBuaWNlIGNvbm5lY3Rpb24gYmV0d2VlbiB0aGUgcHJvYmxlbSBvZiBlc3RpbWF0aW5nIGYtZGl2ZXJnZW5jZXMgYW5kIG1heGltdW0gbWVhbiBkaXNjcmVwYW5jeSB1c2luZyB0aGUga2VybmVsIGFsZ29yaXRobSB0aGV5IGRlcml2ZWQuIFdoaWxlIHRoZSBlbXBpcmljYWwgcmVzdWx0cyBzaG93IG9ubHkgYSBtYXJnaW5hbCBpbXByb3ZlbWVudCBvdmVyIHRoZSBleGlzdGluZyByZXN1bHRzLCB0aGUgcGFwZXIgaXMgdGhlb3JldGljYWxseSBpbnRlcmVzdGluZy5kAgUPZBYEZg8PFgIfAQViSSBoYXZlIHJlYWQgYW5kIGNvbnNpZGVyZWQgdGhlIGF1dGhvcnMnIHJlc3BvbnNlLiAoVG8gYmUgYW5zd2VyZWQgb25seSBhZnRlciB0aGUgcmVzcG9uc2UgcGVyaW9kLilkZAIBD2QWAmYPFQECTm9kAgYPDxYCHwBoZGQCCA8VAQBkAgEPZBYGAgMPZBYCZg8VARRBc3NpZ25lZF9SZXZpZXdlcl8xOWQCBw88KwANAQAPFgQfA2cfAgIFZBYCZg9kFgwCAQ9kFgRmDw8WAh8BBQ5PdmVyYWxsIFJhdGluZ2RkAgEPZBYCZg8VAQtXZWFrIGFjY2VwdGQCAg9kFgRmDw8WAh8BBRNSZXZpZXdlciBjb25maWRlbmNlZGQCAQ9kFgJmDxUBGVJldmlld2VyIGlzIGtub3dsZWRnZWFibGVkAgMPZBYEZg8PFgIfAQUhRGV0YWlsZWQgY29tbWVudHMgZm9yIHRoZSBhdXRob3JzZGQCAQ9kFgJmDxUBmQlUaGUgYXV0aG9ycyBwcm9wb3NlZCBhIHZhcmlhdGlvbmFsIG1ldGhvZCB0byBlc3RpbWF0ZSBmLWRpdmVyZ2VuY2VzLiBUaGUgcHJvcG9zZWQgbWV0aG9kIGltcHJvdmVzIHRoZSB3b3JrIG9mIChOZ3V5ZW4sMDcpLiBUaGUgYXV0aG9ycyBkZXJpdmVkIGEgdGlnaHRlciBsb3dlci1ib3VuZCBvbiB0aGUgdmFyaWF0aW9uIHJlcHJlc2VudGF0aW9uIG9mIGYtZGl2ZXJnZW5jZS4gIA08YnIgLz4NPGJyIC8+VGhlIHBhcGVyIGlzIHJlYWRhYmxlLCBidXQgY2VydGFpbiBwYXJ0cyBjb3VsZCBiZSBpbXByb3ZlZC4gU29tZSBjb21tZW50cyBhcmUgbGlzdGVkIGJlbG93LiANPGJyIC8+DTxiciAvPlRoZSByZXN1bHRzIGFyZSBpbXByZXNzaXZlLCBidXQgc3RpbGwgaW4gbXkgb3BpbmlvbiB0aGUgd29yayBpcyBzb21ld2hhdCBpbmNyZW1lbnRhbCBjb21wYXJlZCB0byAoTmd1eWVuLDA3KS4gVGhlIHVsdGltYXRlIG1pbmltaXphdGlvbiBwcm9ibGVtICg4KSBpcyB2ZXJ5IHNpbWlsYXIgdG8gdGhlIHByb2JsZW0gYXQgdGhlIGVuZCBvZiBMZW1tYTMgb2YgKE5ndXllbiwgMDcpLiBUaGUgbWFpbiBkaWZmZXJlbmNlIGlzIHRoYXQgKDgpIG9wdGltaXplcyBhbHBoYSBvbiBhIHNpbXBsZXgsIHdoaWxlIChOZ3V5ZW4sIDA3KSBvcHRpbWl6ZXMgdW5jb25zdHJhaW5lZCBhbHBoYS4gDTxiciAvPg08YnIgLz5OdW1lcmljYWwgZXhwZXJpbWVudHMgY29uZmlybSB0aGF0IHRoZSB2YXJpYXRpb25hbCBlc3RpbWF0b3JzIGFyZSBnb29kIHdoZW4gdGhlIHRydWUgZGl2ZXJnZW5jZSBpcyBzbWFsbCwgYnV0IEkgdGhpbmsgdGhpcyBzZWN0aW9uIGNvdWxkIGJlIGltcHJvdmVkIGJ5IHN0dWR5aW5nIG90aGVyIGRpc3RyaWJ1dGlvbnMgYXMgd2VsbCB0aGF0IGFyZSB0cnVseSBoaWdoLWRpbWVuc2lvbmFsLiBJdCB3b3VsZCBhbHNvIGJlIGdyZWF0IHRvIHNlZSBjb21tZW50cyBvbiB3aHkgaGlnaGVyIGRpbWVuc2lvbmFsaXR5IGNhdXNlcyBwcm9ibGVtcy4gDTxiciAvPg08YnIgLz5MaW5lIDE1MzogRm9yIEtMIHNob3VsZG4ndCBpdCBiZSBmKHQpPS1sbih0KSA/DTxiciAvPkxpbmUgMjcxOiAyIHNob3VsZCBiZSAoMikNPGJyIC8+TGluZSAyNzE6IEhvdyBpcyBFX1FbcGhpKnBdIHRyYW5zbGF0ZWQgdG8gRV9QW3BoaV0gaW4gKDIpPyAqKg08YnIgLz5MaW5lIDI3NjogV2hlcmUgaXMgKDEuMik/ZAIED2QWBGYPDxYCHwEFPVN1bW1hcnkgb2YgZXZhbHVhdGlvbiAvIFBhcGVyJ3MgbWFpbiBzdHJlbmd0aHMgYW5kIHdlYWtuZXNzZXNkZAIBD2QWAmYPFQGcBVN0cm9uZyBwb2ludHM6IFRoZSBwcm9ibGVtIGludmVzdGlnYXRlZCBpbiB0aGUgcGFwZXIgaXMgaW1wb3J0YW50IGFuZCBjaGFsbGVuZ2luZy4gR2VuZXJhbGx5IHRoZSBwYXBlciBpcyByZWFkYWJsZSwgYWx0aG91Z2ggY2VydGFpbiBwYXJ0cyBjb3VsZCBiZSBpbXByb3ZlZC4gVGhlIG5ldyBtZXRob2QgaW1wcm92ZXMgdGhlIHdvcmsgb2YgKE5ndXllbiwwNykuICANPGJyIC8+DTxiciAvPldlYWsgcG9pbnRzOg08YnIgLz5UaGUgd29yayBpcyBzb21ld2hhdCBpbmNyZW1lbnRhbCBjb21wYXJlZCB0byAoTmd1eWVuLDA3KSwgdGhlcmVmb3JlIEkgY29uc2lkZXIgaXQgbW9kZXJhdGVseSBub3ZlbC4gVGhlIHVsdGltYXRlIG1pbmltaXphdGlvbiBwcm9ibGVtICg4KSBpcyB2ZXJ5IHNpbWlsYXIgdG8gdGhlIHByb2JsZW0gYXQgdGhlIGVuZCBvZiBMZW1tYTMgb2YgKE5ndXllbiwgMDcpLiAgIA08YnIgLz4NPGJyIC8+VGhlIGV4cGVyaW1lbnRzIHNlZW0gcmF0aGVyIGxpbWl0ZWQuIFNvbWUgb3RoZXIgZGlzdHJpYnV0aW9ucyB0aGF0IGFyZSB0cnVseSBoaWdoLWRpbWVuc2lvbmFsIGNvdWxkIGFsc28gYmUgdXNlZC4gSXQgd291bGQgYWxzbyBiZSBnb29kIHRvIHNlZSBzb21lIGNvbW1lbnRzIG9uIHdoeSBoaWdoZXIgZGltZW5zaW9uYWxpdHkgY2F1c2VzIHByb2JsZW1zLiAgZAIFD2QWBGYPDxYCHwEFYkkgaGF2ZSByZWFkIGFuZCBjb25zaWRlcmVkIHRoZSBhdXRob3JzJyByZXNwb25zZS4gKFRvIGJlIGFuc3dlcmVkIG9ubHkgYWZ0ZXIgdGhlIHJlc3BvbnNlIHBlcmlvZC4pZGQCAQ9kFgJmDxUBA1llc2QCBg8PFgIfAGhkZAIIDxUBAGQCAg9kFgYCAw9kFgJmDxUBFEFzc2lnbmVkX1Jldmlld2VyXzMxZAIHDzwrAA0BAA8WBB8DZx8CAgVkFgJmD2QWDAIBD2QWBGYPDxYCHwEFDk92ZXJhbGwgUmF0aW5nZGQCAQ9kFgJmDxUBDVN0cm9uZyBhY2NlcHRkAgIPZBYEZg8PFgIfAQUTUmV2aWV3ZXIgY29uZmlkZW5jZWRkAgEPZBYCZg8VASpSZXZpZXdlcidzIGV2YWx1YXRpb24gaXMgYW4gZWR1Y2F0ZWQgZ3Vlc3NkAgMPZBYEZg8PFgIfAQUhRGV0YWlsZWQgY29tbWVudHMgZm9yIHRoZSBhdXRob3JzZGQCAQ9kFgJmDxUB1wRUaGlzIGFydGljbGUgcHJvdmlkZXMgdGlnaHRlciBib3VuZHMgb24gdGhlIHZhcmlhdGlvbmFsIHJlcHJlc2VudGF0aW9uIGZvciB0aGUgZmFtaWx5IG9mIGYtZGl2ZXJnZW5jZXMgd2hlbiBhcHBsaWVkIHRvIHByb2JhYmlsaXR5IG1lYXN1cmVzLiBUaGUgbmV3IGJvdW5kIGlzIG9idGFpbmVkIGJ5IHRha2luZyBpbnRvIGFjY291bnQgdGhlIGZhY3QgdGhhdCBmLWRpdmVyZ2VuY2VzIGFyZSBkZWZpbmVkIGJldHdlZW4gcHJvYmFiaWxpdHkgZGlzdHJpYnV0aW9ucy4gVGhlIGF1dGhvcnMgYWxzbyBkZXNjcmliZSBhbiBvcHRpbWl6YXRpb24gcHJvZ3JhbSB0byBjb21wdXRlIGYtZGl2ZXJnZW5jZXMgYmV0d2VlbiBlbXBpcmljYWwgZGlzdHJpYnV0aW9ucywgYW5kIHJlbGF0ZSB0aGVpciBwcm9ncmFtIHRvIHRoZSBNYXhpbXVtIE1lYW4gZGlzY3JlcGFuY3kgb2YgKEdyZXR0b24gZXQgYWwsIDIwMDgpLiANPGJyIC8+VGhlIHBhcGVyIGlzIHZlcnkgd2VsbCB3cml0dGVuLCB3aXRoIGNvbXBlbGxpbmcgdGhlb3JldGljYWwgYW5kIGVtcGlyaWNhbCByZXN1bHRzLiBJdCBzaG91bGQgYmUgb2YgaW50ZXJlc3QgZm9yIHRoZSBNTCBjb21tdW5pdHkuDTxiciAvPmQCBA9kFgRmDw8WAh8BBT1TdW1tYXJ5IG9mIGV2YWx1YXRpb24gLyBQYXBlcidzIG1haW4gc3RyZW5ndGhzIGFuZCB3ZWFrbmVzc2VzZGQCAQ9kFgJmDxUBpAFUaGlzIGFydGljbGUgcHJvdmlkZXMgdGlnaHRlciBib3VuZHMgZm9yIHZhcmlhdGlvbmFsIHJlcHJlc2VudGF0aW9ucyBvZiBmLWRpdmVyZ2VuY2VzLiBUaGUgcGFwZXIgaXMgd2VsbCB3cml0dGVuLCB3aXRoIGNvbXBlbGxpbmcgdGhlb3JldGljYWwgYW5kIGVtcGlyaWNhbCByZXN1bHRzLmQCBQ9kFgRmDw8WAh8BBWJJIGhhdmUgcmVhZCBhbmQgY29uc2lkZXJlZCB0aGUgYXV0aG9ycycgcmVzcG9uc2UuIChUbyBiZSBhbnN3ZXJlZCBvbmx5IGFmdGVyIHRoZSByZXNwb25zZSBwZXJpb2QuKWRkAgEPZBYCZg8VAQNZZXNkAgYPDxYCHwBoZGQCCA8VAQBkGAMFH2N0bDAwJGNwaCRndlJldmlld3MkY3RsMDIkY3RsMDAPPCsACgEIAgFkBR9jdGwwMCRjcGgkZ3ZSZXZpZXdzJGN0bDAxJGN0bDAwDzwrAAoBCAIBZAUfY3RsMDAkY3BoJGd2UmV2aWV3cyRjdGwwMCRjdGwwMA88KwAKAQgCAWQe3UgVlzuMscMOv0Nq72KImJm3wQ==" />
+</div>
+
+<table id="header">
+<tr>
+<td width="100%"><a href='http&#58;&#47;&#47;icml.cc&#47;' target='_blank'>ICML</a><br /><b>International Conference on Machine Learning</b><br />June 26 &#8211; July 1, 2012 , Edinburgh, Scotland, UK</td>
+</tr>
+<tr class='headerSeparator'>
+    <td style='height:5px'></td>
+</tr>
+</table>
+<table id="content"><tr><td class='contentBorder'>&nbsp;</td><td class="contentContainer">
+<span id="ctl00_cph_Label4" style="font-size:Small;font-weight:bold;">Reviews For Paper</span>
+<span id="ctl00_cph_lblErrorMessage" class="error" style="font-size:Small;"></span>
+<div id="ctl00_cph_pnlReviews">
+	
+    <span style="font-size:Small;">
+<table class="nicetable2" style="text-align:left; width: 100%;">
+    
+    <tr>
+        <td width="100px"><b>Paper ID</b></td>
+        <td><span id="ctl00_cph_infoSubmission_lblPaperId" style="font-size:Small;">361</span></td>
+    </tr>
+    <tr>
+        <td><b>Title</b></td>
+        <td><span id="ctl00_cph_infoSubmission_lblPaperTitle" style="font-size:Small;">Tighter Variational Representations of f-Divergences via Restriction to Probability Measures</span></td>
+    </tr>
+    
+    
+    
+    
+    
+</table></span>
+    
+    
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label1" style="font-size:Small;">Assigned_Reviewer_17</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl00_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Weak accept
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Reviewer confidence</td><td style="width:80%;">
+                            Reviewer is an expert
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Detailed comments for the authors</td><td style="width:80%;">
+                            Recently, the variational representations of f-divergences have gained popularity in the problem of estimating f-divergences from two sets of finite samples drawn iid from two distributions. In this paper, the authors improved the existing lower bound on these variational representations, and then derived a RKHS based algorithm to estimate the f-divergence between two distributions. With the improved lower bound, the authors empirically demonstrated that the corresponding empirical estimator performs better than the existing ones.<br /><br />The paper is well-written and the results are interesting, except for few typos (see line 272: 2 should be written as (2); line 276: replace (1.2) by (2); see the derivation of \phi*(r) on the right column of page 4, where the signs of the second terms in each of the lines have to be interchanged--please check). The discussing on the relation to MMD is very interesting and I appreciate the authors for highlighting this connection. While the improvement in empirical results are marginal over the existing results, the paper is overall interesting from a theoretical point of view.
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Summary of evaluation / Paper's main strengths and weaknesses</td><td style="width:80%;">
+                            The authors improved the existing lower bound on the variational representations of f-divergences and then derived an RKHS based algorithm to estimate the f-divergence between two distributions from finite samples. They also established a nice connection between the problem of estimating f-divergences and maximum mean discrepancy using the kernel algorithm they derived. While the empirical results show only a marginal improvement over the existing results, the paper is theoretically interesting.
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">I have read and considered the authors' response. (To be answered only after the response period.)</td><td style="width:80%;">
+                            No
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label1" style="font-size:Small;">Assigned_Reviewer_19</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl01_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Weak accept
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Reviewer confidence</td><td style="width:80%;">
+                            Reviewer is knowledgeable
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Detailed comments for the authors</td><td style="width:80%;">
+                            The authors proposed a variational method to estimate f-divergences. The proposed method improves the work of (Nguyen,07). The authors derived a tighter lower-bound on the variation representation of f-divergence.  <br /><br />The paper is readable, but certain parts could be improved. Some comments are listed below. <br /><br />The results are impressive, but still in my opinion the work is somewhat incremental compared to (Nguyen,07). The ultimate minimization problem (8) is very similar to the problem at the end of Lemma3 of (Nguyen, 07). The main difference is that (8) optimizes alpha on a simplex, while (Nguyen, 07) optimizes unconstrained alpha. <br /><br />Numerical experiments confirm that the variational estimators are good when the true divergence is small, but I think this section could be improved by studying other distributions as well that are truly high-dimensional. It would also be great to see comments on why higher dimensionality causes problems. <br /><br />Line 153: For KL shouldn't it be f(t)=-ln(t) ?<br />Line 271: 2 should be (2)<br />Line 271: How is E_Q[phi*p] translated to E_P[phi] in (2)? **<br />Line 276: Where is (1.2)?
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Summary of evaluation / Paper's main strengths and weaknesses</td><td style="width:80%;">
+                            Strong points: The problem investigated in the paper is important and challenging. Generally the paper is readable, although certain parts could be improved. The new method improves the work of (Nguyen,07).  <br /><br />Weak points:<br />The work is somewhat incremental compared to (Nguyen,07), therefore I consider it moderately novel. The ultimate minimization problem (8) is very similar to the problem at the end of Lemma3 of (Nguyen, 07).   <br /><br />The experiments seem rather limited. Some other distributions that are truly high-dimensional could also be used. It would also be good to see some comments on why higher dimensionality causes problems.  
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">I have read and considered the authors' response. (To be answered only after the response period.)</td><td style="width:80%;">
+                            Yes
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label2" style="font-size:Small;font-weight:bold;">Masked Reviewer ID:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label1" style="font-size:Small;">Assigned_Reviewer_31</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="ctl00_cph_gvReviews_ctl02_Label3" style="font-size:Small;font-weight:bold;">Review:</span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <div>
+		<table cellspacing="0" cellpadding="4" rules="all" border="1" style="color:#333333;border-width:1px;border-style:None;font-family:Verdana;font-size:Small;border-collapse:collapse;">
+			<tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+				<th scope="col">Question</th><th scope="col">&nbsp;</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Overall Rating</td><td style="width:80%;">
+                            Strong accept
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Reviewer confidence</td><td style="width:80%;">
+                            Reviewer's evaluation is an educated guess
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">Detailed comments for the authors</td><td style="width:80%;">
+                            This article provides tighter bounds on the variational representation for the family of f-divergences when applied to probability measures. The new bound is obtained by taking into account the fact that f-divergences are defined between probability distributions. The authors also describe an optimization program to compute f-divergences between empirical distributions, and relate their program to the Maximum Mean discrepancy of (Gretton et al, 2008). <br />The paper is very well written, with compelling theoretical and empirical results. It should be of interest for the ML community.<br />
+                        </td>
+			</tr><tr style="color:#284775;background-color:White;">
+				<td style="width:20%;">Summary of evaluation / Paper's main strengths and weaknesses</td><td style="width:80%;">
+                            This article provides tighter bounds for variational representations of f-divergences. The paper is well written, with compelling theoretical and empirical results.
+                        </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td style="width:20%;">I have read and considered the authors' response. (To be answered only after the response period.)</td><td style="width:80%;">
+                            Yes
+                        </td>
+			</tr>
+		</table>
+	</div>
+            
+        
+    <br />
+    <br />
+
+</div>
+</td><td class='contentBorder'>&nbsp;</td></tr></table>
+</form>
+</body>
+</html>

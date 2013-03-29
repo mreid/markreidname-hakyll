@@ -1,0 +1,28 @@
+From: Program Chairs NIPS 2012 <program-chairs@nips.cc>
+Subject: NIPS 2012 notification for paper 811
+Date: 4 September 2012 3:10:06 AM AEST
+To: <mark.reid@anu.edu.au>
+Reply-To: program-chairs@nips.cc
+
+Dear Mark,
+
+We are pleased to inform you that your NIPS 2012 submission "Mixability in Statistical Learning," paper ID 811, has been accepted for publication in the conference proceedings, with a poster presentation at the conference.
+
+There were a record 1467 submissions to NIPS this year, with many strong submissions.  The program committee selected only 370 papers for presentation at the conference, one of which is yours. Congratulations!
+
+You can access the reviews of your paper by logging in to the author console in https://cmt.research.microsoft.com/NIPS2012.  If you have forgotten your CMT password click on "Reset your password" and then enter your login email address: mark.reid@anu.edu.au.  A URL will be sent to you by the CMT system; follow the instructions to set your password. Further help is available via CMT support at cmt@microsoft.com.
+
+These reviews played an important role in the decisions made by the program committee, as did the program committee's own reading of your work.  Please take the reviewers' comments into consideration when you prepare your poster, as well as the final version of your paper for the NIPS Proceedings.
+
+Further instructions on preparing your presentations will be sent by email in a few weeks.
+
+For more information about preparing for the conference, please monitor http://nips.cc.  Before October 1, please log into https://cmt.research.microsoft.com/NIPS2012/ to make sure that the author order, names, email addresses, and affiliations are correct for your paper: we will be using these to prepare the program booklet.
+
+We believe that we have an outstanding program this year. A provisional schedule will be posted in the next few weeks on http://nips.cc.
+
+Congratulations again, and we look forward to seeing you at Lake  Tahoe!
+
+Chris Burges and Léon Bottou
+NIPS 2012 Program Chairs
+
+

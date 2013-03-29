@@ -31,30 +31,23 @@ main = hakyllWith siteConfig $ do
   -- Templates
   match "_templates/**" $ compile templateCompiler
   
-
   -----------------
   -- CSS
-  match "_static/css/*" $ do
-    route   $ gsubRoute "_static/" (const "")
+  match "css/**" $ do
+    route   $ idRoute
     compile $ compressCssCompiler
 
   -----------------
-  -- Static Content
-  match ".htaccess" $ do
-    route   $ idRoute
-    compile $ copyFileCompiler
-
-  match "_static/images/**" $ do
+  -- Static Content (including .htaccess)
+  match "_static/**" $ do
     route   $ gsubRoute "_static/" (const "")
     compile $ copyFileCompiler
 
-  match "_static/js/**" $ do
-    route   $ gsubRoute "_static/" (const "")
-    compile $ copyFileCompiler
-
-  match "_static/guns/**" $ do
-    route   $ gsubRoute "_static/" (const "")
-    compile $ copyFileCompiler
+  -----------------
+  -- 404 Page
+  match "404.md" $ do
+    route   $ setExtension "html"
+    compile $ pandocCompiler >>= pageCompiler "Home"
 
   -----------------
   -- Home
@@ -81,9 +74,18 @@ main = hakyllWith siteConfig $ do
     route   $ setExtension "html"
     compile $ pandocCompiler >>= pageCompiler "Work"
 
-  match "work/pubs/index.markdown" $ do
+  match "work/pubs/**.markdown" $ do
     route   $ setExtension "html"
     compile $ pandocCompiler >>= pageCompiler "Work"
+
+  -----------------
+  -- Notes
+  match "work/note/*.bib" $ compile $ biblioCompiler
+  match "work/note/*.csl" $ compile $ cslCompiler
+
+  match "work/note/**.markdown" $ do
+    route   $ setExtension "html"
+    compile $ bibtexCompiler >>= pageCompiler "Work"
 
   -----------------
   -- Blog
@@ -103,18 +105,24 @@ main = hakyllWith siteConfig $ do
 
   -- Posts
   match "blog/posts/*" $ do
-    route   $ blogPostRoute
-    compile $ blogPostCompiler
+    route   $ gsubRoute "posts" (const "") `composeRoutes` rmDateRoute
+    compile $ blogPostCompiler True
+  
+  -- Drafts
+  match "blog/drafts/*" $ do
+    route   $ rmDateRoute
+    compile $ blogPostCompiler False
 
+  -- Atom / RSS
   create ["blog/atom.xml"] $ do
     route   $ idRoute
     compile $ do
       let feedCtx = postCtx `mappend` bodyField "description"
-      posts <- recentFirst =<< loadAllSnapshots "blog/posts/*" "content"
+      posts <- fmap (take 5) . recentFirst =<< loadAllSnapshots "blog/posts/*" "content"
       renderAtom feedConfig feedCtx posts
 
 --------------------------------------------------------------------------------
--- Main page
+-- Compile pages by wrapping in standard templates
 pageCompiler section item =
     loadAndApplyTemplate "_templates/page.html" homeCtx item
     >>= loadAndApplyTemplate "_templates/nav/main.html" homeCtx
@@ -123,10 +131,19 @@ pageCompiler section item =
     where
       homeCtx = pageCtx section
 
+-- Compile pages with Pandoc's citations resolved against a BibTeX file
+bibtexCompiler = do 
+  csl <- load "work/note/siggraph.csl"
+  bib <- load "work/note/refs.bib"
+
+  getResourceBody 
+    >>= readPandocBiblio def (Just csl) bib 
+    >>= return . writePandoc
+
 -- Blog posts
 -- Take out the post/YYYY-MM-DD part from the post URL
-blogPostRoute = 
-  gsubRoute "posts/[0-9]{4}-[0-9]{2}-[0-9]{2}-" (const "")
+rmDateRoute = 
+  gsubRoute "/[0-9]{4}-[0-9]{2}-[0-9]{2}-" (const "/")
   `composeRoutes` setExtension "html"
 
 -- Blog page compiler
@@ -135,8 +152,7 @@ blogPageCompiler item =
     >>= loadAndApplyTemplate "_templates/nav/blog.html" postCtx
     >>= loadAndApplyTemplate "_templates/disqus/counts.html" postCtx
     >>= loadAndApplyTemplate "_templates/default.html" postCtx
-    -- >>= relativizeUrls
-
+    >>= relativizeUrls
 
 -- Blog index compiler
 blogRecentsCompiler n templateID = do
@@ -146,9 +162,9 @@ blogRecentsCompiler n templateID = do
   pandocCompiler >>= applyAsTemplate (recentCtx `mappend` defaultContext)
 
 -- Blog post compiler
-blogPostCompiler = mathJaxRenderer
+blogPostCompiler snapshot = mathJaxRenderer
   >>= loadAndApplyTemplate "_templates/post/full.html" postCtx
-  >>= saveSnapshot "content"
+  >>= (if snapshot then (saveSnapshot "content") else return . id)
   >>= loadAndApplyTemplate "_templates/nav/blog.html" postCtx
   >>= loadAndApplyTemplate "_templates/default.html" postCtx
   >>= relativizeUrls

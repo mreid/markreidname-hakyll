@@ -7,7 +7,7 @@ Just a short post to reflect on the year that has passed since I [started this b
 
 A quick trawl through the archives reveals I have published 21 posts (not including this one) for an average of just less than two posts per month. A quick look at my traffic statistics show that I've had almost 6,000 visits and over 10,000 page views.
 
-![Vistors over the last year](/images/figures/web-traffic.png)
+![Vistors over the last year](/pics/figures/web-traffic.png)
 :	**Figure 1**: Graph of web traffic over the last year of blogging. 
 
 {:.figure }

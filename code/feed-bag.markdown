@@ -59,7 +59,7 @@ Once you have all of the above dependencies, you can do one of two things:
 * Download the [feedbag.zip][] file and unpack it. 
 * Check it from my [GitHub Feedbag repository][github].
 
-[feedbag.zip]: /files/code/feedbag.zip
+[feedbag.zip]: /bits/code/feedbag.zip
 [github]: http://github.com/mreid/feed-bag/tree/master
 
 Either way, you will get these three files:

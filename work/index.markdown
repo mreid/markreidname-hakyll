@@ -4,7 +4,7 @@ title: Work
 section: Work
 ---
 
-<img class='inset right' src='/images/mark_reid2.jpg' title='Mark Reid' alt='Photo of Mark Reid at work' width='110px' />
+<img class='inset right' src='/pics/mark_reid2.jpg' title='Mark Reid' alt='Photo of Mark Reid at work' width='110px' />
 
 I'm a post-doctoral Research Fellow in the 
 [Research School of Information Sciences and Engineering][rsise] 
@@ -52,12 +52,9 @@ I have [published][] in learning theory, boosting, transfer learning, reinforcem
 <div class="section">
 News
 ====
+_27 March 2013_: I am now an Action Editor for the Journal of Machine Learning Research's [Machine Learning Open Source Software (MLOSS)](http://jmlr.csail.mit.edu/mloss/) track.
 
 _5 November 2012_: My grant proposal titled _Composing Machine Learning via Market Mechanisms_ was successful! I will be receiving funding under the [Discovery Early Career Researcher Award](http://www.arc.gov.au/ncgp/decra.htm) (DECRA) scheme for three years, starting in 2013.
-
-_11 October 2012_: A proposal to demonstrate an implementaiton of the _[Protocols and Structures for Inference](http://psi.cecs.anu.edu.au)_ specification at NIPS 2012 was accepted (joint work with [James Montgomery](http://users.cecs.anu.edu.au/~ejmontgomery/) and [CISRA](http://cisra.com.au))
-
-_4 September 2012_: I have two papers accepted at NIPS: _[Mixability in Statistical Learning](/files/pubs/nips12-stochmix.pdf)_ (with Tim van Erven, Peter Grünwald, and Bob Williamson) and _Interpreting Prediction Markets: A Stochastic Approach_ (with Rafael Frongillo and Nicolás Della Penna).
 
 </div>
 
@@ -96,11 +93,15 @@ inference called _[inductio ex machina](/blog/)_.
 <div class="section">
 Activities
 ==========
-I am currently part of the program committee for [ICML 2013](http://icml.cc/2013/).
+I am currently the Production Editor for the [JMLR Workshop & Conference Proceedings](http://jmlr.csail.mit.edu/proceedings/). I am also an Action Editor for the JMLR's [Machine Learning and Open Source Software](http://jmlr.csail.mit.edu/mloss/) track.
+
+I was a member of the program committee for [ICML 2013](http://icml.cc/2013/).
 I was local organiser for [ALT 2010](http://www-alg.ist.hokudai.ac.jp/~thomas/ALT10/alt10.jhtml) as well as a member of its [Program Committee](http://www-alg.ist.hokudai.ac.jp/~thomas/ALT10/pc.html). I have also been on the program committee for [NIPS 2012](http://nips.cc/Conferences/2012/Committees),  [ACML 2012](http://acml12.comp.nus.edu.sg/), and [AI12](http://ai2012.web.cse.unsw.edu.au/index.html).
 
 I have reviewed for journals ([JMLR][], [JAIR][], [PAMI][], [TCS][], [Trans. on Info. Theory][infotheory], [Trans. on NNLS][nnls], [PloS ONE][], and [AMS Mathematical Reviews][amsmr]), conferences (including [NIPS][], [ICML][], [COLT][], and [UAI][]),
-and have also set up a [discussion site][icmldisc] for ICML and [presented][mlss2009] at the 2009 Machine Learning Summer School. I also participate in the [Mathematicians in Schools](http://www.mathematiciansinschools.edu.au/) program as a partner with Yass High School.
+and have also set up a [discussion site][icmldisc] for ICML and [presented][mlss2009] at the 2009 Machine Learning Summer School. 
+
+I have also participated in the [Mathematicians in Schools](http://www.mathematiciansinschools.edu.au/) program as a partner with Yass High School.
 </div>
 
 [icmldisc]: http://icml.cc/discuss/

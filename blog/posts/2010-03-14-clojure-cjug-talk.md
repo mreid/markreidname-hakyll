@@ -7,7 +7,7 @@ Although I've been fairly quiet on the posting front, I did do a bit of Clojure 
 
 Because it was a Java group and I didn't want to be burned as a language heretic, my talk focused on Clojure's interoperability with Java and walked through a side-by-side translation of Clojure and Java code. To ease the culture shock of visiting a very different style of programming, I had fun framing my talk as a sightseer's guide. As a taste, this was the overview slide:
 
-![The overview slide from my CJUG talk on Clojure.](/images/figures/cjug-overview.png)
+![The overview slide from my CJUG talk on Clojure.](/pics/figures/cjug-overview.png)
 
 I covered a bit of Clojure's background in "History" before talking about installing Clojure on the command line and as an Eclipse plug-in in the "Getting There" section. In the "Survival Kit" I covered some basic data types and sequence functions before talking about how to call Java libraries in "Phoning Home". This was all put together in the "Phrase Book" which gave a side-by-side versions of Clojure and Java programs which did a simple word-frequency count ([code here](http://gist.github.com/331911)). Finally, I very briefly covered some of Clojure's highlights (immutability, laziness, its philosophy on state, and its concurrency primitives) in the "Essential Sights" section.
 

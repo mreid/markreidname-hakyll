@@ -4,7 +4,7 @@ section: Code
 title: Code
 ---
 
-<img class='inset right' src='/images/me_matrix.png' title='Mark Reid' alt='Mark Reid in the Matrix' width='120px' />
+<img class='inset right' src='/pics/me_matrix.png' title='Mark Reid' alt='Mark Reid in the Matrix' width='120px' />
 
 Code
 ====

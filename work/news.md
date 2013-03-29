@@ -1,4 +1,7 @@
 # Old News
+_11 October 2012_: A proposal to demonstrate an implementaiton of the _[Protocols and Structures for Inference](http://psi.cecs.anu.edu.au)_ specification at NIPS 2012 was accepted (joint work with [James Montgomery](http://users.cecs.anu.edu.au/~ejmontgomery/) and [CISRA](http://cisra.com.au))
+
+_4 September 2012_: I have two papers accepted at NIPS: _[Mixability in Statistical Learning](/bits/pubs/nips12-stochmix.pdf)_ (with Tim van Erven, Peter Grünwald, and Bob Williamson) and _Interpreting Prediction Markets: A Stochastic Approach_ (with Rafael Frongillo and Nicolás Della Penna).
 
 _8 June 2012_: My JMLR paper -- _[Mixability is Bayes Risk Curavture Relative to Log Loss](http://jmlr.csail.mit.edu/papers/v13/vanerven12a.html)_ -- with [Tim van Erven](http://www.timvanerven.nl/) and [Bob Williamson](http://users.cecs.anu.edu.au/~williams/) has been published.
 

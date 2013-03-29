@@ -2,7 +2,7 @@
 title: Info
 ---
 
-<img class='inset right' src='/images/mark_reid3.jpg' title='Mark Reid' alt='Photo of Mark Reid with long hair' width='120px' />
+<img class='inset right' src='/pics/mark_reid3.jpg' title='Mark Reid' alt='Photo of Mark Reid with long hair' width='120px' />
 
 About Me
 ========

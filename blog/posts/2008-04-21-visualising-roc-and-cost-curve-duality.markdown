@@ -23,8 +23,8 @@ My ability to intuitively grasp this duality relationship was not that great so 
 The left plot, entitled "Cost Space" shows the (cost,loss) duals of both the black and grey curves from the right-hand plot. The grey diagonal on the right corresponds to a "tent" on the left that represents the best performance of a classifier that constantly predicts a single class.
 
 <dl class="figure">
-<dt><img src="/images/figures/siroc-screenshot.png" width="90%"></img></dt>
-<dd>**Figure 1**: Screenshot of the cost/ROC visualisation applet. Click [here](/files/code/siroc/) to open the applet and interact with it.</dd>
+<dt><img src="/pics/figures/siroc-screenshot.png" width="90%"></img></dt>
+<dd>**Figure 1**: Screenshot of the cost/ROC visualisation applet. Click [here](/bits/code/siroc/) to open the applet and interact with it.</dd>
 </dl>
 
 If you click in the applet area you can get a feel for the relationship between these two representations. When you move your mouse over ROC space you will see the corresponding line in cost space. Conversely, when you move your mouse over the cost space plot you will see the dual line in ROC space.

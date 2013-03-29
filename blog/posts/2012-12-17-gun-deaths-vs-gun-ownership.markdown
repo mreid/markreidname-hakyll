@@ -13,7 +13,7 @@ In the wake of the [tragic shooting][] at Sandy Hook Elementary School there was
 I posted this quote on Facebook and was asked whether there was any correlation between rates of gun ownership and gun-related deaths. After 20 minutes of grabbing some data on worldwide [gun ownership][] and [gun deaths][] from Wikipedia and running it through [R][] I produced the following graph.
 
 <dl class="figure">
-<dd><img alt="Gun deaths vs. Gun Ownership for OECD countries" src="/images/figures/deaths-vs-guns.png" width="90%"/></dd>
+<dd><img alt="Gun deaths vs. Gun Ownership for OECD countries" src="/pics/figures/deaths-vs-guns.png" width="90%"/></dd>
 <dt>Gun-related deaths per capita vs. gun ownership per capita in OECD countries.</dt>
 </dl>
 
@@ -35,9 +35,9 @@ The first step was finding data on gun ownership and gun-related deaths and gett
 
 A quick search revealed Wikipedia articles on [countries by firearm-related death rate][gun deaths] and [Number of guns per capita by country][gun ownership]. I cut and pasted the tables in these articles into a [text editor][vim] and saved them as CSV files. I also grabbed a [list of OECD countries][] from Wikipedia and converted it. You can grab the resulting files here:
 
-* [deaths.csv](/guns/data/deaths.csv) (as of 17 Dec. 2012)
-* [guns.csv](/guns/data/guns.csv) (as of 17 Dec. 2012)
-* [oecd.csv](/guns/data/oecd.csv) (as of 17 Dec. 2012)
+* [deaths.csv](/bits/guns/data/deaths.csv) (as of 17 Dec. 2012)
+* [guns.csv](/bits/guns/data/guns.csv) (as of 17 Dec. 2012)
+* [oecd.csv](/bits/guns/data/oecd.csv) (as of 17 Dec. 2012)
 
 <div class="note">
 **Update - 19 Dec. 2012**: The above data was what was available on Wikipedia when I wrote this post. It has since been changed. See the discussion at the end of this post for details.
@@ -71,7 +71,7 @@ The R code I used to create the plot is given below. It simply reads in the data
 
 You can get all the code I used to generate the figures in this post here:
 
-* [guns.R](/guns/guns.R)
+* [guns.R](/bits/guns/guns.R)
 
 
 ## Other Graphs
@@ -79,19 +79,19 @@ You can get all the code I used to generate the figures in this post here:
 I was asked a number of good questions about the graph I posted on Twitter. In particular, several people were surprised at the number of gun-related deaths for Switzerland. As the following graph of gun homicides vs. gun ownership shows, most of those deaths are actually suicides.
 
 <dl class="figure">
-<dd><img alt="Gun homicides vs. Gun Ownership for OECD countries" src="/images/figures/homicide-vs-guns.png" width="90%"/></dd>
+<dd><img alt="Gun homicides vs. Gun Ownership for OECD countries" src="/pics/figures/homicide-vs-guns.png" width="90%"/></dd>
 <dt>Gun homicides per capita vs. gun ownership per capita in OECD countries.</dt>
 </dl>
 
 <dl class="figure">
-<dd><img alt="Gun homicides vs. Gun Ownership for OECD countries (Detail)" src="/images/figures/homicide-vs-guns-detail.png" width="90%"/></dd>
+<dd><img alt="Gun homicides vs. Gun Ownership for OECD countries (Detail)" src="/pics/figures/homicide-vs-guns-detail.png" width="90%"/></dd>
 <dt>Detail of gun homicides per capita vs. gun ownership per capita in OECD countries.</dt>
 </dl>
 
 Finally, here is a plot of homicide vs. ownership across all countries -- not just those in the OECD. The mass of countries in the lower left corner is unreadble but you can see those countries with either high homicide rates or high gun ownership clearly.
 
 <dl class="figure">
-<dd><img alt="Gun homicides vs. Gun Ownership for all countries" src="/images/figures/homicide-vs-guns-all.png" width="90%"/></dd>
+<dd><img alt="Gun homicides vs. Gun Ownership for all countries" src="/pics/figures/homicide-vs-guns-all.png" width="90%"/></dd>
 <dt>Gun homicides per capita vs. gun ownership per capita in all countries.</dt>
 </dl>
 
@@ -110,15 +110,15 @@ Several people noted that the data I plotted for Switzerland was inconsistent wi
 I have redone the OECD plots with data scraped from the same pages as of 3:30pm on the 19th. You can see the results and get the new data below.
 
 <dl class="figure" >
-<dd><a href="/images/figures/deaths-vs-guns-20121219.png"><img alt="Gun Deaths vs. Gun Ownership for OECD countries" src="/images/figures/deaths-vs-guns-20121219.png" width="45%"/></a>
-<a href="/images/figures/homicide-vs-guns-20121219.png"><img alt="Gun homicides vs. Gun Ownership for OECD countries" src="/images/figures/homicide-vs-guns-20121219.png" width="45%"/></a></dd>
+<dd><a href="/pics/figures/deaths-vs-guns-20121219.png"><img alt="Gun Deaths vs. Gun Ownership for OECD countries" src="/pics/figures/deaths-vs-guns-20121219.png" width="45%"/></a>
+<a href="/pics/figures/homicide-vs-guns-20121219.png"><img alt="Gun homicides vs. Gun Ownership for OECD countries" src="/pics/figures/homicide-vs-guns-20121219.png" width="45%"/></a></dd>
 <dt>Gun deaths (left) and homicides (right) per capita vs. gun ownership per capita in OECD countries (click to view larger images).</dt>
 </dl>
 
 The new data is here:
 
-* [guns-20121219.csv](/guns/data/guns-20121219.csv)
-* [deaths-20121219.csv](/guns/data/deaths-20121219.csv)
+* [guns-20121219.csv](/bits/guns/data/guns-20121219.csv)
+* [deaths-20121219.csv](/bits/guns/data/deaths-20121219.csv)
 
 
 ### Other Analyses
@@ -162,7 +162,7 @@ If you have a question about other possible correlations or relationships, feel 
 [tragic shooting]: http://en.wikipedia.org/wiki/Sandy_Hook_Elementary_School_shooting
 [new yorker article]: http://www.newyorker.com/reporting/2012/04/23/120423fa_fact_lepore?currentPage=all&mobify=0
 [R]: http://www.r-project.org
-[deaths-vs-guns]: /images/figures/deaths-vs-guns.png
+[deaths-vs-guns]: /pics/figures/deaths-vs-guns.png
 [vim]: http://code.google.com/p/macvim/
 [list of oecd countries]: http://en.wikipedia.org/wiki/List_of_OECD_countries_by_GDP_per_capita
 

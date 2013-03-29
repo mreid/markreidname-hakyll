@@ -10,7 +10,7 @@ We had our official release on the 26th of October and even though she's been he
 We refer to her as "Ada Molly Reid".
 
 <dl class="figure">
-<dt>![Ada Molly Reid](/images/ada.jpg)</dt>
+<dt>![Ada Molly Reid](/pics/ada.jpg)</dt>
 <dd>&nbsp;</dd>
 </dl>
 

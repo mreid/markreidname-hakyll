@@ -27,8 +27,8 @@ Mixability is a property of a loss function that characterises when learning can
 
 In our [recent COLT paper][colt11] we were able to characterise mixability in terms of the curvature of the loss for a natural class of losses known as _[proper losses][]_. These losses are "sensible" in that if the true probability of an outcome is $p$ then the expected loss is minimised by predicting $p$. This seemingly innocent requirement actually gives rise to a lot of geometric structure that has been well studied in the economics literature, and that we exploit in our paper.
 
-[colt11]: http://mark.reid.name/files/pubs/colt11.pdf
-[proper losses]: http://mark.reid.name/iem/proper-losses.html
+[colt11]: /bits/pubs/colt11.pdf
+[proper losses]: /blog/proper-losses.html
 
 Online Convex Optimisation is a similar type of game to PWEA in that both are [competitive online prediction][cop] games: a learner repeatedly makes predictions and receives a penalty based on that prediction and its performance is compared to a class of simple alternatives. The main differences between PWEA and OCO are that: the learner does not have access to expert predictions and their penalties; the regret of the learner is relative to a possibly uncountable set of alternatives; and the loss functions involved are assumed to be convex.
 

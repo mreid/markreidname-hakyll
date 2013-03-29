@@ -100,7 +100,7 @@ Figure 1 shows a plot of the PCA reduced book data. Each circle represents one o
 
 [^2]: A book can belong to more than one library. In this case one library is chosen at random to determine a circle's colour.
 
-![Plot of the books across all libraries in the ACRP database](/images/figures/all_libraries.png){: width=550 }
+![Plot of the books across all libraries in the ACRP database](/pics/figures/all_libraries.png){: width=550 }
 :	**Figure 1**: A PCA plot of all the books in the ACRP database coloured according to which library they belong to. The size of each circle indicates the number of borrowers of the corresponding book.
 
 {: .figure }
@@ -121,7 +121,7 @@ Clicking on [this link][applet] will open a new window and, after a short delay,
 
 [applet]: /inductio/wp-content/public/acrp/
 
-![Screenshot of the visualisation applet](/images/figures/acrp.png){: width=550 }
+![Screenshot of the visualisation applet](/pics/figures/acrp.png){: width=550 }
 :	 **Figure 2**: A screenshot of the ACRP visualisation tool showing books 
 	from the Lambton Institute. Click the image to run the tool in a new window.
 

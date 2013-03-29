@@ -5,7 +5,7 @@ section: Home
 
 Welcome
 =======
-<img class='inset right' style='margin-top: -3em;' src='/images/mark_reid.jpg' title='Mark Reid' alt='Photo of Mark Reid drinking a coffee' width='120px' />
+<img class='inset right' style='margin-top: -3em;' src='/pics/mark_reid.jpg' title='Mark Reid' alt='Photo of Mark Reid drinking a coffee' width='120px' />
 
 I'm Mark Reid, a 30-something Australian, academic, husband, programmer, father, 
 snow/skateboarder, and web-nerd---amongst other things. You can find out more about 

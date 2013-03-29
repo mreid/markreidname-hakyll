@@ -586,7 +586,7 @@ We study the stochastic sequence of prices that results from traders with belief
  </div>
 
 [mmmam12workshop]: http://icml2012marketswkshop.pbworks.com/
-[mmmam12]: /files/pubs/mmmam12.pdf
+[mmmam12]: /bits/pubs/mmmam12.pdf
 
 
 ## 2011
@@ -613,7 +613,7 @@ Talk at the [Relations Between Machine Learning Problems][rml11workshop] Worksho
 In order to relate machine learning problems we argue that we need to be able to articulate what is meant by a single machine learning problem. By attempting to name the various aspects of a learning problem we hope to clarify ways in which learning problems might be related to each other. We tentatively put forward a proposal for an anatomy of learning problems that will serve as scaffolding for posing questions about relations. After surveying the way learning problems are discussed in a range of repositories and services. We then argue that the terms used to describe problems to better understand a range of viewpoints within machine learning ranging from the theoretical to the practical.
  </div>
 
-[rml11]: /files/pubs/nips11ws.pdf 
+[rml11]: /bits/pubs/nips11ws.pdf 
 [rml11workshop]: http://rml.cecs.anu.edu.au/
 [rml11video]: http://videolectures.net/nipsworkshops2011_reid_anatomy/
 [rml11slides]: http://videolectures.net/site/normal_dl/tag=658116/nipsworkshops2011_reid_anatomy_01.pdf
@@ -730,41 +730,41 @@ Australian Application Number: 2006252174
 [aistats2010]: http://aistats.org/
 [aistats10]: http://jmlr.csail.mit.edu/proceedings/papers/v9/reid10a/reid10a.pdf
 
-[icdm09]: /files/pubs/icdm09.pdf
+[icdm09]: /bits/pubs/icdm09.pdf
 [procicdm]: http://www.cs.umbc.edu/ICDM09/program.html
 
-[colt09]: /files/pubs/colt09.pdf
+[colt09]: /bits/pubs/colt09.pdf
 [colt09slides]: http://users.rsise.anu.edu.au/~mreid/files/slides/COLT2009.pdf
 [proccolt09]: http://www.cs.mcgill.ca/~colt2009/proceedings.html
-[colt11]: /files/pubs/colt11.pdf 
+[colt11]: /bits/pubs/colt11.pdf 
 [colt11video]: http://videolectures.net/colt2011_williamson_risk/
 [proccolt2011]: http://colt2011.sztaki.hu/accepted_papers.html
 
-[nips11]: /files/pubs/nips11.pdf
+[nips11]: /bits/pubs/nips11.pdf
 [procnips2011]: http://nips.cc/Conferences/2011/Program/accepted-papers.php
 
 [nips12]: http://nips.cc/Conferences/2012/
-[nips12-stochmix]: /files/pubs/nips12-stochmix.pdf
-[nips12-markets]: /files/pubs/nips12-markets.pdf
+[nips12-stochmix]: /bits/pubs/nips12-stochmix.pdf
+[nips12-markets]: /bits/pubs/nips12-markets.pdf
 
-[ci12]: /files/pubs/ci12.pdf
+[ci12]: /bits/pubs/ci12.pdf
 [procci2012]: http://www.ci2012.org/accepted-papers
 
 [icml12]: http://icml.cc/2012/
-[icml12-fdiv]: /files/pubs/icml12-fdiv.pdf
-[icml12-aoso]: /files/pubs/icml12-aoso.pdf
-[icml12-multi]: /files/pubs/icml12-multi.pdf
+[icml12-fdiv]: /bits/pubs/icml12-fdiv.pdf
+[icml12-aoso]: /bits/pubs/icml12-aoso.pdf
+[icml12-multi]: /bits/pubs/icml12-multi.pdf
 
-[icml09]: /files/pubs/icml09.pdf
+[icml09]: /bits/pubs/icml09.pdf
 [icml09slides]: http://users.rsise.anu.edu.au/~mreid/files/slides/ICML2009.pdf
 [procicml09]: http://www.cs.mcgill.ca/~icml2009/abstracts.html
 
-[unsw07]: /files/pubs/unsw07.pdf
-[isj01]: /files/pubs/isj02.pdf
-[ilp04]: /files/pubs/ilp04.pdf
-[ilp00]: /files/pubs/ilp00.pdf
-[icml00]: /files/pubs/icml00.pdf
-[ds99]: /files/pubs/ds99.pdf
+[unsw07]: /bits/pubs/unsw07.pdf
+[isj01]: /bits/pubs/isj02.pdf
+[ilp04]: /bits/pubs/ilp04.pdf
+[ilp00]: /bits/pubs/ilp00.pdf
+[icml00]: /bits/pubs/icml00.pdf
+[ds99]: /bits/pubs/ds99.pdf
 
 [psi]: http://psi.cecs.anu.edu.au/
 [psi-spec]: http://psi.cecs.anu.edu.au/spec/index.html

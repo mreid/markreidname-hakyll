@@ -11,14 +11,14 @@ ago --- project Ada --- is coming along nicely. Her (non-computer) vision,
 
 Here's a recent screenshot[^1].
 
-![Ada](/images/ada-2011.png)
+![Ada](/pics/ada-2011.png)
 :	Ada (AAI v1.0)
 
 Encouraged by the success of the first version of the project we decided to take the plunge and start on version 2. 
 
 We call this version "Edith Valerie Reid".
 
-![Edith](/images/edith-2011.jpg)
+![Edith](/pics/edith-2011.jpg)
 :	Edith (AAI v2.0)
 
 Her initial release on the 26th of July and so far everything is going really
@@ -28,7 +28,7 @@ heard, common to this type of project.
 
 All in all, I'm declaring the version two release a resounding success.
 
-[ada]: /iem/artificial-ai.html
+[ada]: /blog/artificial-ai.html
 [bob]: http://users.cecs.anu.edu.au/~williams/
 
 [^1]: Both photos are courtesy of [Bob Williamson][bob].

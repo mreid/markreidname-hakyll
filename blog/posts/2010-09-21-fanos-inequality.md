@@ -19,7 +19,9 @@ To do this the problem of optimising a function is reduced to identifying one fr
 I won't discuss the convex optimisation result any further and instead focus on explaining Fano's inequality and why it is such an interesting result.
 
 ## Fano's Inequality
-[Fano's inequality](http://en.wikipedia.org/wiki/Fano's_inequality) is a result from information theory that relates the conditional entropy of a random variable $X$ relative to the correlated variable $Y$ to the probability of incorrectly estimating $X$ from $Y$. The intuition here is that the probability of making a mistake when estimating $X$ using the value of $Y$ is going to depend on how certain we are about the value of $X$ given $Y$. 
+[Fano's inequality][] is a result from information theory that relates the conditional entropy of a random variable $X$ relative to the correlated variable $Y$ to the probability of incorrectly estimating $X$ from $Y$. The intuition here is that the probability of making a mistake when estimating $X$ using the value of $Y$ is going to depend on how certain we are about the value of $X$ given $Y$. 
+
+[Fano's inequality]: http://en.wikipedia.org/wiki/Fano's_inequality
 
 Let's introduce some notation so we can state the result more formally. I'll more or less use the presentation from §2.10 of Cover and Thomas's _[Elements of Information Theory](http://www.elementsofinformationtheory.com/)_. Suppose $\hat{X}$ is an estimator for a random variable $X$ and they are conditionally independent given $Y$.  An example of this situation is when some function of $Y$ is used to predict $X$—that is, $\hat{X}=f(Y)$. 
 

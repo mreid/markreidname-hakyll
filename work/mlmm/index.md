@@ -1,10 +1,9 @@
 ---
 title: Composing Machine Learning via Market Mechanisms
-section: Work
-layout: name
-
 ---
 
 # Composing Machine Learning via Market Mechanisms
 
-(Placeholder describing my DECRA grant starting in 2013).
+_Placeholder describing my DECRA grant starting April 2013_.
+
+Watch this space!

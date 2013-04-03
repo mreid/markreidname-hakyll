@@ -4,6 +4,7 @@ import           Control.Applicative ((<$>), empty)
 import           Data.Monoid         (mappend)
 import           Hakyll
 
+import Text.Pandoc.Definition
 import Text.Pandoc.Shared
 import Text.Pandoc.Options
 
@@ -47,7 +48,7 @@ main = hakyllWith siteConfig $ do
   -- 404 Page
   match "404.md" $ do
     route   $ setExtension "html"
-    compile $ pandocCompiler >>= pageCompiler "Home"
+    compile $ myPandocCompiler >>= pageCompiler "Home"
 
   -----------------
   -- Home
@@ -60,23 +61,38 @@ main = hakyllWith siteConfig $ do
   -- Info
   match "info/*.markdown" $ do
     route   $ setExtension "html"
-    compile $ pandocCompiler >>= pageCompiler "Info"
+    compile $ myPandocCompiler >>= pageCompiler "Info"
 
   -----------------
   -- Code
   match "code/**.markdown" $ do
     route   $ setExtension "html"
-    compile $ pandocCompiler >>= pageCompiler "Code"
+    compile $ myPandocCompiler >>= pageCompiler "Code"
 
   -----------------
   -- Work
+  
+  -- News (Note: posts are *.md, index is index.markdown)
+  match "work/news/*.md" $ compile bareCompiler
+  match "work/news/index.markdown" $ do
+    route   $ setExtension "html"
+    compile $ newsRecentsCompiler Nothing "_templates/news/short.html"
+              >>= pageCompiler "Work"
+
   match "work/index.markdown" $ do
     route   $ setExtension "html"
-    compile $ pandocCompiler >>= pageCompiler "Work"
-
+    compile $ newsRecentsCompiler (Just 3) "_templates/news/short.html" 
+              >>= pageCompiler "Work"
+  
+  -- Publications
   match "work/pubs/**.markdown" $ do
     route   $ setExtension "html"
-    compile $ pandocCompiler >>= pageCompiler "Work"
+    compile $ myPandocCompiler >>= pageCompiler "Work"
+
+  -- Machine Learning via Market Mechanisms Project
+  match "work/mlmm/*" $ do
+    route   $ setExtension "html"
+    compile $ myPandocCompiler >>= pageCompiler "Work"
 
   -----------------
   -- Notes
@@ -101,7 +117,7 @@ main = hakyllWith siteConfig $ do
 
   match (fromList ["blog/info.markdown", "blog/kith.markdown"]) $ do
     route   $ setExtension "html"
-    compile $ pandocCompiler >>= blogPageCompiler
+    compile $ myPandocCompiler >>= blogPageCompiler
 
   -- Posts
   match "blog/posts/*" $ do
@@ -120,6 +136,9 @@ main = hakyllWith siteConfig $ do
       let feedCtx = postCtx `mappend` bodyField "description"
       posts <- fmap (take 5) . recentFirst =<< loadAllSnapshots "blog/posts/*" "content"
       renderAtom feedConfig feedCtx posts
+
+
+
 
 --------------------------------------------------------------------------------
 -- Compile pages by wrapping in standard templates
@@ -154,12 +173,11 @@ blogPageCompiler item =
     >>= loadAndApplyTemplate "_templates/default.html" postCtx
     >>= relativizeUrls
 
+-- News index compiler
+newsRecentsCompiler n tplID = recentsCompiler "work/news/*.md" n tplID dateCtx
+
 -- Blog index compiler
-blogRecentsCompiler n templateID = do
-  let ids         = "blog/posts/*"
-  let recentCtx   = recentListField "recentposts" ids n templateID postCtx 
- 
-  pandocCompiler >>= applyAsTemplate (recentCtx `mappend` defaultContext)
+blogRecentsCompiler n tplID = recentsCompiler "blog/posts/*" n tplID postCtx
 
 -- Blog post compiler
 blogPostCompiler snapshot = mathJaxRenderer
@@ -171,7 +189,7 @@ blogPostCompiler snapshot = mathJaxRenderer
 
 -- Pandoc render with MathJax enabled
 mathJaxRenderer =
-  pandocCompilerWith def def { writerHTMLMathMethod = MathJax "" }
+  pandocCompilerWith readerConfig writerConfig { writerHTMLMathMethod = MathJax "" }
 
 -- Set various fields for front pages
 pageCtx :: String -> Context String
@@ -180,24 +198,45 @@ pageCtx section =
   constField "section" section `mappend`
   defaultContext
 
+dateCtx :: Context String
+dateCtx = 
+  dateField "date" "%B %e, %Y" `mappend`
+  dateField "shortdate" "%e %b %y" `mappend` 
+  defaultContext
+
 -- Set various fields for blog posts
 postCtx :: Context String
 postCtx =
-  dateField "date" "%B %e, %Y" `mappend`
-  dateField "shortdate" "%e %b %y" `mappend` 
   constField "top" "Inductio Ex Machina &larr; Mark Reid" `mappend`
   constField "section" "Blog" `mappend`
-  defaultContext
+  dateCtx
 
 --------------------------------------------------------------------------------
 -- Helper functions
 maybeTake Nothing  = id
 maybeTake (Just n) = fmap (take n)
+
 recentListField key ids n templateID context = 
+  mappend defaultContext $
   Context $ \k _ -> 
     if (k==key) then do
       items     <- (maybeTake n) . recentFirst =<< loadAll ids
       template  <- loadBody templateID
       applyTemplateList template context items
 	else empty
-  
+
+-- Recent item compiler
+recentsCompiler ids n templateID itemCtx = do
+  let recentCtx   = recentListField "recentposts" ids n templateID itemCtx
+  myPandocCompiler >>= applyAsTemplate recentCtx
+
+-- Pandoc compiler with defaults I like
+readerConfig = def { readerSmart = True, readerOldDashes = True }
+writerConfig = def
+
+myPandocCompiler = pandocCompilerWith readerConfig writerConfig
+bareCompiler = pandocCompilerWithTransform readerConfig writerConfig stripPara
+
+stripPara :: Pandoc -> Pandoc
+stripPara (Pandoc meta [ (Para inline) ]) = Pandoc meta [ Plain inline ]
+stripPara (Pandoc meta blocks) = Pandoc meta blocks

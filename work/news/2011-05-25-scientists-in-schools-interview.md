@@ -1,0 +1,1 @@
+I was interviewed for the Scientist in Schools [newsletter](http://www.scientistsinschools.edu.au/downloads/newsletter/EMPHASiS_Issue_04%20May_2011.pdf) about my involvement in the Mathematicians in Schools program.

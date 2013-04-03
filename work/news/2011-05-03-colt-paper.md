@@ -1,0 +1,1 @@
+My COLT 2011 submission with [Tim](http://homepages.cwi.nl/~erven/) and [Bob](http://users.cecs.anu.edu.au/~williams/) was accepted! _[Mixability is Bayes Risk Curvature Relative to Log Loss](http://colt2011.sztaki.hu/colt2011_submission_39.pdf)_.

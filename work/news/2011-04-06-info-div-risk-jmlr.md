@@ -1,0 +1,1 @@
+[Bob](http://users.cecs.anu.edu.au/~williams/) and my paper, _[Information, Divergence and Risk for Binary Experiments](http://jmlr.csail.mit.edu/papers/v12/reid11a.html)_ has (finally!) been published in JMLR.

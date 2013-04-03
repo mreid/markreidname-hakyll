@@ -1,0 +1,1 @@
+I have two papers accepted at NIPS: _[Mixability in Statistical Learning](/bits/pubs/nips12-stochmix.pdf)_ (with Tim van Erven, Peter Grünwald, and Bob Williamson) and _Interpreting Prediction Markets: A Stochastic Approach_ (with Rafael Frongillo and Nicolás Della Penna).

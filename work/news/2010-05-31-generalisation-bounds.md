@@ -1,0 +1,1 @@
+I have made available a pre-print of my article on _[Generalization Bounds](http://dl.dropbox.com/u/38668/Papers/Generalization_Bounds.pdf)_ from the forthcoming [Encyclopedia of Machine Learning](http://www.springer.com/computer/ai/book/978-0-387-30768-8).

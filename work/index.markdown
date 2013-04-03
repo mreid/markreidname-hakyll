@@ -1,7 +1,5 @@
 ---
-layout: name
 title: Work
-section: Work
 ---
 
 <img class='inset right' src='/pics/mark_reid2.jpg' title='Mark Reid' alt='Photo of Mark Reid at work' width='110px' />
@@ -35,7 +33,7 @@ Objective
 =========
 My research vision can be distilled down to wanting to **build theoretical and practical foundations for wide-spread, machine-assisted inference**. I am doing so through the following funded projects:
 
- - Composing Machine Learning via Market Mechanisms    
+ - [Composing Machine Learning via Market Mechanisms](/work/mlmm)    
    ([Discovery Early Career Researcher Award](http://www.arc.gov.au/ncgp/decra.htm): 2013--2016)
 
  - [Protocols and Structures for Inference][psi]    
@@ -52,10 +50,9 @@ I have [published][] in learning theory, boosting, transfer learning, reinforcem
 <div class="section">
 News
 ====
-_27 March 2013_: I am now an Action Editor for the Journal of Machine Learning Research's [Machine Learning Open Source Software (MLOSS)](http://jmlr.csail.mit.edu/mloss/) track.
+\$recentposts\$
 
-_5 November 2012_: My grant proposal titled _Composing Machine Learning via Market Mechanisms_ was successful! I will be receiving funding under the [Discovery Early Career Researcher Award](http://www.arc.gov.au/ncgp/decra.htm) (DECRA) scheme for three years, starting in 2013.
-
+[Older News &rarr;](/work/news/)
 </div>
 
 
@@ -84,7 +81,7 @@ I am **not** looking to supervise any more students at present.
 Blog
 ====
 Since September 2007 I have kept a blog on machine learning and statistical 
-inference called _[inductio ex machina](/blog/)_. 
+inference called _[Inductio ex Machina](/blog/)_. 
 </div>
 
 

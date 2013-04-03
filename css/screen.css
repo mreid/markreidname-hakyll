@@ -266,6 +266,10 @@ body#Kith #header a.kith
 
 /* @end */
 
+/* @group News */
+p.news .date { font-weight: bold; }
+/* @end */
+
 /* @group Footnotes */
 .footnotes { color: grey; }
 .footnotes:hover { color: black; }

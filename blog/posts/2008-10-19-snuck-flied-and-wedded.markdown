@@ -1,5 +1,5 @@
 ---
-title: "Snuck, flied and wedded "
+title: "Snuck, flied and wedded"
 excerpt: A quick summary of a paper in Nature last year that analyses the rate at which words shift from irregular to regular.
 location: Canberra, Australia
 ---

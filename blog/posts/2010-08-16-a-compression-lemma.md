@@ -9,10 +9,10 @@ I recently re-read an ICML 2006 paper called _[On Bayesian Bounds][obb]_ by [Ari
 > **Compression Lemma** (Banerjee, 2006)    
 > For any function $\phi : X \to \mathbb{R}$ and any pair of 
 > distributions $P$ and $Q$ over $X$ we have
-> \[ \displaystyle
+> $$ 
 >	\mathbb{E}_Q\left[\phi(x)\right] - \log \mathbb{E}_P\left[e^{\phi(x)}\right]
 >	\le KL(Q\|P)
-> \]
+> $$
 > where $KL(Q\|P) = \mathbb{E}_Q\left[\log\frac{dQ}{dP}\right]$ is 
 > the [Kulback-Leibler divergence][kl] from $P$ to $Q$.
 > Furthermore, the bound is achieved for $\phi(x) = \log\frac{dQ}{dP}(x)$.
@@ -25,31 +25,31 @@ What follows is my own simplification of the proof given by Banerjee. It uses al
 
 ## A Simple Proof
 We need to introduce a slight variant of the KL divergence which, for wont of a better name, I'll call the _relative [cross entropy][ce]_ of distributions $Q$ and $R$ relative to $P$:
-\[ \displaystyle
+$$ 
 	C(Q,R\|P) = \mathbb{E}_Q\left[\log \frac{dR}{dP} \right].
-\]
+$$
 The negative relative cross entropy can be interpreted as the expected code length required to encode symbols drawn from $Q$ when using a code based on $R$.
 
 As you can see, the relative cross entropy is equal to the KL divergence when $R=Q$. In fact, we can easily see that
-\[ \displaystyle
+$$ 
 	C(Q,R\|P) = KL(Q\|P) - KL(Q\|R)
-\]
+$$
 by noting that 
 $\log \frac{dR}{dP} = \log\left( \frac{dR}{dQ}\ \frac{dQ}{dP} \right) = -\log \frac{dQ}{dR} + \log \frac{dQ}{dP}$ and splitting and matching the resulting expectation with the definition of KL divergence.
 
 Since the KL divergence is guaranteed to be non-negative, we see immediately that $C(Q,R\|P) \le KL(Q\|P)$ with equality holding when $KL(Q\|R) = 0$, that is, when $R=Q$.
 
 Now we consider a specific choice of $R$, namely a [Gibbs distribution][gibbs] based on the function $\phi$. Its density relative to $P$ is given by
-\[ \displaystyle
+$$ 
 	\frac{dR}{dP}(x) = \frac{1}{Z_{\phi}} e^{\phi(x)} 
-\]
+$$
 where $Z_{\phi} = \mathbb{E}_P\left[ \exp(\phi(x)) \right]$ is just a normalising term. 
 
 Plugging this definition of $R$ into $C(Q,R\|P)$ gives
-\[ \displaystyle
+$$ 
 	\mathbb{E}_Q\left[\log\left(Z_{\phi}^{-1}e^{\phi(x)}\right)\right]
 	= \mathbb{E}_Q\left[\phi(x)\right] - \log \mathbb{E}_P\left[ e^{\phi(x)} \right]
-\]
+$$
 and since $C(Q,R\|P) \le KL(Q\|P)$ we have proved the first part of the compression lemma. The second part follows by substituting $\phi(x) = \log \frac{dQ}{dP}(x)$ into the definition of the Gibbs distribution $R$ and noting that, in this case, $R = Q$.
 
 ## Some Observations

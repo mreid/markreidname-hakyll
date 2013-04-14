@@ -34,10 +34,10 @@ One recent online algorithm (and the one I've chosen to implement) is _[Pegasos:
 [iem]: /iem/
 
 Pegasos solves the same optimisation problem as [support vector machines][svm]. That is, it minimises the empirical hinge loss with $\ell_2$ regularisation:
-\[ \displaystyle
+$$ 
 	L(w,S) 
 	= \frac{\lambda}{2}\|w\|^2 + \frac{1}{m} \sum_{(x,y)\in S} h(w; (x,y))
-\] 
+$$ 
 where $S$ is a set of training examples, $\|\cdot \|$ the $\ell_2$ norm, $\lambda$ the regularisation constant and 
 $h(w;(x,y)) = \max\{0, 1-y\langle w, x \rangle\}$ 
 is the hinge loss.
@@ -47,9 +47,9 @@ is the hinge loss.
 The neat observation that allows optimisation problems like this to be cast as online learning problems is that the above loss can be computed using example-by-example updates rather than as a large sum. With a little care about how these updates are made fast convergence guarantees can be established.
 
 In the case of Pegasos, if $w_t$ is the model after having seen $t$ examples and $(x,y)$ is an incorrectly predicted example, the (unnormalised) updated model is:
-\[ \displaystyle
+$$ 
 	w_{t+1} = (1-t^{-1})w_t + \frac{1}{\lambda t} yx.
-\]
+$$
 If the new model is outside a ball of radius $1/\sqrt{\lambda}$ it is projected back onto this ball.
 
 Implementing it in Clojure

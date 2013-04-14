@@ -3,6 +3,7 @@
 ## Content
 
 ### Blog
+- Apply Pandoc with smart quotes to title and excerpt fields when building recent posts.
 - Rest of IEM and SAP posts @done
 - Atom feed @done
 	- Render math in Atom feed with MathML

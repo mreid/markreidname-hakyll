@@ -1,0 +1,1 @@
+I will be visiting Tsinghua University, Beijing from the 7-10th of May as part of a [Australia-China Science and Research Fund](http://www.innovation.gov.au/Science/InternationalCollaboration/ACSRF/Pages/GroupMissions.aspx) group mission. 

@@ -14,7 +14,7 @@ remote = "confla@conflate.net:www/name"
 siteConfig = defaultConfiguration
   { destinationDirectory  = destDir,
     storeDirectory        = "/tmp/hakyll_cache/mark.reid.name/",
-    deployCommand         = "rsync -ave ssh " ++ destDir ++ " " ++ remote 
+    deployCommand         = "rsync --exclude 'blog/drafts' -ave ssh " ++ destDir ++ " " ++ remote 
   }
 
 feedConfig = FeedConfiguration

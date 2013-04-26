@@ -65,9 +65,7 @@ I co-lectured a course on [Information Theory (COMP2610)](http://cs.anu.edu.au/c
 <div class="section">
 Students
 ========
-I am currently primary supervisor for three PhD students:[Avi Ruderman][], [Nicolás Della Penna][], and [Mindika Premachandra][]. 
-
-I am also currently an advisor for five other PhD students: Ehsan Abbasnejad, Changyou Chen, Peter Gammie, Ayman Ghoneim, and Wen Shao.
+I am currently primary supervisor for three PhD students:[Avi Ruderman][], [Nicolás Della Penna][], and [Mindika Premachandra][]. I also supervise [Nam Ho](http://maths.anu.edu.au/about-us/people/nam-ho), an Honours Student at the [Mathematical Sciences Institute](http://maths.anu.edu.au). 
 
 I am **not** looking to supervise any more students at present.
 </div>

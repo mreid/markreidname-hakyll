@@ -3,26 +3,24 @@ title: Work
 ---
 
 <img class='inset right' src='/pics/mark_reid2.jpg' title='Mark Reid' alt='Photo of Mark Reid at work' width='110px' />
+I'm a Research Fellow in the 
+[Research School of Computer Science][rscs] 
+at the [Australian National University][anu] in Canberra, Australia and a 
+contributed researcher to [NICTA][]'s [Machine Learning][sml] research group.
 
-I'm a post-doctoral Research Fellow in the 
-[Research School of Information Sciences and Engineering][rsise] 
-at the [Australian National University][anu] in Canberra, Australia. 
-I work with other members of the [Artificial Intelligence][ai] 
-group. As of July 2009, I also work part-time with [NICTA][]'s 
-[Machine Learning][sml] research group.
+My current research interests include: loss functions in statistical and online 
+learning, and connections between learning theory and market mechanisms.
 
-[rsise]: http://rsise.anu.edu.au/
+[rscs]: http://cs.anu.edu.au/
 [anu]: http://anu.edu.au/
-[ai]: http://ai.cecs.anu.edu.au/
-[sml]: http://sml.nicta.com.au/
-[csl]: http://csl.rsise.anu.edu.au/
+[sml]: http://www.nicta.com.au/research/machine_learning
 
 <div class="section">
 Contact 
 =======
 I can be reached at work by phone on (+61) 2 6267 6297, 
 by email at [mark.reid@anu.edu.au](mailto:mark.reid@anu.edu.au).
-My office is on the 3rd floor of the [NICTA][] Canberra Research Lab ([Map][]).
+My office is on the 2nd floor of the [NICTA][] Canberra Research Lab ([Map][]).
 </div>
 
 [nicta]: http://nicta.com.au
@@ -43,7 +41,7 @@ My research vision can be distilled down to wanting to **build theoretical and p
 <div class="section">
 Publications
 ============
-I have [published][] in learning theory, boosting, transfer learning, reinforcement learning, data visualisation, and inductive logic programming. A complete list is available at [my publications page][published].
+I have [published][] research in variety of areas including, most recently: learning theory, prediction markets, and boosting. A complete list is available at [my publications page][published].
 
 </div>
 
@@ -59,7 +57,7 @@ News
 <div class="section">
 Teaching
 ========
-I co-lectured a course on [Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/) with [Edwin Bonilla](http://people.cecs.anu.edu.au/user/4101) in the second semester of 2011 and will be teaching it again in semester 2, 2012. I will also be co-lecturing [Advanced Topics in Statistical Machine Learning (COMP8650)](http://cs.anu.edu.au/courses/info/comp8650/overview) in semester 2, 2012.
+I co-lectured a course on [Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/) with [Edwin Bonilla](http://people.cecs.anu.edu.au/user/4101) in the second semester of 2011 and 2012. I also be co-lectured [Advanced Topics in Statistical Machine Learning (COMP8650)](http://cs.anu.edu.au/courses/info/comp8650/overview) in semester 2, 2012.
 </div>
 
 <div class="section">

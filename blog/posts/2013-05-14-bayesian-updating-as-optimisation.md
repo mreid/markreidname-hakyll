@@ -35,9 +35,9 @@ $$
 	= \E_q\left[\ln \frac{q}{\pi} - \ln p_L + \ln p_D\right]
 $$
 and so the $KL$ term in the optimisation problem above can be written as
-$$ \begin{align*} KL(q(M)\|p(M|D)) &= KL(q(M)\|\pi(M) p(D|M) / p(D)) \\ &= KL(q(M)\|\pi(M)) - \E_{M\sim q}\left[ \ln p(D|M) \right] + p(D) \end{align*} $$
+$$ \begin{align*} KL(q(M)\|p(M|D)) &= KL(q(M)\|\pi(M) p(D|M) / p(D)) \\ &= KL(q(M)\|\pi(M)) - \E_{M\sim q}\left[ \ln p(D|M) \right] + \ln p(D) \end{align*} $$
 since $p(D)$ does not depend on $M$.
-The $p(D)$ term is also irrelevant for the optimisation in \\eqref{eq:kl} so we can now express that problem as
+The $\ln p(D)$ term is also irrelevant for the optimisation in \\eqref{eq:kl} so we can now express that problem as
 $$
 	\inf_{q(M)}\ 
 		\underbrace{KL(q(M)\|\pi(M))}_{\text{closeness to prior}} 

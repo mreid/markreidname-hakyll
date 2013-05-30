@@ -5,14 +5,17 @@
  * AUTHOR:  Mark Reid <mark@reid.name>
  * CREATED: 2013-04-22
  */
+
+// Function to compute f-divergence for and the graph view bounds
+function f(x) { return x*x/2; }
+var graphView = new Rectangle(-0.5,-15,6,30);
+
+// Constants controlling the visual appearance of the app
 var CONST = {
 	'markerSize': 3,
 	'labelOffset': new Point(3,10),
 	'points': 100
 };
-// Function to compute f-divergence for and the graph view bounds
-function f(x) { return x*x/2; }
-var graphView = new Rectangle(-0.5,-15,6,30);
 
 // Single global variable to be read by mouse event handlers
 var markers;

@@ -183,6 +183,7 @@ blogRecentsCompiler n tplID = recentsCompiler "blog/posts/*" n tplID postCtx
 blogPostCompiler snapshot = mathJaxRenderer
   >>= loadAndApplyTemplate "_templates/post/full.html" postCtx
   >>= (if snapshot then (saveSnapshot "content") else return . id)
+  >>= loadAndApplyTemplate "_templates/disqus/thread.html" postCtx
   >>= loadAndApplyTemplate "_templates/nav/blog.html" postCtx
   >>= loadAndApplyTemplate "_templates/default.html" postCtx
   >>= relativizeUrls

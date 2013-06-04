@@ -7,7 +7,7 @@
  */
 
 // Function to compute f-divergence for and the graph view bounds
-var f = function(x) { return -x * Math.log(x) - (1-x) * Math.log(x) - 1; }
+var f = function(x) { return -x * Math.log(x) - (1-x) * Math.log(x); }
 var graphView = new Rectangle(-0.1,-5,1.1,10);
 
 // Constants controlling the visual appearance of the app

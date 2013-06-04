@@ -45,8 +45,10 @@ function initGraph(f, axes) {
     result.segments = [];
     for (var i = 1; i < CONST.points; i++) {
         var x = (i / CONST.points) * gView.width + gView.left;
-        var point = axes.data.screenCoords([x, f(x)]); 
-        result.add(point);
+		if(f(x) < Infinity) {
+	        var point = axes.data.screenCoords([x, f(x)]); 
+    	    result.add(point);
+		}
     }
     result.simplify();
 	result.data = axes.data;
@@ -107,17 +109,22 @@ function initMarkers(graph) {
 function labelledPoint(name, position, color, labelOffset) {
 	var p = new Path.Circle(position, CONST.markerSize);
 	p.fillColor = color;
+	p.visible = false;
 	
  	var label = new PointText(p.position + labelOffset); 
     label.content = name;
     label.fillColor = color;
 	label.data = { 'offset': labelOffset };
+	label.visible = false;
 
 	p.data = {};
 	p.data.label = label;
 
 	return p;
 }
+
+function show(point) { point.visible = true; point.data.label.visible = true; }
+function hide(point) { point.visible = false; point.data.label.visible = false; }
 
 // Compute where the label for the given marker point should go
 function labelPosition(marker) {
@@ -131,7 +138,7 @@ function marker(graph, name) {
 	var xPos  = graph.data.origin;
 	var fxPos =  graph.data.screenCoords([0,f(0)]);
 	var x = labelledPoint(name, xPos, 'black', CONST.labelOffset);	
-	var fx = labelledPoint('f('+name+')', fxPos, 'red', -CONST.labelOffset);
+	var fx = labelledPoint('f('+name+')', undefined, 'red', -CONST.labelOffset);
 
 	var result = {
 		'graph': graph,
@@ -140,19 +147,29 @@ function marker(graph, name) {
 		'moveTo': function(pos) {
 			this.x.position.x = pos.x;
 			this.x.data.label.position = labelPosition(this.x);
-			
+
 			var xCoord = this.graph.data.graphCoords(pos).x;
-			this.fx.position = this.graph.data.screenCoords([xCoord, f(xCoord)]);
-			this.fx.data.label.position = labelPosition(this.fx);
+			if(f(xCoord) < Infinity) {
+				this.fx.position = this.graph.data.screenCoords([xCoord, f(xCoord)]);
+				this.fx.data.label.position = labelPosition(this.fx);
+				show(this.x);
+				show(this.fx);
+			} else {
+				hide(this.fx);
+			}
 		},
 		// Returns a linear function representing the tangent of the graph
 		// at the point f(x).
 		'tangent': function() {
 			// Build function mapping a value x onto the line <m, x-c> = 0
-			var loc = this.graph.getNearestLocation(this.fx.position);
-			var m = loc.tangent;
-			var c = loc.point;
-			return function(x) { return c + m * (x - c.x) / m.x; }
+			if(!isNaN(this.fx.position.x)) {
+				var loc = this.graph.getNearestLocation(this.fx.position);
+				var m = loc.tangent;
+				var c = loc.point;
+				return function(x) { return c + m * (x - c.x) / m.x; }
+			} else {
+				return undefined;
+			}
 		},
 	};
 	return result;
@@ -168,11 +185,13 @@ function onMouseDown(event) {
 	
 	// Compute values on tangent at extremes of view
 	var tangentFn = markers.x0.tangent();
-	var start = tangentFn(0);
-	var end = tangentFn(view.bounds.width);
-	var tangent = new Path.Line(start, end);
-    tangent.strokeColor = 'red';
-    tangent.removeOnDown();
+	if(tangentFn !== undefined) {
+		var start = tangentFn(0);
+		var end = tangentFn(view.bounds.width);
+		var tangent = new Path.Line(start, end);
+    	tangent.strokeColor = 'red';
+    	tangent.removeOnDown();
+	}
 
 	// Make sure all markers are redrawn
 	this.onMouseMove(event);
@@ -180,23 +199,29 @@ function onMouseDown(event) {
 
 function onMouseMove(event) {
 	// Get horizontal mouse position and clamp to view.
-    mousePos = event.point;
+    mousePos = new Point(event.point);
 	if(mousePos.x < view.bounds.left) { mousePos.x = view.bounds.left; }
 	if(mousePos.x > view.bounds.right) { mousePos.x = view.bounds.right; }
 
-	// Update the position of the x1 marker
-	markers.x1.moveTo(mousePos);
+	if(mousePos.y > view.bounds.top && mousePos.y < view.bounds.bottom) {
+		// Update the position of the x1 marker
+		markers.x1.moveTo(mousePos);
 
-	// Compute the line between the tangent and the graphed function at x1
-	var start = markers.x1.fx.position;
-	var tangentFn = markers.x0.tangent();
-	var end = tangentFn(start.x);
+		// Compute the line between the tangent and the graphed function at x1
+		var start = markers.x1.fx.position;
+		if(markers.x0.fx.visible) {
+			var tangentFn = markers.x0.tangent();
+			var end = tangentFn(start.x);
 
-	// Draw the divergence line
-	var div = new Path.Line(start,end);
-    div.strokeWidth = 2;
-    div.strokeColor = 'blue';
-    div.removeOnMove();
+			// Draw the divergence line
+			var div = new Path.Line(start,end);
+			div.strokeWidth = 2;
+			div.strokeColor = 'blue';
+			div.removeOnMove();
+		}
+	} else {
+		document.dispatchEvent(event);
+	}
 }
 
 // Reposition the path whenever the window is resized:

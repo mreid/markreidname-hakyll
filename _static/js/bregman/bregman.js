@@ -199,24 +199,28 @@ function onMouseDown(event) {
 
 function onMouseMove(event) {
 	// Get horizontal mouse position and clamp to view.
-    mousePos = event.point;
+    mousePos = new Point(event.point);
 	if(mousePos.x < view.bounds.left) { mousePos.x = view.bounds.left; }
 	if(mousePos.x > view.bounds.right) { mousePos.x = view.bounds.right; }
 
-	// Update the position of the x1 marker
-	markers.x1.moveTo(mousePos);
+	if(mousePos.y > view.bounds.top && mousePos.y < view.bounds.bottom) {
+		// Update the position of the x1 marker
+		markers.x1.moveTo(mousePos);
 
-	// Compute the line between the tangent and the graphed function at x1
-	var start = markers.x1.fx.position;
-	if(markers.x0.fx.visible) {
-		var tangentFn = markers.x0.tangent();
-		var end = tangentFn(start.x);
+		// Compute the line between the tangent and the graphed function at x1
+		var start = markers.x1.fx.position;
+		if(markers.x0.fx.visible) {
+			var tangentFn = markers.x0.tangent();
+			var end = tangentFn(start.x);
 
-		// Draw the divergence line
-		var div = new Path.Line(start,end);
-    	div.strokeWidth = 2;
-    	div.strokeColor = 'blue';
-    	div.removeOnMove();
+			// Draw the divergence line
+			var div = new Path.Line(start,end);
+			div.strokeWidth = 2;
+			div.strokeColor = 'blue';
+			div.removeOnMove();
+		}
+	} else {
+		document.dispatchEvent(event);
 	}
 }
 

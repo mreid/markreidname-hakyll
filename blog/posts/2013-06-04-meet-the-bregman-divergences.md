@@ -158,7 +158,7 @@ Other readily obtainable facts about Bregman divergences include:
 
 - The **Bregman projection** onto a convex set $C\subseteq\R^n$ given by $y' = \argmin_{x\in C} d_f(x,y)$ is unique.
 
-- A **generalised Pythagorean theorem** holds: for all $x,y$, if $d_f(x,y) \ge d_f(x,y') + d_f(y',y)$ where $y'$ is the Bregman projection of $y$.
+- A **generalised Pythagorean theorem** holds: for all $x,y$ we have $d_f(x,y) \ge d_f(x,y') + d_f(y',y)$ where $y'$ is the Bregman projection of $y$, and equality holds when the convex set $C$ defining the projection $y'$ is affine.
 
 - **Duality**: $d_f(x,y) = d_{f^*}(\nabla f(y), \nabla f(x))$ for all $x,y$ where $f^*$ is the [convex conjugate](http://en.wikipedia.org/wiki/Convex_conjugate) to $f$
 

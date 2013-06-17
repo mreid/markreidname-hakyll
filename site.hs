@@ -108,16 +108,24 @@ main = hakyllWith siteConfig $ do
   match "blog/index.markdown" $ do
     route   $ setExtension "html"
     compile $ blogRecentsCompiler (Just 5) "_templates/post/excerpt.html"
-              >>= blogPageCompiler
+              >>= blogPageCompiler "Home"
 
   match "blog/past.markdown" $ do
     route   $ setExtension "html"
     compile $ blogRecentsCompiler Nothing "_templates/post/excerpt.html"
-              >>= blogPageCompiler
+              >>= blogPageCompiler "Past"
 
-  match (fromList ["blog/info.markdown", "blog/kith.markdown"]) $ do
+  match "blog/info.markdown" $ do
     route   $ setExtension "html"
-    compile $ myPandocCompiler >>= blogPageCompiler
+    compile $ myPandocCompiler >>= blogPageCompiler "Info"
+
+  match "blog/kith.markdown" $ do
+    route   $ setExtension "html"
+    compile $ myPandocCompiler >>= blogPageCompiler "Kith"
+
+  -- match (fromList ["blog/info.markdown", "blog/kith.markdown"]) $ do
+  --   route   $ setExtension "html"
+  --   compile $ myPandocCompiler >>= blogPageCompiler
 
   -- Posts
   match "blog/posts/*" $ do
@@ -168,12 +176,12 @@ rmDateRoute =
   `composeRoutes` setExtension "html"
 
 -- Blog page compiler
-blogPageCompiler item = 
+blogPageCompiler section item = 
     loadAndApplyTemplate "_templates/page.html" postCtx item
     >>= loadAndApplyTemplate "_templates/nav/blog.html" postCtx
     >>= loadAndApplyTemplate "_templates/disqus/counts.html" postCtx
     >>= loadAndApplyTemplate "_templates/main.html" postCtx
-    >>= loadAndApplyTemplate "_templates/bottom.html" postCtx
+    >>= loadAndApplyTemplate "_templates/bottom.html" (pageCtx section)
     >>= loadAndApplyTemplate "_templates/top.html" postCtx
     >>= relativizeUrls
 

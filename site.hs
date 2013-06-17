@@ -145,7 +145,9 @@ main = hakyllWith siteConfig $ do
 pageCompiler section item =
     loadAndApplyTemplate "_templates/page.html" homeCtx item
     >>= loadAndApplyTemplate "_templates/nav/main.html" homeCtx
-    >>= loadAndApplyTemplate "_templates/default.html" homeCtx
+    >>= loadAndApplyTemplate "_templates/main.html" homeCtx
+    >>= loadAndApplyTemplate "_templates/bottom.html" homeCtx
+    >>= loadAndApplyTemplate "_templates/top.html" homeCtx
     >>= relativizeUrls
     where
       homeCtx = pageCtx section
@@ -170,7 +172,9 @@ blogPageCompiler item =
     loadAndApplyTemplate "_templates/page.html" postCtx item
     >>= loadAndApplyTemplate "_templates/nav/blog.html" postCtx
     >>= loadAndApplyTemplate "_templates/disqus/counts.html" postCtx
-    >>= loadAndApplyTemplate "_templates/default.html" postCtx
+    >>= loadAndApplyTemplate "_templates/main.html" postCtx
+    >>= loadAndApplyTemplate "_templates/bottom.html" postCtx
+    >>= loadAndApplyTemplate "_templates/top.html" postCtx
     >>= relativizeUrls
 
 -- News index compiler
@@ -185,7 +189,10 @@ blogPostCompiler snapshot = mathJaxRenderer
   >>= (if snapshot then (saveSnapshot "content") else return . id)
   >>= loadAndApplyTemplate "_templates/disqus/thread.html" postCtx
   >>= loadAndApplyTemplate "_templates/nav/blog.html" postCtx
-  >>= loadAndApplyTemplate "_templates/default.html" postCtx
+  >>= loadAndApplyTemplate "_templates/main.html" postCtx
+  >>= loadAndApplyTemplate "_templates/bottom.html" postCtx
+  >>= loadAndApplyTemplate "_templates/post/twitter-summary.html" postCtx
+  >>= loadAndApplyTemplate "_templates/top.html" postCtx
   >>= relativizeUrls
 
 -- Pandoc render with MathJax enabled
@@ -217,6 +224,7 @@ postCtx =
 maybeTake Nothing  = id
 maybeTake (Just n) = fmap (take n)
 
+-- Create a field of rendered recent items
 recentListField key ids n templateID context = 
   mappend defaultContext $
   Context $ \k _ -> 

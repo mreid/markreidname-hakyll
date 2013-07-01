@@ -89,6 +89,11 @@ main = hakyllWith siteConfig $ do
     route   $ setExtension "html"
     compile $ myPandocCompiler >>= pageCompiler "Work"
 
+  -- Curriculum Vitae
+  match "work/vita/*.md" $ do
+    route   $ setExtension "html"
+    compile $ myPandocCompiler >>= pageCompiler "Vita"
+
   -- Machine Learning via Market Mechanisms Project
   match "work/mlmm/*" $ do
     route   $ setExtension "html"
@@ -193,8 +198,9 @@ blogRecentsCompiler n tplID = recentsCompiler "blog/posts/*" n tplID postCtx
 
 -- Blog post compiler
 blogPostCompiler snapshot = mathJaxRenderer
-  >>= loadAndApplyTemplate "_templates/post/full.html" postCtx
+  >>= loadAndApplyTemplate "_templates/post/body.html" postCtx
   >>= (if snapshot then (saveSnapshot "content") else return . id)
+  >>= loadAndApplyTemplate "_templates/post/full.html" postCtx
   >>= loadAndApplyTemplate "_templates/disqus/thread.html" postCtx
   >>= loadAndApplyTemplate "_templates/nav/blog.html" postCtx
   >>= loadAndApplyTemplate "_templates/main.html" postCtx

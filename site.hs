@@ -83,7 +83,11 @@ main = hakyllWith siteConfig $ do
     route   $ setExtension "html"
     compile $ newsRecentsCompiler (Just 3) "_templates/news/short.html" 
               >>= pageCompiler "Work"
-  
+  -- Vita
+  match "work/vita/*.md" $ do
+    route   $ setExtension "html"
+    compile $ myPandocCompiler >>= pageCompiler "Vita"
+
   -- Publications
   match "work/pubs/**.markdown" $ do
     route   $ setExtension "html"
@@ -122,10 +126,6 @@ main = hakyllWith siteConfig $ do
   match "blog/kith.markdown" $ do
     route   $ setExtension "html"
     compile $ myPandocCompiler >>= blogPageCompiler "Kith"
-
-  -- match (fromList ["blog/info.markdown", "blog/kith.markdown"]) $ do
-  --   route   $ setExtension "html"
-  --   compile $ myPandocCompiler >>= blogPageCompiler
 
   -- Posts
   match "blog/posts/*" $ do

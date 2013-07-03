@@ -1,0 +1,39 @@
+/* print.css
+ *
+ * Some tweaks to screen.css for print.
+ *
+ * AUTHOR: Mark Reid <mark@reid.name>
+ */
+
+body {
+	font-family: Palatino, georgia, "times new roman", serif;
+	background-color: white;
+	font-size: 11pt !important;
+}
+h1, h2, h3 { page-break-after: avoid; }
+.section h3 { page-break-after: avoid; }
+.section li { page-break-before: avoid; page-break-inside: avoid; }
+.details { page-break-before: avoid; }
+#disqus_thread { page-break-before: always; }
+
+#Vita blockquote { page-break-inside: avoid; page-break-before: avoid; }
+#Vita .nobreak { page-break-inside: avoid; }
+#Vita .break { page-break-before: always; }
+
+#site { max-width: 46em; margin: 1em auto 1em auto; line-height:1.5em; }
+#page, #disqus_thread { padding-top: 1em; background: white; border: none; }
+#header, #footer, #feed { display: none; }
+
+/* For /work/vita/ */
+#Vita a { color: black !important; }
+#Vita blockquote { color: black; }
+#Vita h2.hide { display: none; }
+
+/* More experimental CSS3 features */
+#page, #disqus_thread {
+	box-shadow: none;
+	-webkit-box-shadow: none; 
+	-moz-box-shadow: none;
+}
+.noprint { display: none; }
+

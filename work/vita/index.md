@@ -395,9 +395,15 @@ ICML 2002
 
 2011
 
-:    _[Composite Multiclass Losses][nips11]_, 
+:    <div class="highlight">
+     _[Composite Multiclass Losses][nips11]_, 
      Elodie Vernet, Robert C. Williamson, and Mark D. Reid 
 	 – In Proc. of Neural Information Processing Systems (**NIPS**).
+     
+	 > **Contributions**: Prosed preliminary questions for generalising
+	 > binary loss results to multiclass, including the multiclass
+	 > calibration and integral representation results. 
+	 </div>
 
 :    _[Mixability is Minimum Bayes Risk Curvature Relative to Log Loss][colt11]_,
      Tim van Erven, Mark D. Reid, and Robert C. Williamson 

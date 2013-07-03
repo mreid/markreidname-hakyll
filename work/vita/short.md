@@ -1,9 +1,7 @@
 ---
-layout: name
 title: Curriculum Vitæ
 section: Work
 css: vita
-
 ---
 
 # Mark Darren Reid - _Curriculum Vitæ_

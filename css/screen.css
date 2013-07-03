@@ -251,7 +251,8 @@ ul.compact li a {
 .twitter-title a { display: inline; }
 /* @end */
 
-body#Work #header a.work, 
+body#Work #header a.work,
+body#Vita #header a.work,
 body#Home #header a.home, 
 body#Play #header a.play,
 body#Info #header a.info,
@@ -505,6 +506,41 @@ p.delicious-extended:before { content: ' — '; }
 }
 /* @end */
 
+/* @group Vita */
+#Vita blockquote { 
+	margin-top: 0; 
+	margin-left: 0.5ex;
+	padding-left: 1em;
+	border-left: 1px solid #bbb;
+	line-height: 1.5em; 
+}
+#Vita .section ul { margin-bottom: 0; }
+#Vita .highlight { 
+	background: #eef;
+	margin-left: -1em;
+	padding: 0 1em;
+}
+#Vita li p { margin-bottom: 0; }
+#Vita dl {}
+#Vita dt { 
+	font-family: Palatino, georgia, serif;
+	font-size: 100%;
+	line-height: 1.43em;
+	position: absolute;
+	width: 8em;
+	max-width: 8em;
+	margin-left: -8em;	
+	margin-top: 0;
+	text-align: left; 
+	color: gray; 
+	-webkit-hyphens: none !important;
+	hyphens: none !important;
+	font-variant: small-caps; 
+	font-weight: normal;
+}
+#Vita dd { margin-top: 0; }
+#Vita dd p { margin-bottom: 0; }
+/* @end */
 
 /* @group Figures and images */
 .figure, dl.figure {

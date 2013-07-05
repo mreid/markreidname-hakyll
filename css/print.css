@@ -16,6 +16,8 @@ h1, h2, h3 { page-break-after: avoid; }
 .details { page-break-before: avoid; }
 #disqus_thread { page-break-before: always; }
 
+#Vita dd { page-break-inside: avoid; }
+#Vita dt { page-break-after: avoid; }
 #Vita blockquote { page-break-inside: avoid; page-break-before: avoid; }
 #Vita .nobreak { page-break-inside: avoid; }
 #Vita .break { page-break-before: always; }
@@ -25,9 +27,10 @@ h1, h2, h3 { page-break-after: avoid; }
 #header, #footer, #feed { display: none; }
 
 /* For /work/vita/ */
-#Vita a { color: black !important; }
+#Vita a { color: #00a !important; }
 #Vita blockquote { color: black; }
 #Vita h2.hide { display: none; }
+#Vita .print { display: inline; }
 
 /* More experimental CSS3 features */
 #page, #disqus_thread {

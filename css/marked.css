@@ -1,0 +1,259 @@
+/* screen.css
+ *
+ * A clean, simple stylesheet that aims for
+ * a consistent vertical rhythm.
+ *
+ * Base font height: 16px
+ * Base line length: 24px
+ * 
+ * AUTHOR: Mark Reid <mark@reid.name>
+ */
+
+/* @group Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td,abbr { margin:0; padding:0;}
+/* @end */
+
+body {
+	font-family: Palatino, georgia, "times new roman", serif;
+	background-color: whitesmoke;
+	background-position: center -18em;
+	background-repeat: repeat-x; 
+	max-width: 46em;
+	margin: 1.5em auto 3em auto;
+	line-height:1.5em;
+	background: white;
+/*	background-image: url(grid.png); */
+	padding: 3em 3em 1.5em 3em;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+
+	box-shadow: 2px 2px 8px #aaa;
+	-webkit-box-shadow: 2px 2px 8px #aaa;
+	border: 1px solid #ccc;
+}
+
+/* Hack via Joel Spolsky to make image rescaling nicer in IE */
+img { -ms-interpolation-mode:bicubic; }
+
+/* IE6 ignores this and uses default size of 16pt */
+html>body { font-size:16px; }
+p { margin: 0 0 1.5em 0; text-align: justify; }
+
+a { text-decoration: none; color: #339; }
+a:hover { text-decoration: underline; color: #33f; }
+a.pdf:before { 
+	margin-right: 1em;
+	content: url(/files/css/icon_pdf.gif); }
+
+h1,h2,h3,h4 { 
+	line-height:1em; 
+	font-size:1.5em; 
+	font-weight: normal; 
+	clear: left; 	
+	font-family: 'lucida grande', sans-serif; 
+}
+h1 { margin-bottom: 1em; }
+h2 {
+	font-size: 100%;
+	line-height: 1.5em;
+	margin:1.5em 0 1.5em 0;
+	font-weight:bold;
+}
+h3 { font-size: 100%;
+	line-height: 1.5em;
+	margin: 1.5em 0 0 0;
+	font-weight: normal;
+	font-variant: small-caps;
+}
+
+hr { 
+	border-top: 1px solid silver;
+	border-bottom: none;
+	padding: 0;
+	margin: 1.46em 0 0 0;
+}
+
+sup { line-height: 1ex; }
+
+/* @group FancyFirst */
+.emphnext + p:first-letter {
+	font-size: 3em;
+	padding: 0 0.1ex 0 0;
+	margin:  0.2ex 0 -0.2ex 0;
+	line-height: 1em;
+	float: left;
+}
+
+.emphnext + p:first-line {
+	font-variant: small-caps;
+}
+
+/* @end */
+
+.quiet {
+	color: grey;
+	font-size: 0.875em;
+	line-height: 1.714em;
+}
+
+blockquote {
+	padding: 0 2.8em;
+	margin: 1.714em 0;
+	color: #444;
+	font-size: 0.875em;
+	line-height: 1.714em;
+}
+
+li p {
+	 margin-bottom: 0;
+	 margin-top:  0;
+}
+
+/* @group Table */
+table.neat {
+	margin: 1.5em auto 1.5em auto;
+	table-layout: fixed;
+	border-spacing: 0;
+}
+table.neat th { text-align: left; font-weight: bold; background-color: #eeeeee; }
+table.neat td { background-color: white; }
+table.neat th.title { border-bottom: 1px solid gray; border-top: 1px solid gray; vertical-align: bottom; 
+background-color: lightgrey; }
+table.neat tr.end td { border-bottom: 1px solid #eeeeee; }
+
+.figure p, caption { 
+	color: #333;
+	font-size: 0.875em;
+	margin: 0.875em auto 0 auto;
+	line-height: 1.14em;
+	text-align: justify;
+}
+
+table.data tr { text-align: center; }
+
+/* @end */
+
+/* @group Lists */
+ul {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	line-height: 1.5em;
+	padding-left: 1.5em;
+}
+ul li {
+	list-style-type: square;
+	list-style-position: outside;
+}
+ol li {
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+dt { font-weight: bold;}
+dd { margin: 0 0 1.5em 0; text-align: justify; }
+
+ul.compact { margin: 0; padding: 0;}
+ul.compact li { list-style: ;
+	list-style-type: square;
+	list-style-position: inside;
+}
+ul.compact li span.date {	
+	display: none;
+	color: grey;
+	width: 20%;
+}
+ul.compact li a {
+	width: 70%;
+}
+/* @end */
+
+/* @group Footnotes */
+.footnotes { color: grey; }
+.footnotes:hover { color: black; }
+.footnotes ol li {
+	list-style-type: decimal;
+	list-style-position: inside;
+	font-size: 75%;
+	line-height: 1.5em;
+}
+.footnotes ol li > a { display: none; }
+/* @end */
+
+/* @group Code */
+pre {
+	margin: 1em 0 1.5em 0;
+	font-size: 0.75em; /* Hack to make code look same size as body font */  
+	line-height: 1.5em;	
+	color: #111;
+	background: #fffff0;
+	border: 1px solid #ddc;
+	padding: 0.5em 1em;
+	overflow: hidden;
+
+	/* Experimental CSS3 stuff */
+	box-shadow: 1px 1px 6px #ccc;
+	-webkit-box-shadow: 1px 1px 6px #ccc;
+	-moz-box-shadow: 1px 1px 6px #ccc;
+}
+pre:hover {
+	border-right: none;
+	overflow: visible;
+}
+code {
+	font-size: 1em;
+	background-color: #f7f7ff;
+	line-height: 1.4em;
+}
+pre > code {
+	background-color: transparent;
+}
+/* @end */
+
+/* @group Figures and images */
+.figure, dl.figure {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+
+.figure p, dl.figure dd {
+	color: #333;
+	font-size: 0.875em;
+	margin: 0.875em auto 0 auto;
+	line-height: 1.14em;
+	text-align: justify;
+	width: 85%;
+}
+/* @end */
+ 
+/* @group Signature */
+.signature { 
+	margin-top: 3em; 
+	position: relative;
+}
+.signature .author { 
+	font-variant: small-caps; 
+	font-style: normal; 
+	color: black;
+	display: block;
+	margin-bottom: 1.5em;
+}
+.signature .date { 
+	font-size: 87.5%;
+	line-height: 1.5em;
+	display: block; 
+	font-variant: small-caps; 
+	font-style: normal; 
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.signature .location { 
+	display: block; 
+	font-size: 87.5%;
+	line-height: 1.5em;
+	position: absolute;
+	right: 0;
+	top: 1.5em;
+}
+/* @end */

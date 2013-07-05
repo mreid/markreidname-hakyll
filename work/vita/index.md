@@ -50,12 +50,12 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 2007--Present
 
 :    Research Fellow, 
-     _[Research School of Computer Science][], The [Australian National University][], Canberra_
+     _[Research School of Computer Science][], The Australian National University, Canberra_
 	 
-	 > As part of the [Artificial Intelligence group][] I am investigating theoretical representations of and relationships between different types of machine learning problems. 
+	 > As part of the Artificial Intelligence group I am investigating theoretical representations of and relationships between different types of machine learning problems. 
      > To date, this work has led to some deep connections between various notions of risk, information and divergences for binary classification problems as well as potentially fruitful connections to prediction markets.   
      > 
-	 > I have been contributed part-time to the NICTA machine learning group since July 2009.
+	 > I have been contributed to the NICTA machine learning group since July 2009.
      
 
 [Research School of Computer Science]: http://cs.anu.edu.au/
@@ -70,7 +70,7 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 	 
 	 > As a research engineer I have investigated, implemented, evaluated and applied for patents for novel machine learning algorithms which solve problems related to Canon's business interests. I have taken a primary role in three research projects and contributed to several others.
 	 > During this time I have familiarised myself with research into ensemble methods, Bayesian inference, cost-sensitive learning, kernel methods, and spectral methods for dimensional reduction. Some of these techniques were evaluated on large, noisy, high-dimensional datasets.
-	 > My other responsibilities include managing an undergraduate intern, presentation of machine learning papers to CISRA's journal club, various software engineering tasks and patent activities.
+<!--	 > My other responsibilities include managing an undergraduate intern, presentation of machine learning papers to CISRA's journal club, various software engineering tasks and patent activities. -->
 
 [CISRA]: http://www.cisra.com.au/
 
@@ -112,54 +112,6 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 
 </div>
 
-
-## External Grants
-<div class="section">
-
-2013--2017
-
-:    Principal Investigator, ARC Discovery Early Career Researcher Award
-     
-	 > _[Composing Machine Learning via Market Mechanisms][decra]_ (DE130101605)    
-     > Funding: A$289,000.
-
-2013--2015
-
-:    Named Investigator, Australian Solar Institute Grant 
-     
-	 > _[Machine-Learning-based Forecasting of Distributed Solar Energy Production][solar]_     
-	 > Funding: A$800,000.
-
-2013
-
-:    Named Member, ARC Australia-China Science and Research Fund
-     
-	 > _Machine Learning for Social Media_    
-	 > Funding: A$45,000 (Travel to Tsinghua University, Beijing)
-
-
-2011
-
-:    Project Leader, PASCAL2 Harvest Award
-	 
-	 > _A Large Scale Learning Framework for the Infer Toolkit_    
-	 > Funding: €10,964 
-
-2009--2013
-
-:    Co-Chief Investigator, ARC Linkage Project 
-     
-	 > _[Structures and Protocols for Inference][psi]_ (LP0991635).    
-	 > Linkage Partner: [Canon Information Systems Research Australia][cisra] (CISRA)    
-	 > Funding: A$445,000 (ARC + CISRA).    
-	 >  The aim of this project is to make it easier to get machine learning tools into the hands of people who work with data. To do this we plan to develop an inferential architecture for machine learning technology comprising protocols and data structures that allow the use and composition of a variety of software toolkits while avoiding the problems described above. The end result will be a means to use inferential technology that neither requires expert knowledge of the inner workings, nor the learning of a new language and API for each new toolkit.
-
-  </div>
-
-[solar]: http://www.australiansolarinstitute.com.au/machine-learning-based-forecasting-of-distributed-solar-energy/.aspx
-[decra]: http://mark.reid.name/work/mlmm/
-[psi]: http://psi.cecs.anu.edu.au/
-
 ## Awards
 <div class="section">
 1997--2000
@@ -184,6 +136,92 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 
 
 
+<div class="break"></div>
+
+
+
+
+## External Grants
+<div class="section">
+
+2013--2017
+
+:    Principal Investigator, ARC Discovery Early Career Researcher Award
+     
+	 > _[Composing Machine Learning via Market Mechanisms][decra]_ (DE130101605)    
+     > _Funding_: A$289,000.
+	 > 
+	 > ￼This project aims to better understand connections between learning
+	 > algorithms and markets as aggregators of information and develop new, 
+	 > principled techniques for combining predictions. This will improve our 
+	 > ability to construct systems that make predictions based on multiple, 
+	 > complex, and structured sources of data.
+
+2013--2015
+
+:    Named Investigator, Australian Solar Institute Grant 
+     
+	 > _[Machine-Learning-based Forecasting of Distributed Solar Energy Production][solar]_     
+	 > (PI: Prof. Williamson)    
+	 > _Funding_: A$800,000.
+	 >
+	 > This project will explore real-time data mining of some of the 650,000 widely 
+	 > distributed residential PV systems in Australia. The output of these systems,
+	 > when mapped in real time, is expected to enable accurate estimation of cloud 
+	 > location, motion and opacity, inherently matched to the characteristics of
+	 > PV systems.
+
+2013
+
+:    Named Member, ARC Australia-China Science and Research Fund
+     
+	 > _[Machine Learning for Social Media][acsrf]_ (Project Manager: Dr. Buntine)    
+	 > _Funding_: A$45,000 (Travel to Tsinghua University, Beijing)
+	 >
+	 > This group mission will focus on the research collaboration on advanced machine 
+	 > learning algorithms and systems for social media analysis with the 
+	 > Department of Automation and the Department of Computer Science of Tsinghua
+	 > University.
+
+
+2011
+
+:    Project Leader, PASCAL2 Harvest Award
+	 
+	 > _A Large Scale Learning Framework for the Infer Toolkit_    
+	 > _Funding_: €10,964 (Travel for start-up developers to visit ANU)
+	 >
+	 > The aim of this project is to bring together researchers and business-oriented
+	 > developers to implement, evaluate, and release some state-of-the-art online 
+	 > algorithms for solving inference problems on large scale, real- world data.
+	 >
+	 > _Due to personal constraints on the start-up members this project was ended
+	 > and all funds returned shortly after being awarded_.
+
+2009--2013
+
+:    Co-Chief Investigator, ARC Linkage Project 
+     
+	 > _[Structures and Protocols for Inference][psi]_ (LP0991635).    
+	 > Linkage Partner: [Canon Information Systems Research Australia][cisra] (CISRA)    
+	 > Funding: A$445,000 (ARC + CISRA).    
+	 >  The aim of this project is to make it easier to get machine learning tools into the hands of people who work with data. To do this we plan to develop an inferential architecture for machine learning technology comprising protocols and data structures that allow the use and composition of a variety of software toolkits while avoiding the problems described above. The end result will be a means to use inferential technology that neither requires expert knowledge of the inner workings, nor the learning of a new language and API for each new toolkit.
+
+  </div>
+
+[solar]: http://www.australiansolarinstitute.com.au/machine-learning-based-forecasting-of-distributed-solar-energy/.aspx
+[decra]: http://mark.reid.name/work/mlmm/
+[psi]: http://psi.cecs.anu.edu.au/
+[acsrf]: http://www.innovation.gov.au/Science/InternationalCollaboration/ACSRF/GroupMissions/Pages/2012-13FundingRound.aspx
+
+
+
+
+<div class="break"></div>
+
+
+
+
 
 ## Student Supervision
 <div class="section">
@@ -204,7 +242,10 @@ PhD (Advisor)
 
 PhD (Host)
 
-:    * Peng Sun, _Multiclass Boosting_, (Visiting PhD student from Tsinghua University, Oct. 2011--Apr. 2012)
+:    * Nicholas Johnson, _Multi-objective Learning_, (Jun. -- Aug. 2013)    
+     (Visiting PhD student from University of Minnesota)
+     * Peng Sun, _Multiclass Boosting_, (Oct. 2011--Apr. 2012)     
+     (Visiting PhD student from Tsinghua University)
 
 
 Undergraduate
@@ -234,20 +275,36 @@ Work Experience
 
 2012 (S2)
 :    Convening and co-lecturing _[Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/)_, ANU
-     
-     > _Enrolment_: 34 students    
-	 > Student evaluations scores for _Experience of Learning_ averaged 3.9/5 and _Experience of Lecturing_ averaged 4.3/5 with comments regarding my lecturing including: "Mark is very carefully spoken, allowing him to explain concepts clearly."; "very good lecturer"; and "Mark was an excellent lecturer".
+      
+     > _Enrolment_: 33 students    
+	 > _Student Experience of Learning_: 4/5 (14 responses)    
+	 > _Student Experience of Lecturing_:: 4.1/5 (14 reponses)    
+	 > _Student comments_: 
+	 > "Clear explanations and methodical covering of the topic"; 
+	 > "approachable and explained things clearly and completely";
+	 > "seemed very enthused by the subject matter"; 
 
-:    Co-lecturing _Advanced Topics in Statistical Machine Learning (COMP8650)_, ANU
+:    Co-lecturing _[Advanced Topics in Statistical Machine Learning (COMP8650)](https://studyat.anu.edu.au/2012/courses/COMP8650;details.html)_, ANU
 
 2011 (S2)
 :    Convening and co-lecturing _[Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/)_, ANU
      
-     > _Enrolment_: 26 students    
+     > _Enrolment_: 25 students    
+	 > _Student Experience of Learning_: 3.9/5 (13 responses)    
+	 > _Student Experience of Lecturing_:: 4.3/5 (13 reponses)    
+	 > _Student comments_: 
+	 > "Mark is very carefully spoken, allowing him to explain concepts clearly.";
+	 > "very good lecturer"; "Mark was an excellent lecturer".
 
 2010 (S1)
 :    Guest Lecture in _[Introduction to Statistical Machine Learning (COMP4670)](http://sml.nicta.com.au/isml10.html)_, ANU
 </div>
+
+
+
+<div class="break"></div>
+
+
 
 ## Other Teaching Activities
 <div class="section">
@@ -255,15 +312,27 @@ Summer School
 :    _[Information, Divergence, and Risk for Binary Classification](http://mark.reid.name/iem/mlss-2009-lecture.html)_, 
      Machine Learning Summer School, 2009.
 
-### Tutoring
-* _Computer Graphics_, UNSW, 1999
-* _Concurrent Computing_, UNSW, 1998
-* _Computing 1A_, UNSW, 1997
+Tutoring
+:    _Computer Graphics_, UNSW (1999); _Concurrent Computing_, UNSW (1998); 
+     _Computing 1A_, UNSW (1997)
 
-### Seminars
-* _[Machine Learning Book Reading Group](http://mark.reid.name/work/reading-group.html)_, ANU, April 2011--
 </div>
 
+## Professional Development
+<div class="section">
+Courses Taken
+:    * _[Foundations of University Teaching and Learning][futl]_, [CEDAM][] ANU, 2011
+     * _Postdoc/Early Career Academic Writing Cycle_, ANU, 2010
+     * _[Research Supervision][ressup]_, [CEDAM][] ANU, 2009
+     * _Team Management Training Accreditation_, [Team Managent Systems][tms], 2009
+     * _[Academic Leadership and Management][alm]_, [CEDAM][] ANU, 2008
+</div>
+
+[cedam]: http://cedam.anu.edu.au/
+[futl]: http://cedam.anu.edu.au/teaching-enrichment/foundations
+[ressup]: http://researchsuper.cedam.anu.edu.au/
+[alm]: http://cedam.anu.edu.au/career-development/academic-leadership-management
+[tms]: http://www.tms.com.au/
 
 
 ## Event Organisation
@@ -278,14 +347,15 @@ NIPS 2011
 ALT/DS 2010
 :   Local Organiser for the _International Conference on [Algorithmic Learning Theory][alt10] (ALT) and [Discovery Science][ds10] (DS)_, Canberra, October 2010.
     
-    > Duties included the management of budgeting, promotion, invited speakers, venue, accommodation, banquet, PC meetings, proceedings delivery, conference materials, fundraising, and student scholarships.
-    >
-    > Conference Budget: A$61,000 (support from PASCAL2, AI Journal, NICTA, and ANU).
+    > _Conference Budget_: A$61,000 (PASCAL2, AI Journal, NICTA, and ANU)    
+    > Duties included the management of budgeting, promotion, invited speakers, 
+	> venue, accommodation, banquet, PC meetings, proceedings delivery, conference 
+	> materials, fundraising, and student scholarships. 
 
 ICML 2002
 :    Web Chair Administrator for the _[19th International Conference on Machine Learning][icml2002]_, Sydney, 2002.
     
-    > Evaluated, installed, and maintained a web-based conference management system.
+    > Evaluated, installed, and maintained a web conference management system.
 
 </div>
 
@@ -295,236 +365,7 @@ ICML 2002
 
 
 
-## Refereed Publications (Best highlighted; Contributions Noted)
-
-### Book Chapters
-<div class="section">
-
-2010
-
-:    _[Generalization Bounds][emlgb]_, 
-     Mark D. Reid 
-	 — In the _[Encyclopedia of Machine Learning][eml]_, 
-	 C. Sammut and G. Webb (Eds), Springer.
-
-:    _Squinting at a Sea of Dots: Visualising Australian Readerships using Statistical Machine Learning_, 
-     Julieanne Lamond and Mark D. Reid 
-	 — In _Resourceful Reading: The New Empiricism, eResearch and Australian Literary Culture_,
-	 K. Bode and R. Dixon (Eds), Sydney University Press.
-</div>
-
-### Journal Articles
-<div class="section">
-
-2012
-
-:    <div class="highlight">
-     _[Mixability is Bayes Risk Curvature Relative to Log Loss][jmlr12]_, 
-     Tim van Erven, Mark D. Reid, and Robert C. Williamson 
-	 – Journal of Machine Learning Research (**JMLR**), vol. 13(May):1639–1663
-     
-	 > **Contributions**: 
-	 > Proposed investigation of mixability using existing results from JMLR 2011 paper; Developed application of matrix differential geometry to multiclass loss surfaces; Provided several key steps in the proof of the main result and streamlined the overall argument.
-	 </div>
-
-2011
-:    <div class="highlight">
-     _[Information, Divergence, and Risk for Binary Experiments][jmlr11]_, 
-     Mark D. Reid and Robert C. Williamson 
-	 — Journal of Machine Learning Research (**JMLR**), vol. 12(Mar):731–817
-     
-	 > **Contributions**: 
-	 > Significant input to the conception, development, and exposition of all aspects of the paper. More specifically: derivation of link between weight functions for losses and f-divergences; Proposal and development of the unified derivation, representations and properties of proper losses f-divergences, and statistical information via Taylor’s theorem and Jensen’s inequality, highlighting the fundamental similarities of these quantities; Derivation of connections between Bayes risk, the Neyman-Pearson lemma, and ROC curves.
-	 </div>
-
-2010
-:    <div class="highlight">
-     _[Composite Binary Losses][jmlr10]_, 
-     Mark D. Reid and Robert C. Williamson 
-	 — Journal of Machine Learning Research (**JMLR**), vol. 11(Sep):2387–2422
-     
-	 > **Contributions**:
-	 > Contributed to all aspects of the paper but specifically: Proposed key definitions (fair, regular, definite); Proposed and developed results connecting properness and robustness; Derived result characterising properness in terms of a loss’s link function and partial derivatives and implications for margin losses; Proposed generalised notion of classification calibrated and its connection to properness; Proposed investigation of “best” surrogate loss; Collaborated on development of the main characterisation of convexity result.
-	</div>
-
-2002
-:    _[Cross-training and its application to Skill-Mining][isj02]_, 
-     Dan Oblinger, Mark Reid, Mark Brodie, and Rodrigo de Salvo Braz
-	 — **IBM Systems Journal**, vol. 41(3):449–460
-     
-	 > **Contributions**:
-	 > Development of transfer learning method; Coding of skill- mining software; Experimental design and analysis.
-</div>
-
-
-
-
-### Conferences
-<div class="section">
-2012
-
-:    <div class="highlight">
-     _Interpreting Prediction Markets: A Stochastic Approach_, 
-	 Rafael M. Frongillo, Nicolás Della Penna, and Mark D. Reid 
-	 – In Proc. of Neural Information Processing Systems (**NIPS**).
-     
-     > **Contributions**: Significant input to the conception of the main theoretical
-	 > results concerning connections with equilibrium prices and optimisation.
-	 > Designed and coded experimental evaluation.
-     </div>
-
-:    _Mixability in Statistical Learning_,
-     Tim van Erven, Peter Grünwald, Mark D. Reid, and Robert Williamson
-     – In Proc. of Neural Information Processing Systems (**NIPS**). 
-
-:    _Tighter Variational Represenations of f-Divergences via Restriction to Probability Measures_, 
-     Avraham Ruderman,  Dario Garcia-Garcia, James Petterson, and Mark D. Reid 
-	 – In Proc. of the International Conference on Machine Learning (**ICML**).
-    
-:    _The Convexity and Design of Composite Multiclass Losses_, 
-     Mark D. Reid, Robert C. Williamson, and Peng Sun 
-	 – In Proc. of the International Conference on Machine Learning (**ICML**).
-
-:    _AOSO-LogitBoost: Adaptive One-Vs-One LogitBoost for Multiclass Problems_, 
-     Peng Sun, Mark D. Reid, and Jie Zhou 
-	 – In Proc. of the International Conference on Machine Learning (**ICML**).
-
-:    _[Crowd & Prejudice: An Impossibility Theorem for Crowd Labelling without a Gold Standard][ci12]_, 
-     Nicolás Della Penna and Mark D. Reid 
-	 - In Proc. of Collective Intelligence (**CI**).
-
-2011
-
-:    <div class="highlight">
-     _[Composite Multiclass Losses][nips11]_, 
-     Elodie Vernet, Robert C. Williamson, and Mark D. Reid 
-	 – In Proc. of Neural Information Processing Systems (**NIPS**).
-     
-	 > **Contributions**: Prosed preliminary questions for generalising
-	 > binary loss results to multiclass, including the multiclass
-	 > calibration and integral representation results. 
-	 </div>
-
-:    _[Mixability is Minimum Bayes Risk Curvature Relative to Log Loss][colt11]_,
-     Tim van Erven, Mark D. Reid, and Robert C. Williamson 
-	 — In Proc. of Conference on Learning Theory (**COLT**).
-
-2010
-
-:    _[Convexity of Proper Composite Binary Losses][aistats10]_, 
-     Mark D. Reid and Robert C. Williamson 
-	 — In Proc. of International Conference on Artificial Intelligence and Statistics (**AISTATS**).
-
-2009
-
-:    _[Kernel Conditional Quantile Estimation via Reduction Revisited][icdm09]_, 
-     Novi Quadrianto, Kristian Kersting, Mark Reid, Tiberio Caetano, and Wray Buntine 
-	 — In Proc. of IEEE International Conference on Data Mining (**ICDM**).
-
-:    <div class="highlight">
-     _[Generalised Pinsker Inequalities][colt09]_, 
-     Mark D. Reid and Robert C. Williamson 
-	 — In Proc. of Conference on Learning Theory (**COLT**).
-    
-	 > **Contributions**: Proposed analysis of f-divergences via duality with Bayes risk; Developed analysis of variational primitive divergences as constraints on f- divgerences via weight functions; Collaboration on statement, proof, and refinement of main result. 
-	 </div>
-
-:    _[Surrogate Regret Bounds for Proper Losses][icml09]_, 
-     Mark D. Reid and Robert C. Williamson 
-	 — In Proc. of International Conference of Machine Learning (**ICML**).
-
-2004
-:    _[Improving Rule Evaluation Using Multitask Learning][ilp04]_, 
-     Mark D. Reid 
-	 — In Proc. of International Conference on Inductive Logic Programming (**ILP**).
-
-2000
-
-:    _[Using ILP to Improve Planning in Hierarchical Reinforcement Learning][ilp00]_, 
-     Mark D. Reid and Malcolm Ryan  
-	 — In Proc. of International Conference on Inductive Logic Programming (**ILP**).
-	 
-:    _[Learning to Fly: An Application of Hierarchical Reinforcement Learning][icml00]_,
-     Malcolm Ryan and Mark Reid 
-	 — In Proc. of International Conference on Machine Learning (**ICML**).
-
-1999
-:    _[NRMIS: A Noise Resistant Model Inference System][ds99]_, 
-     Eric McCreath and Mark Reid 
-	 — In Proc. of Discovery Science (**DS**).
-</div>
-
-### Workshops
-<div class="section">
-
-2011
-
-:     _Anatomy of a Learning Problem_ 
-      (with James Montgomery and Mindika Premachandra), 
-	  NIPS Workshop on [Relations between machine learning problems – an approach to unify the field](http://rml.cecs.anu.edu.au/), December.
-
-2010
-
-:     _Reading the stats: tackling library loans records with statistical machine learning_ 
-      (with Julieanne Lamond), 
-	  [Literature and Science](http://www.aal.asn.au/conference/2010/), July.
-
-2009
-
-:    _Hybrid Model of Conditional Random Field and Support Vector Machine_ 
-     (with Qinfeng Shi and Tiberio Caetano), 
-	 NIPS Workshop on [The Generative and Discriminative Learning Interface](http://gen-disc2009.wikidot.com/), December.
-
-:    _Discriminative and Generative Views of Binary Experiments_ 
-     (with Bob Williamson), 
-	 NIPS Workshop on [The Generative and Discriminative Learning Interface](http://gen-disc2009.wikidot.com/), December 
-
-2007
-:    _Representations in Learning Task Design_ 
-     (Invited Talk with Bob Williamson) 
-	 NIPS Workshop on [Principles of Learning Problem Design](http://hunch.net/~learning-problem-design/), December
-
-</div>
-
-
-
-### Demonstrations
-<div class="section">
-
-2012
-:    _Protocols and Structures for Inference_ 
-     (with James Montgomery), NIPS Demonstration Track, December
-</div>
-
-### Patents
-<div class="section">
-
-2006
-:    _Determining Page Complexity_, 
-     Mark D. Reid and Barry J. Drake, Australian Application #2006252174
-</div>
-
-[isj02]: http://mark.reid.dev/files/pubs/isj02.pdf
-[jmlr10]: http://jmlr.csail.mit.edu/papers/v11/reid10a.html
-[jmlr11]: http://jmlr.csail.mit.edu/papers/v12/reid11a.html
-[jmlr12]: http://jmlr.csail.mit.edu/papers/v13/vanerven12a.html
-[eml]: http://www.springer.com/computer/ai/book/978-0-387-30768-8
-[emlgb]: http://dl.dropbox.com/u/38668/Papers/Generalization_Bounds.pdf
-[nips11]: http://books.nips.cc/papers/files/nips24/NIPS2011_0719.pdf
-[colt11]: http://mark.reid.name/files/pubs/colt11.pdf 
-[nips09talk]: http://videolectures.net/nipsworkshops09_williamson_dgvbe/
-[nips09gd]: http://gen-disc2009.wdfiles.com/local--files/schedule/gendisc09-williamson.pdf
-[aistats10]: http://jmlr.csail.mit.edu/proceedings/papers/v9/reid10a/reid10a.pdf
-[icdm09]: http://mark.reid.name/files/pubs/icdm09.pdf
-[colt09]: http://mark.reid.name/files/pubs/colt09.pdf
-[icml09]: http://mark.reid.name/files/pubs/icml09.pdf
-[ilp04]: http://mark.reid.name/files/pubs/ilp04.pdf
-[icml00]: http://mark.reid.dev/files/pubs/icml00.pdf
-[ilp00]: http://mark.reid.dev/files/pubs/ilp00.pdf
-[ds99]: http://mark.reid.dev/files/pubs/ds99.pdf
-[ci12]: http://arxiv.org/pdf/1204.3511.pdf
-
-
+<div class="break"></div>
 
 
 
@@ -604,15 +445,315 @@ Outreach
 [icml discussion site]: http://mldiscuss.appspot.com
 
 
+<div class="break"></div>
+
+
+
+## Refereed Publications (Best highlighted; Contributions Noted)
+
+### Book Chapters
+<div class="section">
+
+2010
+
+:    _[Generalization Bounds][emlgb]_, 
+     Mark D. Reid 
+	 — In the _[Encyclopedia of Machine Learning][eml]_, 
+	 C. Sammut and G. Webb (Eds), Springer.
+
+:    _[Squinting at a Sea of Dots: Visualising Australian Readerships using Statistical Machine Learning](http://hdl.handle.net/1885/8736)_, 
+     Julieanne Lamond and Mark D. Reid 
+	 — In _Resourceful Reading: The New Empiricism, eResearch and Australian Literary Culture_,
+	 K. Bode and R. Dixon (Eds), Sydney University Press.
+     
+	 > **Contributions**: Significant contributions to the technical aspects of the collaboration, including: proposing the application of visualisation methods to library loans database; developing software for interactive visualisation; explaning the visualisation technique for a humanities audience.
+</div>
+
+### Journal Articles
+<div class="section">
+
+2012
+
+:    <div class="highlight">
+     _[Mixability is Bayes Risk Curvature Relative to Log Loss][jmlr12]_, 
+     Tim van Erven, Mark D. Reid, and Robert C. Williamson 
+	 – Journal of Machine Learning Research (**JMLR**), vol. 13(May):1639–1663
+     
+	 > **Contributions**: 
+	 > Proposed investigation of mixability using existing results from JMLR 2011 paper; Developed application of matrix differential geometry to multiclass loss surfaces; Provided several key steps in the proof of the main result and streamlined the overall argument.
+	 </div>
+
+2011
+:    <div class="highlight">
+     _[Information, Divergence, and Risk for Binary Experiments][jmlr11]_, 
+     Mark D. Reid and Robert C. Williamson 
+	 — Journal of Machine Learning Research (**JMLR**), vol. 12(Mar):731–817
+     
+	 > **Contributions**: 
+	 > Significant input to the conception, development, and exposition of all aspects of the paper. More specifically: derivation of link between weight functions for losses and f-divergences; Proposal and development of the unified derivation, representations and properties of proper losses f-divergences, and statistical information via Taylor’s theorem and Jensen’s inequality, highlighting the fundamental similarities of these quantities; Derivation of connections between Bayes risk, the Neyman-Pearson lemma, and ROC curves.
+	 </div>
+
+2010
+:    <div class="highlight">
+     _[Composite Binary Losses][jmlr10]_, 
+     Mark D. Reid and Robert C. Williamson 
+	 — Journal of Machine Learning Research (**JMLR**), vol. 11(Sep):2387–2422
+     
+	 > **Contributions**:
+	 > Contributed to all aspects of the paper but specifically: Proposed key definitions (fair, regular, definite); Proposed and developed results connecting properness and robustness; Derived result characterising properness in terms of a loss’s link function and partial derivatives and implications for margin losses; Proposed generalised notion of classification calibrated and its connection to properness; Proposed investigation of “best” surrogate loss; Collaborated on development of the main characterisation of convexity result.
+	</div>
+
+2002
+:    _[Cross-training and its application to Skill-Mining][isj02]_, 
+     Dan Oblinger, Mark Reid, Mark Brodie, and Rodrigo de Salvo Braz
+	 — **IBM Systems Journal**, vol. 41(3):449–460
+     
+	 > **Contributions**:
+	 > Development of transfer learning method; Coding of skill- mining software; Experimental design and analysis.
+</div>
+
+
+<div class="break"></div>
+
+
+### Conferences
+<div class="section">
+2012
+
+:    <div class="highlight">
+     _[Interpreting Prediction Markets: A Stochastic Approach][nips12-markets]_, 
+	 Rafael M. Frongillo, Nicolás Della Penna, and Mark D. Reid 
+	 – In Proc. of Neural Information Processing Systems (**NIPS**).
+     
+     > **Contributions**: Significant input to the main theoretical
+	 > results connecting equilibrium prices and optimisation.
+	 > Design and code for experiments.
+     </div>
+
+:    _[Mixability in Statistical Learning][nips12-stochmix]_,
+     Tim van Erven, Peter Grünwald, Mark D. Reid, and Robert Williamson
+     – In Proc. of Neural Information Processing Systems (**NIPS**). 
+     
+	 > **Contributions**: Input to proofs of results connecting stochastic and online
+	 > mixability, including the definition of "supportability" of points on a
+	 > loss surface.
+
+:    _[Tighter Variational Represenations of f-Divergences via Restriction to Probability Measures][icml12-fdiv]_, 
+     Avraham Ruderman,  Dario Garcia-Garcia, James Petterson, and Mark D. Reid 
+	 – In Proc. of the International Conference on Machine Learning (**ICML**).
+     
+	 > **Contributions**: Co-developed all theoretical results.
+	 > Initiated connection with maximum mean discrepancy. Design and analysis
+	 > of experiments.
+    
+:    _[The Convexity and Design of Composite Multiclass Losses][icml12-multi]_, 
+     Mark D. Reid, Robert C. Williamson, and Peng Sun 
+	 – In Proc. of the International Conference on Machine Learning (**ICML**).
+	 
+	 > **Contributions**: Derived key result for the Hessian of multiclass
+	 > composite losses. Initiated and developed section on designing
+	 > losses. Experimental design.
+
+:    _[AOSO-LogitBoost: Adaptive One-Vs-One LogitBoost for Multiclass Problems][icml12-aoso]_, 
+     Peng Sun, Mark D. Reid, and Jie Zhou 
+	 – In Proc. of the International Conference on Machine Learning (**ICML**).
+
+	 > **Contributions**: Simplified main algorithm. Clarified analysis and presentation.
+
+:    _[Crowd & Prejudice: An Impossibility Theorem for Crowd Labelling without a Gold Standard][ci12]_, 
+     Nicolás Della Penna and Mark D. Reid 
+	 - In Proc. of Collective Intelligence (**CI**).
+
+	 > **Contributions**: Developed information-theoretic formalism and proof of the
+	 > main theorem.
+
+2011
+
+:    <div class="highlight">
+     _[Composite Multiclass Losses][nips11]_, 
+     Elodie Vernet, Robert C. Williamson, and Mark D. Reid 
+	 – In Proc. of Neural Information Processing Systems (**NIPS**).
+     
+	 > **Contributions**: Initiated generalisation of
+	 > binary loss results to multiclass. Developed multiclass
+	 > calibration and integral representation results. 
+	 </div>
+
+:    _[Mixability is Minimum Bayes Risk Curvature Relative to Log Loss][colt11]_,
+     Tim van Erven, Mark D. Reid, and Robert C. Williamson 
+	 — In Proc. of Conference on Learning Theory (**COLT**).
+
+	 > **Contributions**: Initiated looking at mixability for proper losses. 
+	 > Developed use of matrix differential 
+	 > geometry to multiclass loss surfaces; Provided key steps in the proof 
+	 > of the main result; Streamlined the overall argument.
+
+
+<div class="break"></div>
+
+
+
+2010
+
+:    _[Convexity of Proper Composite Binary Losses][aistats10]_, 
+     Mark D. Reid and Robert C. Williamson 
+	 — In Proc. of International Conference on Artificial Intelligence and Statistics (**AISTATS**).
+     
+	 > **Contributions**: Characterised properness in terms of a link function and derivatives;
+	 > Worked out implications for margin losses; Co-developed main characterisation of convexity 
+	 > result.
+2009
+
+:    _[Kernel Conditional Quantile Estimation via Reduction Revisited][icdm09]_, 
+     Novi Quadrianto, Kristian Kersting, Mark Reid, Tiberio Caetano, and Wray Buntine 
+	 — In Proc. of IEEE International Conference on Data Mining (**ICDM**).
+
+	 > **Contributions**: Proposed and proved theoretical guarantees for quantile 
+	 > estimation via reduction to Gaussian process regression.
+
+:    <div class="highlight">
+     _[Generalised Pinsker Inequalities][colt09]_, 
+     Mark D. Reid and Robert C. Williamson 
+	 — In Proc. of Conference on Learning Theory (**COLT**).
+    
+	 > **Contributions**: Proposed analysis of f-divergences via duality with Bayes 
+	 > risk; Developed analysis of variational primitive divergences as constraints 
+	 > on f- divgerences via weight functions; Collaboration on statement, proof, 
+	 > and refinement of main result. 
+	 </div>
+
+:    _[Surrogate Regret Bounds for Proper Losses][icml09]_, 
+     Mark D. Reid and Robert C. Williamson 
+	 — In Proc. of International Conference of Machine Learning (**ICML**).
+     
+	 > **Contributions**: Proposed analysis via Taylor’s theorem; 
+	 > Made connections with classification calibration; Proof of main result; 
+	 > Co-developed all other results.
+
+2004
+:    _[Improving Rule Evaluation Using Multitask Learning][ilp04]_, 
+     Mark D. Reid 
+	 — In Proc. of International Conference on Inductive Logic Programming (**ILP**).
+
+2000
+
+:    _[Using ILP to Improve Planning in Hierarchical Reinforcement Learning][ilp00]_, 
+     Mark D. Reid and Malcolm Ryan  
+	 — In Proc. of International Conference on Inductive Logic Programming (**ILP**).
+     
+	 > **Contributions**: Proposed use of ILP to learn descriptions of frame axiom 
+	 > violations; Implementation of sampling scheme; Experimental analysis.
+	 
+:    _[Learning to Fly: An Application of Hierarchical Reinforcement Learning][icml00]_,
+     Malcolm Ryan and Mark Reid 
+	 — In Proc. of International Conference on Machine Learning (**ICML**).
+     
+	 > **Contributions**: Development of techniques for efficient hierarchical 
+	 > planning; Experimental analysis. 
+
+1999
+:    _[NRMIS: A Noise Resistant Model Inference System][ds99]_, 
+     Eric McCreath and Mark Reid 
+	 — In Proc. of Discovery Science (**DS**).
+     
+	 > **Contributions**: Proposed noise-resistant extension of Shapiro’s MIS; 
+	 > Implementation of noise-handling; Experimental analysis.
+</div>
+
+<div class="break"></div>
+
+### Workshops
+<div class="section">
+
+2011
+
+:     _Anatomy of a Learning Problem_ 
+      (with James Montgomery and Mindika Premachandra), 
+	  NIPS Workshop on [Relations between machine learning problems – an approach to unify the field](http://rml.cecs.anu.edu.au/), December.
+
+2010
+
+:     _Reading the stats: tackling library loans records with statistical machine learning_ 
+      (with Julieanne Lamond), 
+	  [Literature and Science](http://www.aal.asn.au/conference/2010/), July.
+
+2009
+
+:    _Hybrid Model of Conditional Random Field and Support Vector Machine_ 
+     (with Qinfeng Shi and Tiberio Caetano), 
+	 NIPS Workshop on [The Generative and Discriminative Learning Interface](http://gen-disc2009.wikidot.com/), December.
+
+:    _Discriminative and Generative Views of Binary Experiments_ 
+     (with Bob Williamson), 
+	 NIPS Workshop on [The Generative and Discriminative Learning Interface](http://gen-disc2009.wikidot.com/), December 
+
+2007
+:    _Representations in Learning Task Design_ 
+     (Invited Talk with Bob Williamson) 
+	 NIPS Workshop on [Principles of Learning Problem Design](http://hunch.net/~learning-problem-design/), December
+
+</div>
+
+
+
+### Demonstrations
+<div class="section">
+
+2012
+:    _Protocols and Structures for Inference_ 
+     (with James Montgomery), NIPS Demonstration Track, December
+</div>
+
+### Patents
+<div class="section">
+
+2006
+:    _Determining Page Complexity_, 
+     Mark D. Reid and Barry J. Drake, Australian Application #2006252174
+</div>
+
+[icml12-aoso]: http://mark.reid.name/bits/pubs/icml12-aoso.pdf
+[icml12-multi]: http://mark.reid.name/bits/pubs/icml12-multi.pdf
+[nips12-markets]: http://mark.reid.name/bits/pubs/nips12-markets.pdf
+[icml12-fdiv]: http://mark.reid.name/bits/pubs/icml12-fdiv.pdf
+[nips12-stochmix]: http://mark.reid.name/bits/pubs/nips12-stochmix.pdf
+[isj02]: http://mark.reid.dev/files/pubs/isj02.pdf
+[jmlr10]: http://jmlr.csail.mit.edu/papers/v11/reid10a.html
+[jmlr11]: http://jmlr.csail.mit.edu/papers/v12/reid11a.html
+[jmlr12]: http://jmlr.csail.mit.edu/papers/v13/vanerven12a.html
+[eml]: http://www.springer.com/computer/ai/book/978-0-387-30768-8
+[emlgb]: http://dl.dropbox.com/u/38668/Papers/Generalization_Bounds.pdf
+[nips11]: http://books.nips.cc/papers/files/nips24/NIPS2011_0719.pdf
+[colt11]: http://mark.reid.name/files/pubs/colt11.pdf 
+[nips09talk]: http://videolectures.net/nipsworkshops09_williamson_dgvbe/
+[nips09gd]: http://gen-disc2009.wdfiles.com/local--files/schedule/gendisc09-williamson.pdf
+[aistats10]: http://jmlr.csail.mit.edu/proceedings/papers/v9/reid10a/reid10a.pdf
+[icdm09]: http://mark.reid.name/files/pubs/icdm09.pdf
+[colt09]: http://mark.reid.name/files/pubs/colt09.pdf
+[icml09]: http://mark.reid.name/files/pubs/icml09.pdf
+[ilp04]: http://mark.reid.name/files/pubs/ilp04.pdf
+[icml00]: http://mark.reid.dev/files/pubs/icml00.pdf
+[ilp00]: http://mark.reid.dev/files/pubs/ilp00.pdf
+[ds99]: http://mark.reid.dev/files/pubs/ds99.pdf
+[ci12]: http://arxiv.org/pdf/1204.3511.pdf
+
+
+
+
+
 ## Research Visits
 <div class="section">
 2013
-:   _Tsinghua University_    
+:   _[Department of Automation, Tsinghua University](http://www.tsinghua.edu.cn/publish/auen/)_    
     Beijing, China, May 8th-10th
 
 2012
-:   _Facebook Faculty Summit on Machine Learning_ (Invite Only)    
+:   _[Facebook Faculty Summit on Machine Learning](https://www.facebook.com/academics)_ (Invite Only)    
     Menlo Park, CA, USA, July 3rd
+
+2011
+:   _[QUT Discipline of Mathematical Sciences](http://www.scitech.qut.edu.au/about/disciplines/mathsci/)_    
+    Brisbane, QLD, May 27th
 
 2010
 :   _[Microsoft Research][msrc]_    
@@ -625,6 +766,10 @@ Outreach
 
 
 
+
+
+
+<!--
 ## Presentations
 <div class="section">
 
@@ -650,27 +795,12 @@ Outreach
 :   _Notes on Representations_    
     [MPI for Biological Cybernetics][mpi], July 3rd
 </div>
+-->
 [msrc]: http://research.microsoft.com/en-us/labs/cambridge/default.aspx
 [mpi]: http://www.kyb.mpg.de/
 
 
 
-
-## Professional Development
-<div class="section">
-Courses Taken
-:    * _[Foundations of University Teaching and Learning][futl]_, [CEDAM][] ANU, 2011
-     * _Postdoc/Early Career Academic Writing Cycle_, ANU, 2010
-     * _[Research Supervision][ressup]_, [CEDAM][] ANU, 2009
-     * _Team Management Training Accreditation_, [Team Managent Systems][tms], 2009
-     * _[Academic Leadership and Management][alm]_, [CEDAM][] ANU, 2008
-</div>
-
-[cedam]: http://cedam.anu.edu.au/
-[futl]: http://cedam.anu.edu.au/teaching-enrichment/foundations
-[ressup]: http://researchsuper.cedam.anu.edu.au/
-[alm]: http://cedam.anu.edu.au/career-development/academic-leadership-management
-[tms]: http://www.tms.com.au/
 
 
 <!--
@@ -707,9 +837,7 @@ Courses Taken
 [github]: https://github.com/mreid
 -->
 
-## References
 
-_References available upon request._
 <!--
 <div class="section">
 * **Prof. Robert Williamson**   
@@ -729,8 +857,8 @@ _References available upon request._
 
 ----
 <div class="quiet">
-Web Version: <http://mark.reid.name/work/vita/>
-<span class="right">Last Updated: 27 June 2013</span>
+<span class="print">Web Version: <http://mark.reid.name/work/vita/></span>
+<span class="right">Last Updated: 5th July 2013</span>
 </div>
 
 <script type="text/javascript" src="/js/jquery.js"> </script>

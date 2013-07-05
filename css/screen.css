@@ -511,7 +511,7 @@ p.delicious-extended:before { content: ' — '; }
 	margin-top: 0; 
 	margin-left: 0.5ex;
 	padding-left: 1em;
-	border-left: 1px solid #bbb;
+	border-left: 1px solid #ddd;
 	line-height: 1.5em; 
 }
 #Vita .section ul { margin-bottom: 0; }
@@ -519,6 +519,7 @@ p.delicious-extended:before { content: ' — '; }
 	background: #eef;
 	margin-left: -1em;
 	padding: 0 1em;
+	border-left: 2px solid #ccf;
 }
 #Vita li p { margin-bottom: 0; }
 #Vita dl {}
@@ -540,6 +541,7 @@ p.delicious-extended:before { content: ' — '; }
 }
 #Vita dd { margin-top: 0; }
 #Vita dd p { margin-bottom: 0; }
+#Vita .print { display: none; }
 /* @end */
 
 /* @group Figures and images */

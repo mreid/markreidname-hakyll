@@ -9,7 +9,7 @@ import Text.Pandoc.Shared
 import Text.Pandoc.Options
 
 --------------------------------------------------------------------------------
-destDir = "/Users/mreid/Sites/hakylltest/"
+destDir = "/Users/mreid/Sites/mark.reid.name/"
 remote = "confla@conflate.net:www/name" 
 siteConfig = defaultConfiguration
   { destinationDirectory  = destDir,

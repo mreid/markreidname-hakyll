@@ -235,15 +235,17 @@ PhD (Primary)
 
 PhD (Advisor)
 
-:    * Ehsan Abbasnejad (2011--)
-     * Changyou Chen (2011--)
-     * Wen Shao (2011--)
-     * Peter Gammie (2009--2012)
+:    * Ehsan Abbasnejad, _Bayesian Decision Theory_ (2011--)
+     * Changyou Chen, _Bayesian Nonparametrics_ (2011--)
+     * Wen Shao, _Large Alphabet Sequence Compression_ (2011--)
+     * Peter Gammie, _Arrows for Knowledge-Based Circuits_ (2009--2013)
 
 PhD (Host)
 
 :    * Nicholas Johnson, _Multi-objective Learning_, (Jun. -- Aug. 2013)    
      (Visiting PhD student from University of Minnesota)
+	 * Rafael Frongillo, _Interpreting Prediction Markets_, (Mar. 2012)    
+	 (Visiting PhD student from UC Berkeleyterm)
      * Peng Sun, _Multiclass Boosting_, (Oct. 2011--Apr. 2012)     
      (Visiting PhD student from Tsinghua University)
 

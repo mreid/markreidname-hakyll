@@ -9,6 +9,16 @@ section: Past
 This is the complete archive of posts from [Inductio Ex Machina](/iem) in 
 reverse chronological order.
 
-\$recentposts\$
+$for(posts)$
+  <div class="section list">
 
+  <h1>$shortdate$</h1>
+  
+  <p class="line">
+	<a class="title" href="$url$">$title$</a>
+	<a class="comments" href="$url$#disqus_thread">View Comments</a>
+  </p>
 
+  <p class="excerpt">$excerpt$</p>
+  </div>
+$endfor$

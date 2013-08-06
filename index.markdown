@@ -27,16 +27,22 @@ Blogs
 I keep a research blog called _[Inductio ex Machina](/blog)_ on 
 machine learning and statistics.
 Recent posts include:
-\$recentposts\$
+
+<ul>
+$for(posts)$
+  <li><a href="$url$" title="$excerpt$">$title$</a></li>
+$endfor$
+</ul>
 
 </div>
 
 <div class="section">
 [Twitter](http://twitter.com/mdreid)
 ====================================
- <div id="tweet">
- Contacting Twitter... 
- </div>
+ <a class="twitter-timeline" href="https://twitter.com/mdreid" height="2em" data-widget-id="364574639483129859" data-chrome="nofooter noborders noheader noscrollbar transparent" data-tweet-limit="1" data-show-replies="false">Tweets by mdreid</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
 </div>
 
 <div class="section">
@@ -46,11 +52,4 @@ Recent posts include:
 <script type="text/javascript" src="http://www.librarything.com/jswidget.php?reporton=mdreid&show=recent&header=&num=8&covers=small&text=title&tag=show&css=0&style=2&version=1"> </script>
 </div>
 
-<!-- Twitter calls -->
-<script
- src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js" 
- type="text/javascript">
-</script>
-<script src="/js/twitter-conf.js" type="text/javascript">
-</script>
 

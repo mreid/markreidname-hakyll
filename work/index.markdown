@@ -48,7 +48,9 @@ I have [published][] research in variety of areas including, most recently: lear
 <div class="section">
 News
 ====
-\$recentposts\$
+\$for(posts)\$
+	<p class="news"><span class="date">\$date\$</span> &ndash; \$body\$</p>
+\$endfor\$
 
 [Older News &rarr;](/work/news/)
 </div>

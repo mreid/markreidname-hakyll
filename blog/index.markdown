@@ -21,7 +21,19 @@ You can also subscribe to an [atom feed][] of the most recent posts.
 Recent Posts
 ------------
 
-\$recentposts\$
+$for(posts)$
+  <div class="section list">
+
+  <h1>$shortdate$</h1>
+  
+  <p class="line">
+	<a class="title" href="$url$">$title$</a>
+	<a class="comments" href="$url$#disqus_thread">View Comments</a>
+  </p>
+
+  <p class="excerpt">$excerpt$</p>
+  </div>
+$endfor$
 
 [Older Posts &rarr;](past.html)
 

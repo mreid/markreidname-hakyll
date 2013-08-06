@@ -2,6 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Control.Applicative ((<$>), empty)
 import           Data.Monoid         (mappend)
+import           Data.Set            (delete)
 import           Hakyll
 
 import Text.Pandoc.Definition
@@ -9,12 +10,17 @@ import Text.Pandoc.Shared
 import Text.Pandoc.Options
 
 --------------------------------------------------------------------------------
+-- Used to specify whether to take all or some of an item list
+data ItemCount = All | Only Int
+
+--------------------------------------------------------------------------------
 destDir = "/Users/mreid/Sites/mark.reid.name/"
 remote = "confla@conflate.net:www/name" 
 siteConfig = defaultConfiguration
   { destinationDirectory  = destDir,
     storeDirectory        = "/tmp/hakyll_cache/mark.reid.name/",
-    deployCommand         = "rsync --exclude 'blog/drafts' -ave ssh " ++ destDir ++ " " ++ remote 
+    deployCommand         = "rsync --exclude 'blog/drafts' -ave ssh " 
+                            ++ destDir ++ " " ++ remote 
   }
 
 feedConfig = FeedConfiguration
@@ -54,9 +60,9 @@ main = hakyllWith siteConfig $ do
   -- Home
   match "index.markdown" $ do
     route   $ setExtension "html"
-    compile $ blogRecentsCompiler (Just 3) "_templates/post/short.html"
+    compile $ listCompiler "posts" postCtx (Only 3) "blog/posts/*"
               >>= pageCompiler "Home"
-  
+
   -----------------
   -- Info
   match "info/*.markdown" $ do
@@ -76,13 +82,14 @@ main = hakyllWith siteConfig $ do
   match "work/news/*.md" $ compile bareCompiler
   match "work/news/index.markdown" $ do
     route   $ setExtension "html"
-    compile $ newsRecentsCompiler Nothing "_templates/news/short.html"
+    compile $ listCompiler "posts" dateCtx All "work/news/*.md"
               >>= pageCompiler "Work"
 
   match "work/index.markdown" $ do
     route   $ setExtension "html"
-    compile $ newsRecentsCompiler (Just 3) "_templates/news/short.html" 
+    compile $ listCompiler "posts" dateCtx (Only 3) "work/news/*.md"
               >>= pageCompiler "Work"
+
   -- Vita
   match "work/vita/*.md" $ do
     route   $ setExtension "html"
@@ -111,13 +118,13 @@ main = hakyllWith siteConfig $ do
   -- Blog
   match "blog/index.markdown" $ do
     route   $ setExtension "html"
-    compile $ blogRecentsCompiler (Just 5) "_templates/post/excerpt.html"
+    compile $ listCompiler "posts" postCtx (Only 5) "blog/posts/*" 
               >>= blogPageCompiler "Home"
-
+      
   match "blog/past.markdown" $ do
     route   $ setExtension "html"
-    compile $ blogRecentsCompiler Nothing "_templates/post/excerpt.html"
-              >>= blogPageCompiler "Past"
+    compile $ listCompiler "posts" postCtx All "blog/posts/*" 
+              >>= blogPageCompiler "Home"
 
   match "blog/info.markdown" $ do
     route   $ setExtension "html"
@@ -142,10 +149,8 @@ main = hakyllWith siteConfig $ do
     route   $ idRoute
     compile $ do
       let feedCtx = postCtx `mappend` bodyField "description"
-      posts <- fmap (take 5) . recentFirst =<< loadAllSnapshots "blog/posts/*" "content"
+      posts <- takeRecentFirst (Only 5) =<< loadAllSnapshots "blog/posts/*" "content"
       renderAtom feedConfig feedCtx posts
-
-
 
 
 --------------------------------------------------------------------------------
@@ -169,6 +174,14 @@ bibtexCompiler = do
     >>= readPandocBiblio def (Just csl) bib 
     >>= return . writePandoc
 
+-- Compile a page that include template code to show a list
+listCompiler field listItemCtx number listItemId = do
+  let posts = takeRecentFirst number =<< loadAll listItemId
+  let listCtx = listField field listItemCtx posts `mappend` defaultContext
+
+  noMathsCompiler >>= applyAsTemplate listCtx
+
+
 -- Blog posts
 -- Take out the post/YYYY-MM-DD part from the post URL
 rmDateRoute = 
@@ -186,10 +199,10 @@ blogPageCompiler section item =
     >>= relativizeUrls
 
 -- News index compiler
-newsRecentsCompiler n tplID = recentsCompiler "work/news/*.md" n tplID dateCtx
+-- newsRecentsCompiler n tplID = recentsCompiler "work/news/*.md" n tplID dateCtx
 
 -- Blog index compiler
-blogRecentsCompiler n tplID = recentsCompiler "blog/posts/*" n tplID postCtx
+-- blogRecentsCompiler n tplID = recentsCompiler "blog/posts/*" n tplID postCtx
 
 -- Blog post compiler
 blogPostCompiler snapshot = mathJaxRenderer
@@ -230,28 +243,24 @@ postCtx =
 
 --------------------------------------------------------------------------------
 -- Helper functions
-maybeTake Nothing  = id
-maybeTake (Just n) = fmap (take n)
 
--- Create a field of rendered recent items
-recentListField key ids n templateID context = 
-  mappend defaultContext $
-  Context $ \k _ -> 
-    if (k==key) then do
-      items     <- (maybeTake n) . recentFirst =<< loadAll ids
-      template  <- loadBody templateID
-      applyTemplateList template context items
-	else empty
+-- Create a function that either takes n or all of a list
+maybeTake :: ItemCount -> [a] -> [a]
+maybeTake All  = id
+maybeTake (Only n) = take n
 
--- Recent item compiler
-recentsCompiler ids n templateID itemCtx = do
-  let recentCtx   = recentListField "recentposts" ids n templateID itemCtx
-  myPandocCompiler >>= applyAsTemplate recentCtx
+-- Sort list of items in reverse chronological order then take first n
+takeRecentFirst n = fmap (maybeTake n) . recentFirst
 
 -- Pandoc compiler with defaults I like
 readerConfig = def { readerSmart = True, readerOldDashes = True }
-writerConfig = def
+writerConfig = def 
+readerNoMaths = def { 
+    readerExtensions = delete Ext_tex_math_dollars (readerExtensions readerConfig) 
+  }
+writerNoMaths = def 
 
+noMathsCompiler = pandocCompilerWith readerNoMaths writerNoMaths
 myPandocCompiler = pandocCompilerWith readerConfig writerConfig
 bareCompiler = pandocCompilerWithTransform readerConfig writerConfig stripPara
 

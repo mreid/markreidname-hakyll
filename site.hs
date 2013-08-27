@@ -12,6 +12,11 @@ import Text.Pandoc.Options
 --------------------------------------------------------------------------------
 -- Used to specify whether to take all or some of an item list
 data ItemCount = All | Only Int
+data Navigation = Main | Blog
+
+navCtx :: Navigation -> Context a
+navCtx Main = constField "isNavMain" "true"
+navCtx Blog = constField "isNavBlog" "true"
 
 --------------------------------------------------------------------------------
 destDir = "/Users/mreid/Sites/mark.reid.name/"
@@ -155,6 +160,7 @@ main = hakyllWith siteConfig $ do
 
 --------------------------------------------------------------------------------
 -- Compile pages by wrapping in standard templates
+pageCompiler :: String -> Item String -> Compiler (Item String)
 pageCompiler section item =
     loadAndApplyTemplate "_templates/page.html" homeCtx item
     >>= loadAndApplyTemplate "_templates/nav/main.html" homeCtx
@@ -175,6 +181,7 @@ bibtexCompiler = do
     >>= return . writePandoc
 
 -- Compile a page that include template code to show a list
+-- listCompiler :: String -> Context String -> ItemCount -> String -> Compiler (Item String)
 listCompiler field listItemCtx number listItemId = do
   let posts = takeRecentFirst number =<< loadAll listItemId
   let listCtx = listField field listItemCtx posts `mappend` defaultContext
@@ -253,12 +260,12 @@ maybeTake (Only n) = take n
 takeRecentFirst n = fmap (maybeTake n) . recentFirst
 
 -- Pandoc compiler with defaults I like
-readerConfig = def { readerSmart = True, readerOldDashes = True }
 writerConfig = def 
+readerConfig = def { readerSmart = True, readerOldDashes = True }
+writerNoMaths = def 
 readerNoMaths = def { 
     readerExtensions = delete Ext_tex_math_dollars (readerExtensions readerConfig) 
   }
-writerNoMaths = def 
 
 noMathsCompiler = pandocCompilerWith readerNoMaths writerNoMaths
 myPandocCompiler = pandocCompilerWith readerConfig writerConfig

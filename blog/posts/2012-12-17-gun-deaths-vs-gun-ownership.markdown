@@ -12,10 +12,7 @@ In the wake of the [tragic shooting][] at Sandy Hook Elementary School there was
 
 I posted this quote on Facebook and was asked whether there was any correlation between rates of gun ownership and gun-related deaths. After 20 minutes of grabbing some data on worldwide [gun ownership][] and [gun deaths][] from Wikipedia and running it through [R][] I produced the following graph.
 
-<dl class="figure">
-<dd><img alt="Gun deaths vs. Gun Ownership for OECD countries" src="/pics/figures/deaths-vs-guns.png" width="90%"/></dd>
-<dt>Gun-related deaths per capita vs. gun ownership per capita in OECD countries.</dt>
-</dl>
+![_Figure 1_: Gun-related deaths per capita vs. gun ownership per capita in OECD countries.](/pics/figures/deaths-vs-guns.png)
 
 <div class="note">
 **Update - 19 Dec. 2012**: The above graph was correct for the data I obtained for Wikipedia on the 17th. It has since been updated. See the update at the end of this post for details.
@@ -78,22 +75,13 @@ You can get all the code I used to generate the figures in this post here:
 
 I was asked a number of good questions about the graph I posted on Twitter. In particular, several people were surprised at the number of gun-related deaths for Switzerland. As the following graph of gun homicides vs. gun ownership shows, most of those deaths are actually suicides.
 
-<dl class="figure">
-<dd><img alt="Gun homicides vs. Gun Ownership for OECD countries" src="/pics/figures/homicide-vs-guns.png" width="90%"/></dd>
-<dt>Gun homicides per capita vs. gun ownership per capita in OECD countries.</dt>
-</dl>
+![_Figure 2_: Gun homicides per capita vs. gun ownership per capita in OECD countries.](/pics/figures/homicide-vs-guns.png)
 
-<dl class="figure">
-<dd><img alt="Gun homicides vs. Gun Ownership for OECD countries (Detail)" src="/pics/figures/homicide-vs-guns-detail.png" width="90%"/></dd>
-<dt>Detail of gun homicides per capita vs. gun ownership per capita in OECD countries.</dt>
-</dl>
+![_Figure 3_: Detail of gun homicides per capita vs. gun ownership per capita in OECD countries.](/pics/figures/homicide-vs-guns-detail.png)
 
 Finally, here is a plot of homicide vs. ownership across all countries -- not just those in the OECD. The mass of countries in the lower left corner is unreadble but you can see those countries with either high homicide rates or high gun ownership clearly.
 
-<dl class="figure">
-<dd><img alt="Gun homicides vs. Gun Ownership for all countries" src="/pics/figures/homicide-vs-guns-all.png" width="90%"/></dd>
-<dt>Gun homicides per capita vs. gun ownership per capita in all countries.</dt>
-</dl>
+![_Figure 4_: Gun homicides per capita vs. gun ownership per capita in all countries.](/pics/figures/homicide-vs-guns-all.png)
 
 Just to be clear, I am not making any claims about the effect of gun ownership on shootings. I just wanted to show how easy it is to use freely available data to help answer reasonable questions about heated political issues like gun control. 
 
@@ -109,11 +97,9 @@ Several people noted that the data I plotted for Switzerland was inconsistent wi
 
 I have redone the OECD plots with data scraped from the same pages as of 3:30pm on the 19th. You can see the results and get the new data below.
 
-<dl class="figure" >
-<dd><a href="/pics/figures/deaths-vs-guns-20121219.png"><img alt="Gun Deaths vs. Gun Ownership for OECD countries" src="/pics/figures/deaths-vs-guns-20121219.png" width="45%"/></a>
-<a href="/pics/figures/homicide-vs-guns-20121219.png"><img alt="Gun homicides vs. Gun Ownership for OECD countries" src="/pics/figures/homicide-vs-guns-20121219.png" width="45%"/></a></dd>
-<dt>Gun deaths (left) and homicides (right) per capita vs. gun ownership per capita in OECD countries (click to view larger images).</dt>
-</dl>
+![_Figure 1 (updated)_: Gun-related Deaths vs. Gun Ownership for OECD countries.](/pics/figures/deaths-vs-guns-20121219.png)
+
+![_Figure 2 (updated)_: Gun Homicides vs. Gun Ownership for OECD countries.](/pics/figures/homicide-vs-guns-20121219.png)
 
 The new data is here:
 

@@ -27,7 +27,7 @@ containing all the grey spheres.
 <dt>
 ![2-dimensional packing](/pics/figures/high-dim-2d.png)
 </dt>
-<dd>**Figure 1.** The blue circle in the middle touches each of the four identical grey circles.</dd>
+<dd><p>_Figure 1_: The blue circle in the middle touches each of the four identical grey circles.</p></dd>
 </dl>
 
 We can move to three dimensions and set up an analogue of the two dimensional
@@ -44,7 +44,7 @@ width 4 that holds all eight grey spheres.
 <dt>
 ![3-dimensional packing](/pics/figures/high-dim-3d.png)
 </dt>
-<dd>**Figure 2.** The blue sphere touches each of the eight identical grey spheres.</dd>
+<dd><p>_Figure 2:_ The blue sphere touches each of the eight identical grey spheres.</p></dd>
 </dl>
 
 It's not too hard to convince yourself that we can carry on this construction

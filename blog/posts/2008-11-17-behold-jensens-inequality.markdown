@@ -25,7 +25,7 @@ I was quite happy then to have found a graphical "proof" of Jensen's inequality.
 <dt>
 	<img src="/pics/figures/jensen.png" alt="Jensen\&#039;s Inequality" title="Jensen\&#039;s Inequality" />
 </dt><dd>
-	<strong>Figure 1.</strong> Behold! A graphical demonstration of Jensen&#039;s Inequality. The expectations shown are with respect to an arbitrary discrete distribution over the x<sub>i</sub>"
+	<p>_Figure 1_: Behold! A graphical demonstration of Jensen's Inequality. The expectations shown are with respect to an arbitrary discrete distribution over the $x_i$</p>
 </dd>
 </dl>
 

@@ -157,6 +157,11 @@ main = hakyllWith siteConfig $ do
       posts <- takeRecentFirst (Only 5) =<< loadAllSnapshots "blog/posts/*" "content"
       renderAtom feedConfig feedCtx posts
 
+  -----------------
+  -- Testing
+  match "blog/test/*.md" $ do
+    route   $ gsubRoute "test" (const "") `composeRoutes` rmDateRoute
+    compile $ blogPostCompiler False
 
 --------------------------------------------------------------------------------
 -- Compile pages by wrapping in standard templates

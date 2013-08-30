@@ -11,15 +11,13 @@ ago --- project Ada --- is coming along nicely. Her (non-computer) vision,
 
 Here's a recent screenshot[^1].
 
-![Ada](/pics/ada-2011.png)
-:	Ada (AAI v1.0)
+![Ada (AAI v1.0)](/pics/ada-2011.png)
 
 Encouraged by the success of the first version of the project we decided to take the plunge and start on version 2. 
 
 We call this version "Edith Valerie Reid".
 
-![Edith](/pics/edith-2011.jpg)
-:	Edith (AAI v2.0)
+![Edith (AAI v2.0)](/pics/edith-2011.jpg)
 
 Her initial release on the 26th of July and so far everything is going really
 well. As with the first version, there are some issues to resolve such as

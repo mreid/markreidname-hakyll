@@ -7,10 +7,11 @@ Just a short post to reflect on the year that has passed since I [started this b
 
 A quick trawl through the archives reveals I have published 21 posts (not including this one) for an average of just less than two posts per month. A quick look at my traffic statistics show that I've had almost 6,000 visits and over 10,000 page views.
 
-![Vistors over the last year](/pics/figures/web-traffic.png)
-:	**Figure 1**: Graph of web traffic over the last year of blogging. 
+<div class="nostretch">
 
-{:.figure }
+![*Figure 1*: Graph of web traffic over the last year of blogging.](/pics/figures/web-traffic.png)
+
+</div>
 
 That huge spike of almost 500 visitors on a single day was for my post on [books that have affected my research](http://conflate.net/inductio/2008/05/research-changing-books/). Most of the incoming traffic for that post was from Kevin Kelly's [post on the same topic](http://kk.org/cooltools/archives/002879.php). It's my most read post with over 2,500 views.
 

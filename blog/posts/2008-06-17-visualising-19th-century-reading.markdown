@@ -33,7 +33,7 @@ The full database contains 99,692 loans of 7,078 different books from 11 librari
 This distilled the database down to a simple table with each row representing one of 1,616 books and each column representing one of 2,473 people. 
 
 <table class="neat data" width="80%">
-<caption>Table 1: A portion of the book and borrower table. A 1 indicates that the borrower (column)
+<caption>*Table 1*: A portion of the book and borrower table. A 1 indicates that the borrower (column)
 borrowed the book (row) at least once. A 0 indicates that the borrower never borrowed the book.
 </caption>
 <tr><th rowspan="2" class="title">Book<br/>ID</th><th colspan="4" class="title">Borrower ID</th></tr>
@@ -75,7 +75,7 @@ A standard technique for doing this is [Principal Component Analysis][pca]. Intu
 [pca]: http://en.wikipedia.org/wiki/Principal_components_analysis
 
 <table class="neat data" width="80%">
-<caption>Table 2: A portion of the book table after PCA. The values in the two new columns (PCA IDs) can be used to plot the books.
+<caption>*Table 2*: A portion of the book table after PCA. The values in the two new columns (PCA IDs) can be used to plot the books.
 </caption>
 <tr><th rowspan="2" class="title">Book<br/>ID</th><th colspan="2" class="title">PCA ID</th></tr>
 <tr>                 <th>1</th><th>2</th></tr>
@@ -100,10 +100,7 @@ Figure 1 shows a plot of the PCA reduced book data. Each circle represents one o
 
 [^2]: A book can belong to more than one library. In this case one library is chosen at random to determine a circle's colour.
 
-![Plot of the books across all libraries in the ACRP database](/pics/figures/all_libraries.png){: width=550 }
-:	**Figure 1**: A PCA plot of all the books in the ACRP database coloured according to which library they belong to. The size of each circle indicates the number of borrowers of the corresponding book.
-
-{: .figure }
+![*Figure 1*: A PCA plot of all the books in the ACRP database coloured according to which library they belong to. The size of each circle indicates the number of borrowers of the corresponding book.](/pics/figures/all_libraries.png)
 
 One immediate observation is that books are clustered according to which library they belong to. This is not too surprising since the books in a library limit what borrowers from that library can read. This means it is likely that two voracious readers that frequent the same library will read the same books. This, in turn, will mean the similarity of two books from a library will be higher than books from different libraries as there are very few borrowers that use more than one library.
 
@@ -121,11 +118,7 @@ Clicking on [this link][applet] will open a new window and, after a short delay,
 
 [applet]: /inductio/wp-content/public/acrp/
 
-![Screenshot of the visualisation applet](/pics/figures/acrp.png){: width=550 }
-:	 **Figure 2**: A screenshot of the ACRP visualisation tool showing books 
-	from the Lambton Institute. Click the image to run the tool in a new window.
-
-{: .figure }
+![*Figure 2*: A screenshot of the ACRP visualisation tool showing books from the Lambton Institute. Click the image to run the tool in a new window.](/pics/figures/acrp.png)
 
 Instructions describing how to use the tool can be found below it. 
 In a nutshell: hovering over a circle will reveal the title of the book corresponding to that circle; clicking on a circle will draw lines to its most similar neighbours; altering the "Borrowers" bar will only show books with at least that many borrowers; and altering the "Similarity" bar will only draw lines to books with at least that proportion of books in common.

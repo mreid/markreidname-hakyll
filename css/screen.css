@@ -139,24 +139,29 @@ li p {
 	 margin-top:  0;
 }
 /* @group Table */
-table.neat {
+table {
 	margin: 1.5em auto 1.5em auto;
 	table-layout: fixed;
 	border-spacing: 0;
 }
-table.neat th { text-align: left; font-weight: bold; background-color: #eeeeee; }
-table.neat td { background-color: white; }
-table.neat th.title { border-bottom: 1px solid gray; border-top: 1px solid gray; vertical-align: bottom; 
+table th { text-align: center; font-weight: bold; background-color: #eeeeee; }
+table td { background-color: white; padding: 0 1em; }
+table th.title { border-bottom: 1px solid gray; border-top: 1px solid gray; vertical-align: bottom; 
 background-color: lightgrey; }
-table.neat tr.end td { border-bottom: 1px solid #eeeeee; }
+table tr.end td { border-bottom: 1px solid #eeeeee; }
 
-.figure p, caption { 
+.figure { border: 1px solid #eee; margin-bottom: 1em; padding: 1em 1em 0 1em; }
+.figure img { width: 95%; margin: 1em auto 0 auto; } 
+.figure p, dl.figure dt, caption { 
 	color: #333;
 	font-size: 0.875em;
-	margin: 0.875em auto 0 auto;
 	line-height: 1.14em;
-	text-align: justify;
+	text-align: center;
 }
+.nostretch .figure img { width: auto !important; }
+
+.figure p, dl.figure dt { margin: 0.875em auto 0 auto; }
+caption { margin: 0 auto 0.875em  auto; }
 
 table.data tr { text-align: center; }
 
@@ -544,7 +549,7 @@ p.delicious-extended:before { content: ' — '; }
 #Vita .print { display: none; }
 /* @end */
 
-/* @group Figures and images */
+/* @group Figures and images
 .figure, dl.figure {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
@@ -559,7 +564,7 @@ p.delicious-extended:before { content: ' — '; }
 	text-align: justify;
 	width: 85%;
 }
-/* @end */
+ @end */
 
 /* @group Equations */
 div.maruku-equation { display: block ;text-align: center; }

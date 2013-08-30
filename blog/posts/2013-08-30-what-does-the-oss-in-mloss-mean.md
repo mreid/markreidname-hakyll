@@ -1,6 +1,6 @@
 ---
 title: What does the “OSS” in MLOSS mean?
-excerpt: A summary of a recent discussion between the MLOSS Action Editors on what “open” means.
+excerpt: A summary of a recent discussion between the JMLR Machine Learning Open Source Software (MLOSS) Action Editors about what “open” means.
 location: Canberra, Australia
 ---
 
@@ -11,11 +11,11 @@ the JMLR MLOSS track (as well as the [broader MLOSS project][]) -- to encourage
 the creation and use of open source software within machine learning -- is well
 aligned with my own interests and attitude towards scientific software.
 
-Shortly after I joined, [Antti Honkela][] raised a question about how we are to
-interpret an item in the [review criteria][] that states that reviewers should
-consider the "freedom of the code (lack of dependence on proprietary software)"
-when assessing submissions. What followed was an engaging email discussion
-amongst the Action Editors about the how to clarify our position. 
+Shortly after I joined, one of the other editors raised a question about how we
+are to interpret an item in the [review criteria][] that states that reviewers
+should consider the "freedom of the code (lack of dependence on proprietary
+software)" when assessing submissions. What followed was an engaging email
+discussion amongst the Action Editors about the how to clarify our position. 
 
 After some discussion (summarised below), we settled on the following guideline
 which tries to ensure MLOSS projects are as open as possible while recognising
@@ -44,7 +44,7 @@ offered to write them up in this post for posterity and to solicit feedback from
 the machine learning community at large.
 
 
-### Reviewing and Decision Making
+### Reviewing and decision making
 
 A couple of arguments were put forward in favour of a strict "no proprietary
 dependencies" policy.
@@ -56,11 +56,11 @@ acceptability of future submission.
 
 
 
-### Promoting Open Ports
+### Promoting open ports
 
 An argument made in favour of accepting projects with proprietary 
 dependencies was that doing so may actually increase the chances of its code being 
-forked version with no such dependencies. 
+forked to produce a version with no such dependencies. 
 
 [Mikio Braun][] explored this idea further along with
 some broader concerns in a [blog post][] about the role of curation and how it 
@@ -68,7 +68,7 @@ potentially limits collaboration.
 
 
 
-### Where Do We Draw The Line?
+### Where do we draw the line?
 
 Some of us had concerns about what exactly constitutes a proprietary dependency 
 and came up with a number of examples that possibly fall into a grey area.
@@ -91,7 +91,7 @@ to enforce in practice.
 
 
 
-### What Is Our Focus?
+### What is our focus?
 
 It is pretty clear what position Richard Stallman or other fierce free software 
 advocates would take on the above questions: reject all of them!
@@ -143,9 +143,11 @@ Of course, a project like MLOSS is only as strong as the community it serves so 
 are keen to get feedback about this decision from people who use and create machine 
 learning software so feel free to leave a comment or contact one of us by email.
 
-<div class="note">
-This piece was cross-posted on the [MLOSS blog][].
-</div>
+----
+
+**Shameless Plug**: If you are working on some open source software for machine learning, I encourage you to consider submitting your work to the [JMLR MLOSS track][MLOSS] or the upcoming [NIPS 2013 Workshop on Machine Learning Open Source Software][workshop] (I'm on the program committee).
+
+[workshop]: http://mloss.org/workshop/nips13/
 
 [MLOSS]: http://jmlr.org/mloss/
 [aim]: http://jmlr.org/mloss/mloss-info.html

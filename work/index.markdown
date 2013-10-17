@@ -59,7 +59,7 @@ News
 <div class="section">
 Teaching
 ========
-I co-lectured a course on [Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/) with [Edwin Bonilla](http://people.cecs.anu.edu.au/user/4101) in the second semester of 2011 and 2012. I also be co-lectured [Advanced Topics in Statistical Machine Learning (COMP8650)](http://cs.anu.edu.au/courses/info/comp8650/overview) in semester 2, 2012.
+I am convening and co-lecturing a course on [Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/) with [Aditya Menon](http://cs.anu.edu.au/user/5022) in semester 2, 2013. I previously taught this with [Edwin Bonilla](http://people.cecs.anu.edu.au/user/4101) in 2011 and 2012. I also co-lectured [Advanced Topics in Statistical Machine Learning (COMP8650)](http://cs.anu.edu.au/courses/info/comp8650/overview) in semester 2, 2012.
 </div>
 
 <div class="section">

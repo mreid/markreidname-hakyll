@@ -1,0 +1,1 @@
+Two of my submissions to [MaxEnt 2013](http://www.maxent2013.org) – one with [Rafael Frongillo](http://www.cs.berkeley.edu/~raf/), the other with [Brendan van Rooyen](http://cs.anu.edu.au/user/4806) – have been accepted as oral presentations.

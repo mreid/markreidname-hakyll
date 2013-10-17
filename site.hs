@@ -20,7 +20,7 @@ navCtx Blog = constField "isNavBlog" "true"
 
 --------------------------------------------------------------------------------
 destDir = "/Users/mreid/Sites/mark.reid.name/"
-remote = "confla@conflate.net:www/name" 
+remote = "confla@mark.reid.name:www/name" 
 siteConfig = defaultConfiguration
   { destinationDirectory  = destDir,
     storeDirectory        = "/tmp/hakyll_cache/mark.reid.name/",

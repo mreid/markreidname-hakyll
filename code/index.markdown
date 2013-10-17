@@ -11,6 +11,19 @@ Code
 Eventually this page will contain links to most of the research and non-research
 related programming I've done.
 
+<div class="section markdown="1">
+# ML as a Service
+[The PSI Project](https://github.com/psi-project/)
+:    James Montogomery's implementation of the 
+	 [PSI specification](http://psi.cecs.anu.edu.au/spec) I co-wrote for presenting
+	 machine learning resources (e.g., learning algorithms, predictors, data sets)
+	 as RESTful web services.
+	 This was work done as part of the 
+	 [Protocols and Structures for Inference](http://psi.cecs.anu.edu.au) ARC
+	 Linkage project
+	 with Canon Information Systems Research Australia (CISRA).
+</div>
+
 <div class="section" markdown="1">
 Demos
 =====

@@ -1,1 +1,1 @@
-[James Montgomery](http://users.cecs.anu.edu.au/~ejmontgomery/) and I have put code for a prototype [PSI](http://psi.cecs.anu.edu.au) client and server on [GitHub](https://github.com/psi-project/)
+The [PSI project](http://psi.cecs.anu.edu.au/) was awarded an Amazon [AWS in Education](http://aws.amazon.com/grants/) grant to help us set up PSI services on AWS.

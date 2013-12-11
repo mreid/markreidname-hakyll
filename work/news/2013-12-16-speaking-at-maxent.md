@@ -1,0 +1,1 @@
+I have had two papers accepted for oral presentation at [MaxEnt 2013](http://www.maxent2013.org/program.html): one on _Convex Foundations of Generalized MaxEnt Models_ with [Rafael Frongillo](http://www.cs.berkeley.edu/~raf/), and the other on _Conjugate Priors for Generalized MaxEnt Families_ with [Brendan van Rooyen](https://cs.anu.edu.au/user/4806).

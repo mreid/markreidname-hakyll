@@ -155,6 +155,47 @@ We present an approach for cataloging an organization’s skill assets based on 
 
 ## Conference Papers
 <div class="section">
+## 2013
+
+**Aggregating Predictions via Sequential Mini-Trading**    
+[Mindika Premachandra][mindika] and Mark D. Reid    
+Asian Conference on Machine Learning [(ACML 2013)][acml13]    
+{ [PDF][acml13-minitrades] | [Abstract]() | [BibTeX]() }
+
+ <div class="abstract">
+### Abstract
+  Prediction markets which trade on contracts representing unknown future
+  outcomes are designed specifically to aggregate expert predictions via the
+  market price. While there are some existing machine learning interpretations
+  for the market price and connections to Bayesian updating under the
+  equilibrium analysis of such markets, there is less of an understanding
+  of what the instantaneous price in sequentially traded markets means. In
+  this paper we show that the prices generated in sequentially traded
+  prediction markets are stochastic approximations to the price given by an
+  equilibrium analysis. We do so by showing the equilibrium price is
+  a solution to a stochastic optimisation problem which is solved by
+  stochastic mirror descent (SMD) by a class of sequential pricing
+  mechanisms. This connection leads us to propose a scheme called
+  “mini-trading” which introduces a parameter related to the learning rate
+  in SMD. We prove several properties of this scheme and show that it can
+  improve the stability of prices in sequentially traded prediction
+  markets.
+ </div>
+
+ <div class="bibtex">
+### BibTeX
+
+    @conference{Premachandra:2013,
+	  Address = {Canberra, Australia},
+	  Author = {Premachandra, Mindika and Reid, Mark D.},
+	  Booktitle = {Proceedings of Asian Conference on Machine Learning (ACML)},
+	  Month = {November},
+	  Title = {Aggregating Predictions via Sequential Mini-Trading},
+	  Year = {2013}}
+
+ </div>
+
+
 ## 2012
 
 **Mixability in Statistical Learning**    
@@ -570,9 +611,80 @@ Within the empirical ILP setting we propose a method of inducing definite progra
 [avi]: http://cs.anu.edu.au/user/4381
 [jamesp]: http://users.cecs.anu.edu.au/~jpetterson/
 [peter]: http://homepages.cwi.nl/~pdg/
+[mindika]: https://cs.anu.edu.au/user/4382
+[brendan]: https://cs.anu.edu.au/user/4806
 
 ## Refereed Workshops
 <div class="section">
+
+## 2013
+**Convex Foundations for Generalized MaxEnt Models**    
+[Rafael Frongillo][raf] and Mark D. Reid    
+International Workshop on Bayesian Inference and Maximum Entropy [(MaxEnt 2013)][maxent13]    
+{ [PDF][maxent13-convex-gefs] | [Abstract]() | [BibTeX]() }
+
+ <div class="abstract">
+### Abstract
+  We present an approach to maximum entropy models that highlights the convex
+  geometry and duality of GEFs and their connection to Bregman divergences.
+  Using our framework, we are able to resolve a puzzling aspect of the
+  bijection of \cite{banerjee2005clustering} between classical exponential
+  families and what they call \emph{regular} Bregman divergences.
+  Their regularity condition rules out all but Bregman divergences generated
+  from log-convex generators.
+  We recover their bijection and show that a much broader class of divergences
+  correspond to GEFs via two key observations: 
+    1) Like classical exponential families, GEFs have a ``cumulant'' $C$ whose 
+	   subdifferential contains the mean: 
+	   $\E_{\o\sim p_\theta}\left[\phi(\o)\right] \in \partial C(\theta)$; 
+	2) Generalized relative entropy is a $C$-Bregman divergence between parameters:
+       $D_F(p_\theta, p_{\theta'}) = D_C(\theta,\theta')$, where $D_F$ becomes the
+       KL divergence for $F = -H$.
+  We also show that every \emph{incomplete} market with cost function $C$
+  (see~\cite{abernethy2011optimization-based}) can be expressed as a complete
+  market, where the prices are constrained to be a GEF with cumulant $C$.  
+  This provides an entirely new interpretation of prediction markets, relating their
+  design back to the principle of maximum entropy. 
+  </div>
+
+ <div class="bibtex">
+### BibTeX
+
+    @conference{Frongillo:2013,
+	  Address = {Canberra, Australia},
+	  Author = {Frongillo, Rafael and Reid, Mark D.},
+	  Booktitle = {Proceedings of the 33rd International Workshop on Bayesian Inference and Maximum Entropy Methods in Science and Engineering},
+	  Month = {December},
+	  Title = {Convex Foundations for Generalized MaxEnt Models},
+	  Year = {2013}}
+
+ </div>
+
+**Conjugate Priors for Generalized MaxEnt Families**    
+[Brendan van Rooyen][brendan] and Mark D. Reid    
+International Workshop on Bayesian Inference and Maximum Entropy [(MaxEnt 2013)][maxent13]    
+{ [PDF][maxent13-update-gefs] | [Abstract]() | [BibTeX]() }
+
+ <div class="abstract">
+### Abstract
+  In this work we show that a notion of a conjugate prior for non exponential
+  family distributions can be recovered if one uses a slightly modified version
+  of Bayesian updating. We prove some theorems concerning this new updating
+  rule before giving a simple example of such a generalized conjugate prior.
+ </div>
+
+ <div class="bibtex">
+### BibTeX
+
+    @conference{vanRooyen:2013,
+	  Address = {Canberra, Australia},
+	  Author = {van Rooyen, Brendan and Reid, Mark D.},
+	  Booktitle = {Proceedings of the 33rd International Workshop on Bayesian Inference and Maximum Entropy Methods in Science and Engineering},
+	  Month = {December},
+	  Title = {Conjugate Priors for Generalized MaxEnt Families},
+	  Year = {2013}}
+
+ </div>
 
 ## 2012
 **Interpreting Prediction Markets: A Stochastic Approach**    
@@ -725,6 +837,13 @@ Australian Application Number: 2006252174
 { [Entry][pat06] }
 
 </div>
+
+[maxent13]: http://www.maxent2013.org
+[maxent13-convex-gefs]: /bits/pubs/maxent13-convex-gefs.pdf
+[maxent13-update-gefs]: /bits/pubs/maxent13-update-gefs.pdf
+
+[acml13]: http://acml2013.conference.nicta.com.au
+[acml13-minitrade]: /bits/pubs/acml13-minitrade.pdf
 
 [bounds]: http://dl.dropbox.com/u/38668/Papers/Generalization_Bounds.pdf
 [aistats2010]: http://aistats.org/

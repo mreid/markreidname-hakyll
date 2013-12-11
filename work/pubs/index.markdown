@@ -160,7 +160,7 @@ We present an approach for cataloging an organization’s skill assets based on 
 **Aggregating Predictions via Sequential Mini-Trading**    
 [Mindika Premachandra][mindika] and Mark D. Reid    
 Asian Conference on Machine Learning [(ACML 2013)][acml13]    
-{ [PDF][acml13-minitrades] | [Abstract]() | [BibTeX]() }
+{ [PDF][acml13-minitrade] | [Abstract]() | [BibTeX]() }
 
  <div class="abstract">
 ### Abstract
@@ -628,21 +628,21 @@ International Workshop on Bayesian Inference and Maximum Entropy [(MaxEnt 2013)]
   We present an approach to maximum entropy models that highlights the convex
   geometry and duality of GEFs and their connection to Bregman divergences.
   Using our framework, we are able to resolve a puzzling aspect of the
-  bijection of \cite{banerjee2005clustering} between classical exponential
-  families and what they call \emph{regular} Bregman divergences.
+  bijection of Banerjee et al. (2005) between classical exponential
+  families and what they call _regular_ Bregman divergences.
   Their regularity condition rules out all but Bregman divergences generated
   from log-convex generators.
   We recover their bijection and show that a much broader class of divergences
   correspond to GEFs via two key observations: 
     1) Like classical exponential families, GEFs have a ``cumulant'' $C$ whose 
 	   subdifferential contains the mean: 
-	   $\E_{\o\sim p_\theta}\left[\phi(\o)\right] \in \partial C(\theta)$; 
+	   $\mathbb{E}_{o\sim p_\theta}\left[\phi(o)\right] \in \partial C(\theta)$; 
 	2) Generalized relative entropy is a $C$-Bregman divergence between parameters:
        $D_F(p_\theta, p_{\theta'}) = D_C(\theta,\theta')$, where $D_F$ becomes the
        KL divergence for $F = -H$.
-  We also show that every \emph{incomplete} market with cost function $C$
-  (see~\cite{abernethy2011optimization-based}) can be expressed as a complete
-  market, where the prices are constrained to be a GEF with cumulant $C$.  
+  We also show that every _incomplete_ market with cost function $C$
+  (see Abernethy et al. (2011)) can be expressed as a complete
+  market, where the prices are constrained to be a GEF with cumulant $C$.
   This provides an entirely new interpretation of prediction markets, relating their
   design back to the principle of maximum entropy. 
   </div>

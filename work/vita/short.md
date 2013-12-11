@@ -60,7 +60,7 @@ The Australian National University, ACT 0200, Australia
 
 2001
 
-:    Co-Op Research Intern, 
+:    Research Intern, 
      _[IBM T.J. Watson Research][Watson], New York_
 
 [Watson]: http://www.watson.ibm.com/index.shtml
@@ -74,10 +74,15 @@ The Australian National University, ACT 0200, Australia
 2013--2017
 
 :    Principal Investigator, ARC Discovery Early Career Researcher Award
+     
+     > Title: _Composing Machine Learning via Market Mechanisms_
 
 2009--2013
 
-:    Co-Chief Investigator, ARC Linkage Project 
+:    Co-Principal Investigator, ARC Linkage Project with Canon Information Research
+     Systems Australia
+
+	 > Title: _Structures and Protocols for Inference_
 
   </div>
 
@@ -97,6 +102,7 @@ The Australian National University, ACT 0200, Australia
 </div>
 
 
+<div class="break"></div>
 
 ## Course Teaching and Convening
 <div class="section">
@@ -153,10 +159,27 @@ Editorships
 
 ## Selected Refereed Publications
 
-&nbsp;
+I have published 2 book chapters, 4 journal articles, 17 conference papers, and 5 
+refereed workshop submissions. 
 
-:    I have published a total of 2 book chapters, 4 journal articles, 
-     16 conference papers, and 5 workshop submissions.
+There are currently three main strands to my research output, as summarised
+by the selected papers below:
+ 
+* Understanding theoretically how loss functions -- that is, the way 
+	predictions are assessed in forecasting problems -- affect whether or
+	not learning can be done efficiently [JMLR 2012, NIPS 2012].
+
+* Characterising and relating various measures of uncertainty in terms of
+	their geometric properties, such as convexity 
+	[JMLR 2011, ICML 2012, NIPS 2011]. This had led to the closing of a 40 year
+	old open problem concerning tight bounds between information theoretic
+	measures [COLT 2009].
+ 
+* More recently, demonstrating that a particular class of automatic pricing 
+	mechanisms in prediction markets are equivalent to a class of 
+	learning/optimisation algorithm [NIPS 2012].
+
+<div class="break"></div>
 
 ### Journal Articles
 <div class="section">
@@ -237,7 +260,7 @@ Editorships
 ----
 <div class="quiet">
 <span class="print">Full CV at <http://mark.reid.name/work/vita/></span>
-<span class="right">Last Updated: 5th July 2013</span>
+<span class="right">Last Updated: 7th November 2013</span>
 </div>
 
 <script type="text/javascript" src="/js/jquery.js"> </script>

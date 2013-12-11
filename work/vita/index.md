@@ -380,7 +380,8 @@ Editorships
 
 
 Program Committees
-:   * [Australiasian Joint Conference on AI](http://ai2012.web.cse.unsw.edu.au/index.html) (AI12), 2012
+:   * [Workshop on Machine Learning Open Source Software](http://mloss.org/workshop/nips13/) (NIPS13), 2013
+	* [Australiasian Joint Conference on AI](http://ai2012.web.cse.unsw.edu.au/index.html) (AI12), 2012
     * [Asian Conference on Machine Learning](http://acml12.comp.nus.edu.sg/index.php?n=Main.HomePage) (ACML), 2012
     * [International Conference on Machine Learning](http://icml.cc/2012/committee-members/) (ICML), 2012
     * International Conference on [Algorithmic Learning Theory](http://www-alg.ist.hokudai.ac.jp/~thomas/ALT10/pc.html) (ALT), 2010

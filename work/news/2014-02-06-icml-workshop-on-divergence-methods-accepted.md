@@ -1,0 +1,1 @@
+I will be co-organising an [Workshop on Divergence Methods and Probabilistic Inference](http://ml-thu.net/~dmpi-icml2014-workshop/home) with [Sanmi Koyejo](http://www.ideal.ece.utexas.edu/~sanmi/), [Jun Zhu](http://www.ml-thu.net/~jun/), and [Eric Xing](http://www.cs.cmu.edu/~epxing/) at [ICML 2014](http://icml.cc/2014/).

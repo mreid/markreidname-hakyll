@@ -65,7 +65,7 @@ I am convening and co-lecturing a course on [Information Theory (COMP2610)](http
 <div class="section">
 Students
 ========
-I am currently primary supervisor for three PhD students:[Avi Ruderman][], [Nicolás Della Penna][], and [Mindika Premachandra][]. I also supervise [Nam Ho](http://maths.anu.edu.au/about-us/people/nam-ho), an Honours Student at the [Mathematical Sciences Institute](http://maths.anu.edu.au). 
+I am currently primary supervisor for three PhD students:[Avi Ruderman][], [Nicolás Della Penna][], and [Mindika Premachandra][]. I supervised [Nam Ho](http://maths.anu.edu.au/about-us/people/nam-ho), an Honours Student at the [Mathematical Sciences Institute](http://maths.anu.edu.au) in 2013.
 
 I am **not** looking to supervise any more students at present.
 </div>
@@ -90,11 +90,8 @@ Activities
 ==========
 I am currently the Production Editor for the [JMLR Workshop & Conference Proceedings](http://jmlr.csail.mit.edu/proceedings/). I am also an Action Editor for the JMLR's [Machine Learning and Open Source Software](http://jmlr.csail.mit.edu/mloss/) track.
 
-I was a member of the program committee for [ICML 2013](http://icml.cc/2013/).
-I was local organiser for [ALT 2010](http://www-alg.ist.hokudai.ac.jp/~thomas/ALT10/alt10.jhtml) as well as a member of its [Program Committee](http://www-alg.ist.hokudai.ac.jp/~thomas/ALT10/pc.html). I have also been on the program committee for [NIPS 2012](http://nips.cc/Conferences/2012/Committees),  [ACML 2012](http://acml12.comp.nus.edu.sg/), and [AI12](http://ai2012.web.cse.unsw.edu.au/index.html).
-
-I have reviewed for journals ([JMLR][], [JAIR][], [PAMI][], [TCS][], [Trans. on Info. Theory][infotheory], [Trans. on NNLS][nnls], [PloS ONE][], and [AMS Mathematical Reviews][amsmr]), conferences (including [NIPS][], [ICML][], [COLT][], and [UAI][]),
-and have also set up a [discussion site][icmldisc] for ICML and [presented][mlss2009] at the 2009 Machine Learning Summer School. 
+I was local organiser for [ALT 2010](http://www-alg.ist.hokudai.ac.jp/~thomas/ALT10/alt10.jhtml) as well as a member of its [Program Committee](http://www-alg.ist.hokudai.ac.jp/~thomas/ALT10/pc.html). I have also been on program committees for ICML, NIPS, UAI, and ACML.
+I have reviewed for journals ([JMLR][], [JAIR][], [PAMI][], [TCS][], [Trans. on Info. Theory][infotheory], [Trans. on NNLS][nnls], [PloS ONE][], and [AMS Mathematical Reviews][amsmr]), conferences (including [NIPS][], [ICML][], [COLT][], and [UAI][]).
 
 I have also participated in the [Mathematicians in Schools](http://www.mathematiciansinschools.edu.au/) program as a partner with Yass High School.
 </div>

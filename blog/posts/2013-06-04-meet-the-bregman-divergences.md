@@ -114,8 +114,8 @@ These were first introduced by L.M. Bregman in his 1967 paper and first given th
 There are obviously many convex function you can choose to build a Bregman divergence, but one of the things that makes it a good generalisation is that this class of distances already includes several existing distance measures. For example, the [Mahalanobis distances][], which are usually defined in terms of a matrix $A \in \R^{n\times n}$ can be generated as a Bregman divergence from the "distorted" squared norm $f_A(x) = \frac{1}{2} x^{\tr} A x$, which reduces to the usual squared norm when $A$ is the identity.
 
 Perhaps more importantly, the famous [Kullback-Leibler (KL) divergence][KLdiv] can be expressed as a Bregman divergence using the convex function 
-$f_{KL}(p) = -\sum_{i=1}^n p_i \log p_i$ 
-defined over $p \in \R^n$ with $\sum_{i=1}^n p_i = 1$.
+$f_{KL}(p) = \sum_{i=1}^n p_i \log p_i$ 
+(i.e., the negative [Shannon entropy][]) defined over $p \in \R^n$ with $\sum_{i=1}^n p_i = 1$.
 [Figure 2](#figure2) shows an interactive rendering of the KL divergence as a Bregman divergence.
 
 [Mahalanobis distances]: http://en.wikipedia.org/wiki/Mahalanobis_distance
@@ -130,13 +130,14 @@ defined over $p \in \R^n$ with $\sum_{i=1}^n p_i = 1$.
 	_Figure 2_: A geometric interpretation of the KL divergence. 
 	**Hover** to move $x$; **Click** to place $y$. 
 	The <span style="color: black;">black curve</span> is 
-	$f_{KL}(x) = -x \ln x - (1-x) \ln (1-x)$. 
+	$f_{KL}(x) = x \ln x + (1-x) \ln (1-x)$. 
 	The <span style="color: red;">red line</span> is the tangent at $y$. 
 	The length of the <span style="color: blue;">blue line</span> is the value of 
 	$KL(x,y)$.</p>
     </p>	
  </div>
 
+[Shannon entropy]: http://en.wikipedia.org/wiki/Entropy_(information_theory)
 
 
 ## What's the point?
@@ -158,7 +159,7 @@ Other readily obtainable facts about Bregman divergences include:
 
 - The **Bregman projection** onto a convex set $C\subseteq\R^n$ given by $y' = \argmin_{x\in C} d_f(x,y)$ is unique.
 
-- A **generalised Pythagorean theorem** holds: for all $x,y$ we have $d_f(x,y) \ge d_f(x,y') + d_f(y',y)$ where $y'$ is the Bregman projection of $y$, and equality holds when the convex set $C$ defining the projection $y'$ is affine.
+- A **generalised Pythagorean theorem** holds: for convex $C \in \R^n$ and for all $x \in C$ and $y \in \R^n$ we have $d_f(x,y) \ge d_f(x,y') + d_f(y',y)$ where $y'$ is the Bregman projection of $y$, and equality holds when the convex set $C$ defining the projection $y'$ is affine.
 
 - **Duality**: $d_f(x,y) = d_{f^*}(\nabla f(y), \nabla f(x))$ for all $x,y$ where $f^*$ is the [convex conjugate](http://en.wikipedia.org/wiki/Convex_conjugate) to $f$
 

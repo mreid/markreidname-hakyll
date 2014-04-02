@@ -20,7 +20,7 @@ navCtx Blog = constField "isNavBlog" "true"
 
 --------------------------------------------------------------------------------
 destDir = "/Users/mreid/Sites/mark.reid.name/"
-remote = "confla@mark.reid.name:www/name" 
+remote = "confla@mark.reid.name:www/" 
 siteConfig = defaultConfiguration
   { destinationDirectory  = destDir,
     storeDirectory        = "/tmp/hakyll_cache/mark.reid.name/",
@@ -115,9 +115,9 @@ main = hakyllWith siteConfig $ do
   match "work/note/*.bib" $ compile $ biblioCompiler
   match "work/note/*.csl" $ compile $ cslCompiler
 
-  match "work/note/**.markdown" $ do
-    route   $ setExtension "html"
-    compile $ bibtexCompiler >>= pageCompiler "Work"
+  -- match "work/note/**.markdown" $ do
+  --   route   $ setExtension "html"
+  --   compile $ bibtexCompiler >>= pageCompiler "Work"
 
   -----------------
   -- Blog
@@ -177,13 +177,13 @@ pageCompiler section item =
       homeCtx = pageCtx section
 
 -- Compile pages with Pandoc's citations resolved against a BibTeX file
-bibtexCompiler = do 
-  csl <- load "work/note/siggraph.csl"
-  bib <- load "work/note/refs.bib"
+-- bibtexCompiler = do 
+--   csl <- load "work/note/siggraph.csl"
+--   bib <- load "work/note/refs.bib"
 
-  getResourceBody 
-    >>= readPandocBiblio def (Just csl) bib 
-    >>= return . writePandoc
+--   getResourceBody 
+--     >>= readPandocBiblio def (Just csl) bib 
+--     >>= return . writePandoc
 
 -- Compile a page that include template code to show a list
 -- listCompiler :: String -> Context String -> ItemCount -> String -> Compiler (Item String)

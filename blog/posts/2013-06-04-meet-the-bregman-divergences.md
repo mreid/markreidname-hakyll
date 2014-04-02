@@ -76,16 +76,16 @@ $$
 The interactive [Figure 1](#figure1) shows this interpretation in the one dimensional case. The SED between $x$ and $y$ is the vertical distance between the black curve and the red tangent line, where both are evaluated at the point $x$ (shown on the horizontal axis).
 
 <div class="figure" id="figure1">
-	<canvas id="euclideanCanvas" width="600" height="220">
-		An interactive visualisation in browsers which support the HTML5 canvas tag 
-		and have Javascript enabled.
-    </canvas>
-	<p class="caption">
-	_Figure 1_: A geometric interpretation of the squared Euclidean distance. 
-	**Hover** to move $x$; **Click** to place a tangent line at $y$. 
-	The <span style="color: black;">black curve</span> is $\|x\|^2$. 
-	The <span style="color: red;">red line</span> is the tangent to $\|x\|^2$ at $y$. 
-	The length of the <span style="color: blue;">blue line</span> is the value of $d^2(x,y)$.</p>
+<canvas id="euclideanCanvas" width="600" height="220">
+An interactive visualisation in browsers which support the HTML5 canvas tag 
+and have Javascript enabled.
+</canvas>
+<p class="caption">
+_Figure 1_: A geometric interpretation of the squared Euclidean distance. 
+**Hover** to move $x$; **Click** to place a tangent line at $y$. 
+The <span style="color: black;">black curve</span> is $\|x\|^2$. 
+The <span style="color: red;">red line</span> is the tangent to $\|x\|^2$ at $y$. 
+The length of the <span style="color: blue;">blue line</span> is the value of $d^2(x,y)$.</p>
  </div>
 
 
@@ -122,19 +122,19 @@ $f_{KL}(p) = \sum_{i=1}^n p_i \log p_i$
 [KLdiv]: http://en.wikipedia.org/wiki/Kullback–Leibler_divergence
 
 <div class="figure" id="figure2">
-	<canvas id="myCanvas" width="600" height="220">
-		An interactive visualisation in browsers which support the HTML5 canvas tag 
-		and have Javascript enabled.
-    </canvas>
-	<p class="caption">
-	_Figure 2_: A geometric interpretation of the KL divergence. 
-	**Hover** to move $x$; **Click** to place $y$. 
-	The <span style="color: black;">black curve</span> is 
-	$f_{KL}(x) = x \ln x + (1-x) \ln (1-x)$. 
-	The <span style="color: red;">red line</span> is the tangent at $y$. 
-	The length of the <span style="color: blue;">blue line</span> is the value of 
-	$KL(x,y)$.</p>
-    </p>	
+<canvas id="myCanvas" width="600" height="220">
+An interactive visualisation in browsers which support the HTML5 canvas tag 
+and have Javascript enabled.
+</canvas>
+<p class="caption">
+_Figure 2_: A geometric interpretation of the KL divergence. 
+**Hover** to move $x$; **Click** to place $y$. 
+The <span style="color: black;">black curve</span> is 
+$f_{KL}(x) = x \ln x + (1-x) \ln (1-x)$. 
+The <span style="color: red;">red line</span> is the tangent at $y$. 
+The length of the <span style="color: blue;">blue line</span> is the value of 
+$KL(x,y)$.</p>
+</p>	
  </div>
 
 [Shannon entropy]: http://en.wikipedia.org/wiki/Entropy_(information_theory)

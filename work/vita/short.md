@@ -37,6 +37,7 @@ The Australian National University, ACT 0200, Australia
 
 :    Research Fellow, 
      _[Research School of Computer Science][], The Australian National University, Canberra_
+	 _(Contributed to NICTA from 2009)_
 
 [Research School of Computer Science]: http://cs.anu.edu.au/
 [Artificial Intelligence group]: http://ai.cecs.anu.edu.au/
@@ -96,14 +97,15 @@ The Australian National University, ACT 0200, Australia
 <div class="section">
 2011--
 
-:   I am currently the primary supervisor for 3 PhD students and 1 honours student.
-    I am also on the advisory panel of 4 other PhD students and have hosted 3 visiting
+:   I am currently the primary supervisor for 3 PhD students.
+    I also advise 4 other PhD students and have hosted 3 visiting
     PhD students.
 </div>
 
 
-<div class="break"></div>
+<!-- <div class="break"></div> -->
 
+<!--
 ## Course Teaching and Convening
 <div class="section">
 
@@ -118,8 +120,9 @@ The Australian National University, ACT 0200, Australia
 2011 (S2)
 :    Convening and co-lecturing _[Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/)_, ANU
 </div>
+-->
 
-
+<!--
 ## Professional Development
 <div class="section">
 Courses Taken
@@ -129,14 +132,14 @@ Courses Taken
      * _Team Management Training Accreditation_, [Team Managent Systems][tms], 2009
      * _[Academic Leadership and Management][alm]_, [CEDAM][] ANU, 2008
 </div>
+</div>
 
 [cedam]: http://cedam.anu.edu.au/
 [futl]: http://cedam.anu.edu.au/teaching-enrichment/foundations
 [ressup]: http://researchsuper.cedam.anu.edu.au/
 [alm]: http://cedam.anu.edu.au/career-development/academic-leadership-management
 [tms]: http://www.tms.com.au/
-
-
+-->
 
 ## Selected Professional Activities
 <div class="section">
@@ -159,27 +162,24 @@ Editorships
 
 ## Selected Refereed Publications
 
-I have published 2 book chapters, 4 journal articles, 17 conference papers, and 5 
-refereed workshop submissions. 
+I have published 2 book chapters, 6 journal articles, 17 conference papers, and 5 
+refereed workshop submissions. More detail at my 
+[publications page](http://mark.reid.name/work/pubs/) or 
+[Google Scholar](http://scholar.google.com.au/citations?user=H2dgqTYAAAAJ&hl=en).
 
 There are currently three main strands to my research output, as summarised
-by the selected papers below:
- 
-* Understanding theoretically how loss functions -- that is, the way 
-	predictions are assessed in forecasting problems -- affect whether or
-	not learning can be done efficiently [JMLR 2012, NIPS 2012].
+by the selected papers below: 
+1) Understanding how loss functions 
+affect whether learning can be done efficiently; 
+2) Characterising and relating various measures of uncertainty in terms of
+	their geometric properties. 
+	This led to the closing of a 40 year
+	old open problem in information theory.
+3) Demonstrating that a particular class of prediction market 
+	mechanisms are equivalent to a class of 
+	learning algorithm.
 
-* Characterising and relating various measures of uncertainty in terms of
-	their geometric properties, such as convexity 
-	[JMLR 2011, ICML 2012, NIPS 2011]. This had led to the closing of a 40 year
-	old open problem concerning tight bounds between information theoretic
-	measures [COLT 2009].
- 
-* More recently, demonstrating that a particular class of automatic pricing 
-	mechanisms in prediction markets are equivalent to a class of 
-	learning/optimisation algorithm [NIPS 2012].
-
-<div class="break"></div>
+<!-- <div class="break"></div> -->
 
 ### Journal Articles
 <div class="section">
@@ -260,7 +260,7 @@ by the selected papers below:
 ----
 <div class="quiet">
 <span class="print">Full CV at <http://mark.reid.name/work/vita/></span>
-<span class="right">Last Updated: 7th November 2013</span>
+<span class="right">Last Updated: 30th April 2014</span>
 </div>
 
 <script type="text/javascript" src="/js/jquery.js"> </script>

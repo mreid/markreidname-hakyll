@@ -1,0 +1,1 @@
+I will be attending [ICML](http://icml.cc/2014/) in Beijing from June 22-26 where I am helping run the [Workshop on Divergence Methods for Probabilistic Inference](http://ml-thu.net/~dmpi-icml2014-workshop/home).

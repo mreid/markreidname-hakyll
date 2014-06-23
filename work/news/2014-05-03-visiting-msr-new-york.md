@@ -1,0 +1,1 @@
+[Microsoft Research, New York](http://research.microsoft.com/en-us/labs/newyork/default.aspx) is kindly hosting me as a visitor from May 5-30th while I work on projects related to [DECRA](/work/mlmm).

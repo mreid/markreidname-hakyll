@@ -24,7 +24,7 @@ remote = "confla@mark.reid.name:www/"
 siteConfig = defaultConfiguration
   { destinationDirectory  = destDir,
     storeDirectory        = "/tmp/hakyll_cache/mark.reid.name/",
-    deployCommand         = "rsync --exclude 'blog/drafts' -ave ssh " 
+    deployCommand         = "rsync --exclude 'blog/drafts' -av --rsh='ssh -p1022' " 
                             ++ destDir ++ " " ++ remote 
   }
 

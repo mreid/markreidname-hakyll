@@ -23,7 +23,7 @@ Yes, there is a [Jekyll plugin for pandoc](https://github.com/dsanson/jekyll-pan
 
 As the name suggests, Hakyll is inspired by Jekyll but written in Haskell. Both systems are built around the idea of taking a folder full of blog posts written in markdown (or some other human-friendly markup language) and generating HTML by rendering their content and wrapping templates around them.
 
-Jekyll follows the general ruby philosophy of "convention of configuration" and, out of the box, will look for specially named files (e.g., `*.md`) and folders (e.g., `_posts` and `_layouts`) to find the content and templates needed to build you site.
+Jekyll follows the general ruby philosophy of "convention over configuration" and, out of the box, will look for specially named files (e.g., `*.md`) and folders (e.g., `_posts` and `_layouts`) to find the content and templates needed to build your site.
 
 In constrast, Hakyll requires you to write a small Haskell program to describe how you want pages to be rendered using a very flexible "Rules" language. For example, in my [`site.hs`](https://github.com/mreid/markreidname-hakyll/blob/master/site.hs) file I use the following code to set up my CSS files and render and wrap my blog posts.
 

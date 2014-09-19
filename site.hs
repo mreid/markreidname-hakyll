@@ -81,6 +81,11 @@ main = hakyllWith siteConfig $ do
     compile $ myPandocCompiler >>= pageCompiler "Code"
 
   -----------------
+  -- Play
+  match "play/**.md" $ do
+    route   $ setExtension "html"
+    compile $ myPandocCompiler >>= pageCompiler "Play"
+  -----------------
   -- Work
   
   -- News (Note: posts are *.md, index is index.markdown)

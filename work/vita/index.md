@@ -101,6 +101,7 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 
 [Watson]: http://www.watson.ibm.com/index.shtml
 
+<!--
 1998--2000
 
 :   Resident Academic Assistant, 
@@ -110,8 +111,10 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 
 [Goldstein College]: http://www.kensingtoncolleges.unsw.edu.au/ 
 
+-->
 </div>
 
+<!--
 ## Awards
 <div class="section">
 1997--2000
@@ -133,11 +136,9 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 :    _School of Mathematics Prize_, UNSW
 
 </div>
+-->
 
-
-
-<div class="break"></div>
-
+<!--<div class="break"></div>--> 
 
 
 
@@ -217,7 +218,7 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 
 
 
-<div class="break"></div>
+<!--<div class="break"></div>-->
 
 
 
@@ -230,14 +231,14 @@ PhD (Primary)
 
 :    * Avraham Ruderman, _Transfer Learning and Divergences_ (2011--)
      * Nicolás Della Penna, _Markets and Machine Learning_ (2011--)
-     * Mindika Premachandra, _Mechanisms for Sequential Markets_ (2011--)
+     * Mindika Premachandra, _Mechanisms for Sequential Markets_ (2011--2014)
      * Fangfang Lu, _Multiclass Probability Estimation_ (2009)
 
 PhD (Advisor)
 
 :    * Ehsan Abbasnejad, _Bayesian Decision Theory_ (2011--)
      * Changyou Chen, _Bayesian Nonparametrics_ (2011--)
-     * Wen Shao, _Large Alphabet Sequence Compression_ (2011--)
+     <!-- * Wen Shao, _Large Alphabet Sequence Compression_ (2011--2013) -->
      * Peter Gammie, _Arrows for Knowledge-Based Circuits_ (2009--2013)
 
 PhD (Host)
@@ -245,7 +246,7 @@ PhD (Host)
 :    * Nicholas Johnson, _Multi-objective Learning_, (Jun. -- Aug. 2013)    
      (Visiting PhD student from University of Minnesota)
 	 * Rafael Frongillo, _Interpreting Prediction Markets_, (Mar. 2012)    
-	 (Visiting PhD student from UC Berkeleyterm)
+	 (Visiting PhD student from UC Berkeley)
      * Peng Sun, _Multiclass Boosting_, (Oct. 2011--Apr. 2012)     
      (Visiting PhD student from Tsinghua University)
 
@@ -254,7 +255,7 @@ Undergraduate
 
 :    * Nam Ho, _Online Learning Theory_ (Honours, 2013)
      * Daniel Visentin, _Mapping Machine Learning_ (Adv. Studies Course, 2010)
-
+<!--
 Interns 
 
 :    * James Wong (PhD Intern, CISRA, 2007)
@@ -263,12 +264,18 @@ Interns
 Work Experience
 
 :    * Thomas Pinson (Yass High School, November 2009)
+-->
 </div>
 
 
 
 ## Course Teaching and Convening
 <div class="section">
+
+2014 (S2)
+:    Convening and co-lecturing _[Information Theory (COMP2610/6261)](http://cs.anu.edu.au/courses/COMP2610/)_, ANU      
+     
+	 > _Enrolment_: 70 students
 
 2013 (S2)
 :    Convening and co-lecturing _[Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/)_, ANU      
@@ -304,7 +311,7 @@ Work Experience
 
 
 
-<div class="break"></div>
+<!--<div class="break"></div>-->
 
 
 
@@ -340,6 +347,12 @@ Courses Taken
 ## Event Organisation
 <div class="section">
 
+NIPS 2014
+:   Co-organiser of the _NIPS Workshop on [Transactional Machine Learning and E-Commerce](http://workshops.inf.ed.ac.uk/ml/nipstransactional/), Montreal, Canada, December, 2014
+
+ICML 2014
+:   Co-organiser of the _ICML Workshop on [Divergence Methods for Probabilistic Inference](http://bigml.cs.tsinghua.edu.cn/~dmpi-icml2014-workshop/home)_, Beijing, China, June 26, 2014
+
 ACML 2013
 :   Co-organiser of the _ACML Workshop on [Theory and Practice in Machine Learning](https://sites.google.com/site/mltheoryandpractice/)_, Canberra, Australia, November 13, 2013.
 
@@ -367,7 +380,7 @@ ICML 2002
 
 
 
-<div class="break"></div>
+<!--<div class="break"></div>-->
 
 
 
@@ -380,31 +393,32 @@ Editorships
 
 
 Program Committees
-:   * [Workshop on Machine Learning Open Source Software](http://mloss.org/workshop/nips13/) (NIPS13), 2013
-	* [Australiasian Joint Conference on AI](http://ai2012.web.cse.unsw.edu.au/index.html) (AI12), 2012
-    * [Asian Conference on Machine Learning](http://acml12.comp.nus.edu.sg/index.php?n=Main.HomePage) (ACML), 2012
-    * [International Conference on Machine Learning](http://icml.cc/2012/committee-members/) (ICML), 2012
-    * International Conference on [Algorithmic Learning Theory](http://www-alg.ist.hokudai.ac.jp/~thomas/ALT10/pc.html) (ALT), 2010
+:   [Workshop on Machine Learning Open Source Software](http://mloss.org/workshop/nips13/) (NIPS13), 2013
+	; [Australiasian Joint Conference on AI](http://ai2012.web.cse.unsw.edu.au/index.html) (AI12), 2012
+    ; [Asian Conference on Machine Learning](http://acml12.comp.nus.edu.sg/index.php?n=Main.HomePage) (ACML), 2012
+    ; [International Conference on Machine Learning](http://icml.cc/2012/committee-members/) (ICML), 2012
+    ; International Conference on [Algorithmic Learning Theory](http://www-alg.ist.hokudai.ac.jp/~thomas/ALT10/pc.html) (ALT), 2010
 
 
 Journal Reviewing
-:   * [Journal of Artificial Intelligence Research](http://www.jair.org/)
-    * [Journal of Machine Learning Research](http://jmlr.csail.mit.edu/)
-    * [Theoretical Computer Science](http://www.elsevier.com/locate/tcs)
-    * [Trans. on Pattern Analysis and Machine Intelligence](http://www.computer.org/tpami/)
-    * [Trans. on Information Theory](http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=18)
-    * [Trans. on Neural Networks and Learning Systems](http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385)
-    * [Trans. on Knowledge and Data Engineering](http://www.computer.org/portal/web/tkde)
-    * [PLoS ONE](http://www.plosone.org/home.action)
-    * [AMS Mathematical Reviews](http://www.ams.org/mr-database/)
+:   [Journal of Artificial Intelligence Research](http://www.jair.org/)
+    ; [Journal of Machine Learning Research](http://jmlr.csail.mit.edu/)
+    ; [Theoretical Computer Science](http://www.elsevier.com/locate/tcs)
+    ; [Trans. on Pattern Analysis and Machine Intelligence](http://www.computer.org/tpami/)
+    ; [Trans. on Information Theory](http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=18)
+    ; [Trans. on Neural Networks and Learning Systems](http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385)
+    ; [Trans. on Knowledge and Data Engineering](http://www.computer.org/portal/web/tkde)
+    ; [PLoS ONE](http://www.plosone.org/home.action)
+    ; [AMS Mathematical Reviews](http://www.ams.org/mr-database/)
 
 Conference Reviewing
 
-:   * [Neural Information Processing Systems][nips] (NIPS), 2008--2013
-    * [International Conference on Learning Theory][colt] (COLT), 2007--2013
-	* [International Conference on Algorithmic Learning Theory][alt] (ALT), 2010
-	* [International Conference on Machine Learning][icml] (ICML), 2007--2013
-	* [Conference on Uncertainty in Artificial Intelligence][uai] (UAI), 2009
+:   [Neural Information Processing Systems][nips] (NIPS), 2008--2014
+    ; [International Conference on Learning Theory][colt] (COLT), 2007--2014
+	; [International Conference on Algorithmic Learning Theory][alt] (ALT), 2010
+	; [International Conference on Machine Learning][icml] (ICML), 2007--2014
+	; [Conference on Uncertainty in Artificial Intelligence][uai] (UAI), 2009
+	; [AAAI Conference on AI][aaai] (AAAI), 2015
 </div>
 
 [acml]: http://acml12.comp.nus.edu.sg
@@ -414,7 +428,7 @@ Conference Reviewing
 [colt]: http://www.learningtheory.org/
 [alt]: http://www-alg.ist.hokudai.ac.jp/~thomas/ALTARCH/altarch.jhtml
 [uai]: http://www.auai.org/
-
+[aaai]: http://www.aaai.org/Conferences/AAAI/aaai.php
 
 
 
@@ -451,8 +465,7 @@ Outreach
 <div class="break"></div>
 
 
-
-## Refereed Publications (Best highlighted; Contributions Noted)
+## Selected Refereed Publications
 
 ### Book Chapters
 <div class="section">
@@ -474,10 +487,19 @@ Outreach
 
 ### Journal Articles
 <div class="section">
+2014
+
+:   _[A Hybrid Loss for Multiclass and Structured Prediction](http://dx.doi.org/10.1109/TPAMI.2014.2306414)_,  
+	Qinfeng Shi, Mark D. Reid, Tiberio Caetano, Anton van den Hengel, and Zhenhau Wang    
+    IEEE Trans. on Pattern Analysis and Machine Intelligence, (to appear)    
+
+:   _[An Improved Multiclass LogitBoost Using Adaptive-One-vs-One](http://dx.doi.org/10.1007/s10994-014-5434-3)_,    
+    Peng Sun, Mark D. Reid, and Jie Zhou    
+    Machine Learning Journal, February
 
 2012
 
-:    <div class="highlight">
+:    <div class="no-highlight">
      _[Mixability is Bayes Risk Curvature Relative to Log Loss][jmlr12]_, 
      Tim van Erven, Mark D. Reid, and Robert C. Williamson 
 	 – Journal of Machine Learning Research (**JMLR**), vol. 13(May):1639–1663
@@ -487,7 +509,7 @@ Outreach
 	 </div>
 
 2011
-:    <div class="highlight">
+:    <div class="no-highlight">
      _[Information, Divergence, and Risk for Binary Experiments][jmlr11]_, 
      Mark D. Reid and Robert C. Williamson 
 	 — Journal of Machine Learning Research (**JMLR**), vol. 12(Mar):731–817
@@ -497,7 +519,7 @@ Outreach
 	 </div>
 
 2010
-:    <div class="highlight">
+:    <div class="no-highlight">
      _[Composite Binary Losses][jmlr10]_, 
      Mark D. Reid and Robert C. Williamson 
 	 — Journal of Machine Learning Research (**JMLR**), vol. 11(Sep):2387–2422
@@ -516,14 +538,19 @@ Outreach
 </div>
 
 
-<div class="break"></div>
+<!--<div class="break"></div>-->
 
 
 ### Conferences
 <div class="section">
+2013
+:    _Aggregating Predictions via Sequential Mini-Trading_,    
+     Mindika Premachandra and Mark D. Reid    
+     Asian Conference on Machine Learning (ACML 2013)
+
 2012
 
-:    <div class="highlight">
+:    <div class="no-highlight">
      _[Interpreting Prediction Markets: A Stochastic Approach][nips12-markets]_, 
 	 Rafael M. Frongillo, Nicolás Della Penna, and Mark D. Reid 
 	 – In Proc. of Neural Information Processing Systems (**NIPS**).
@@ -572,7 +599,7 @@ Outreach
 
 2011
 
-:    <div class="highlight">
+:    <div class="no-highlight">
      _[Composite Multiclass Losses][nips11]_, 
      Elodie Vernet, Robert C. Williamson, and Mark D. Reid 
 	 – In Proc. of Neural Information Processing Systems (**NIPS**).
@@ -592,7 +619,7 @@ Outreach
 	 > of the main result; Streamlined the overall argument.
 
 
-<div class="break"></div>
+<!--<div class="break"></div>-->
 
 
 
@@ -614,7 +641,7 @@ Outreach
 	 > **Contributions**: Proposed and proved theoretical guarantees for quantile 
 	 > estimation via reduction to Gaussian process regression.
 
-:    <div class="highlight">
+:    <div class="no-highlight">
      _[Generalised Pinsker Inequalities][colt09]_, 
      Mark D. Reid and Robert C. Williamson 
 	 — In Proc. of Conference on Learning Theory (**COLT**).
@@ -633,6 +660,7 @@ Outreach
 	 > Made connections with classification calibration; Proof of main result; 
 	 > Co-developed all other results.
 
+<!--
 2004
 :    _[Improving Rule Evaluation Using Multitask Learning][ilp04]_, 
      Mark D. Reid 
@@ -661,10 +689,12 @@ Outreach
      
 	 > **Contributions**: Proposed noise-resistant extension of Shapiro’s MIS; 
 	 > Implementation of noise-handling; Experimental analysis.
+-->
 </div>
 
-<div class="break"></div>
+<!--<div class="break"></div>-->
 
+<!--
 ### Workshops
 <div class="section">
 
@@ -698,7 +728,6 @@ Outreach
 </div>
 
 
-
 ### Demonstrations
 <div class="section">
 
@@ -714,6 +743,7 @@ Outreach
 :    _Determining Page Complexity_, 
      Mark D. Reid and Barry J. Drake, Australian Application #2006252174
 </div>
+-->
 
 [icml12-aoso]: http://mark.reid.name/bits/pubs/icml12-aoso.pdf
 [icml12-multi]: http://mark.reid.name/bits/pubs/icml12-multi.pdf
@@ -746,6 +776,10 @@ Outreach
 
 ## Research Visits
 <div class="section">
+2014
+:   _[Microsoft Research](http://research.microsoft.com/en-us/labs/newyork/)_    
+    New York, USA, May 5th-30th
+
 2013
 :   _[Department of Automation, Tsinghua University](http://www.tsinghua.edu.cn/publish/auen/)_    
     Beijing, China, May 8th-10th
@@ -754,9 +788,11 @@ Outreach
 :   _[Facebook Faculty Summit on Machine Learning](https://www.facebook.com/academics)_ (Invite Only)    
     Menlo Park, CA, USA, July 3rd
 
+<!--
 2011
 :   _[QUT Discipline of Mathematical Sciences](http://www.scitech.qut.edu.au/about/disciplines/mathsci/)_    
     Brisbane, QLD, May 27th
+-->
 
 2010
 :   _[Microsoft Research][msrc]_    
@@ -861,7 +897,7 @@ Outreach
 ----
 <div class="quiet">
 <span class="print">Web Version: <http://mark.reid.name/work/vita/></span>
-<span class="right">Last Updated: 5th July 2013</span>
+<span class="right">Last Updated: 7th October 2014</span>
 </div>
 
 <script type="text/javascript" src="/js/jquery.js"> </script>

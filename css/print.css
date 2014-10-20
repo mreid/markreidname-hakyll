@@ -22,7 +22,7 @@ h1, h2, h3 { page-break-after: avoid; }
 #Vita .nobreak { page-break-inside: avoid; }
 #Vita .break { page-break-before: always; }
 
-#site { max-width: 46em; margin: 1em auto 1em auto; line-height:1.5em; }
+#site { max-width: 48em; margin: 1em auto 1em auto; line-height:1.5em; }
 #page, #disqus_thread { padding-top: 1em; background: white; border: none; }
 #header, #footer, #feed { display: none; }
 

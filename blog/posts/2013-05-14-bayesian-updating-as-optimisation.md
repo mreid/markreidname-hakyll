@@ -77,12 +77,17 @@ Some other questions that came up in my discussions with Jun included:
 
 I haven't yet spent much time thinking about these but I find this approach a fascinating way to couch the problem of managing uncertainty.
 
+## Updates
+
+- 2014-11-24: Updated links to Jun Zhu's new [home page][jun zhu], [research page][regbayes], and the [JMLR version][jmlr] of the RegBayes paper (the [arxiv][] version has also been updated).
+
 [tsinghua university]: http://www.tsinghua.edu.cn/publish/csen/
-[jun zhu]: http://www.ml-thu.net/~jun/
-[regbayes]: http://www.ml-thu.net/~jun/research.shtml
-[arxiv]: http://arxiv.org/abs/1210.1766v2
+[jun zhu]: http://bigml.cs.tsinghua.edu.cn/~jun 
+[regbayes]: http://bigml.cs.tsinghua.edu.cn/~jun/research.shtml
+[arxiv]: http://arxiv.org/abs/1210.1766v3
+[jmlr]: http://jmlr.org/papers/v15/zhu14b.html
 [rifkin07]: http://jmlr.csail.mit.edu/papers/v8/rifkin07a.html
 [kl divergence]: http://en.wikipedia.org/wiki/Kullback–Leibler_divergence
 [idr]: http://jmlr.csail.mit.edu/papers/v12/reid11a.html
 
-[^1]: In [their paper][arxiv], Jun Zhu et al. point out a number of other, earlier works that inspired RegBayes but I had either not seen them or made the connection to Bayesian updating before.
+[^1]: In [their paper][jmlr], Jun Zhu et al. point out a number of other, earlier works that inspired RegBayes but I had either not seen them or made the connection to Bayesian updating before.

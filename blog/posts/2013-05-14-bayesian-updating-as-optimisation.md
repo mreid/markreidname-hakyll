@@ -10,7 +10,7 @@ The core idea is very simple: express classical Bayesian updating as an optimisa
 
 The closest thing I'd seen to something like output regularisation was in a 2007 JMLR paper, _[Value Regularization and Fenchel Duality][rifkin07]_ by Rifkin & Lippert.[^1] However, RegBayes specifically starts with Bayesian updating and regularises distributions instead of just values.
 
-I really like seeing new takes on old ideas, so I thought I'd work through the representation of updating as optimisation. The derivation below is an expansion of what is worked through in Section 3.1 of a recent paper by Zhu, Chen, and Xing titled _[Bayesian Inference with Posterior Regularization and Infinite Latent SVMs][arxiv]_. Interested readers can also find an extended discussion, applications and connections with earlier work there.
+I really like seeing new takes on old ideas, so I thought I'd work through the representation of updating as optimisation. The derivation below is an expansion of what is worked through in Section 3 of a recent paper by Zhu, Chen, and Xing titled _[Bayesian Inference with Posterior Regularization and Applications to Infinite Latent SVMs][jmlr]_. Interested readers can also find an extended discussion, applications and connections with earlier work there.
 
 ## Bayesian Updating as Divergence Optimisation
 

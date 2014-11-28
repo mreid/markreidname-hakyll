@@ -99,6 +99,10 @@ main = hakyllWith siteConfig $ do
     route   $ setExtension "html"
     compile $ listCompiler "posts" dateCtx (Only 3) "work/news/*.md"
               >>= pageCompiler "Work"
+  -- Teaching
+  match "work/comp/**.md" $ do
+    route   $ setExtension "html"
+    compile $ myPandocCompiler >>= pageCompiler "Teach"
 
   -- Vita
   match "work/vita/*.md" $ do

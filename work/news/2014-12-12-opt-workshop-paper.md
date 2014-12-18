@@ -1,0 +1,1 @@
+[Rafael Frongillo](http://people.seas.harvard.edu/~raf/) will present our paper on [Randomized Subspace Descent](http://www.opt-ml.org/papers/opt2014_submission_29.pdf) at the [NIPS 2014 Optimization Workshop](http://www.opt-ml.org/papers.html).

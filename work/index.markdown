@@ -32,7 +32,7 @@ Objective
 My research vision can be distilled down to wanting to **build theoretical and practical foundations for wide-spread, machine-assisted inference**. I am doing so through the following funded projects:
 
  - [Composing Machine Learning via Market Mechanisms](/work/mlmm)    
-   ([Discovery Early Career Researcher Award](http://www.arc.gov.au/ncgp/decra.htm): 2013--2016)
+   ([Discovery Early Career Researcher Award](http://www.arc.gov.au/ncgp/decra.htm): 2013 – 2017)
 
  - [Protocols and Structures for Inference][psi]    
    ([ARC Linkage](http://www.arc.gov.au/ncgp/lp/lp_default.htm) with [CISRA](http://cisra.com.au) until 2013).
@@ -59,7 +59,12 @@ News
 <div class="section">
 Teaching
 ========
-I am convening and co-lecturing a course on [Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/) with [Aditya Menon](http://cs.anu.edu.au/user/5022) in semester 2, 2014. I previously taught this with [Edwin Bonilla](http://people.cecs.anu.edu.au/user/4101) in 2011 and 2012, and with Aditya in 2013. I also co-lectured [Advanced Topics in Statistical Machine Learning (COMP8650)](http://cs.anu.edu.au/courses/info/comp8650/overview) in semester 2, 2012.
+I convened and co-lectured a course on [Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/) with [Aditya Menon](http://cs.anu.edu.au/user/5022) in semester 2, 2014. I previously taught this with [Edwin Bonilla](http://people.cecs.anu.edu.au/user/4101) in 2011 and 2012, and with Aditya in 2013. I also co-lectured [Advanced Topics in Statistical Machine Learning (COMP8650)](http://cs.anu.edu.au/courses/info/comp8650/overview) in semester 2, 2012.
+Some course material is available here:
+
+- [Information Theory (COMP2610/COMP6261)](/work/comp/2610/) – ANU, Semester 2, 2014.
+- [Short course on Information Theory](/work/comp/2610/short.html) – Tsinghua University, Dec. 2014.
+
 </div>
 
 <div class="section">

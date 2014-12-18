@@ -11,6 +11,12 @@ I've been messing around with music for years in one form or another. This is a 
 
 You can find more of my tracks on my [Soundcloud account](https://soundcloud.com/mdreid-1).
 
+<!-- Watching -->
+
+<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/180849267&amp;color=0066cc&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+
+This is the first piece I wrote when I got my hands on the fantastic [MicroBrute analog synth](http://www.arturia.com/products/hardware-synths/microbrute). The only sounds here are the MicroBrute and the [Magnetic delay effect](https://www.ableton.com/en/blog/dub-machines-analog-delay-max-for-live/). (2014)
+
 <!-- You (Amity Mix) -->
 
 <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/163803179&amp;color=0066cc&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>

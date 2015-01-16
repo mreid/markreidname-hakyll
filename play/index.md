@@ -4,12 +4,19 @@ section: Play
 title: Play
 ---
 
-<img class='inset right' src='/pics/me_guitar.jpg' title='Mark Reid' alt='Me, Ada and a Guitar' width='120px' />
+# Musical Dabblings  ![Me, Ada, and a Guitar](/pics/me_guitar.jpg)
 
 
-I've been messing around with music for years in one form or another. This is a selection of tracks that I think turned out ok.
+I've been messing around making music for years in one form or another. This is a selection of tracks that I think turned out ok.
 
 You can find more of my tracks on my [Soundcloud account](https://soundcloud.com/mdreid-1).
+
+<!-- Drained -->
+
+<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/185046931&amp;color=0066cc&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+
+A kind of dubby techno piece, again using only sounds from my [MicroBrute](http://www.arturia.com/products/hardware-synths/microbrute) plus arrangement and production in Ableton Live. I was particularly impressed by the quality of the drum sounds this little synth can make.
+
 
 <!-- Watching -->
 

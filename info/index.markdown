@@ -2,10 +2,7 @@
 title: Info
 ---
 
-<img class='inset right' src='/pics/mark_reid3.jpg' title='Mark Reid' alt='Photo of Mark Reid with long hair' width='120px' />
-
-About Me
-========
+# About Me   ![Photo of Mark Reid with long hair](/pics/mark_reid3.jpg)
 
 I was born and bred in Darwin, at the “top-end” of Australia, where I finished high-school before moving to Sydney to complete an honours degree in pure mathematics and computer science at the [University of New South Wales](http://unsw.edu.au/) in 1996.
 

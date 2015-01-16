@@ -41,6 +41,13 @@ h1,h2,h3,h4 {
 	font-family: 'lucida grande', sans-serif; 
 }
 h1 { margin-bottom: 1em; }
+h1 img {
+	width: 120px;
+	border: 1px solid silver; 
+	padding: 2px;
+	margin: 0em 1em 0.8em 1em;
+	float: right; clear: left;
+}
 h2 {
 	font-size: 100%;
 	line-height: 1.5em;

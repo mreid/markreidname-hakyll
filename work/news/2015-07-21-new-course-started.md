@@ -1,0 +1,1 @@
+[Stephen Gould](http://users.cecs.anu.edu.au/~sgould/) and I gave the first lecture for our new course, [The Craft of Computing](http://programsandcourses.anu.edu.au/course/comp1040). Despite a couple of technical glitches I think it went pretty well and it looks like we have a keen cohort of students too.

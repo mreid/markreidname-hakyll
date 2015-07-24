@@ -59,7 +59,10 @@ News
 <div class="section">
 Teaching
 ========
-I convened and co-lectured a course on [Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/) with [Aditya Menon](http://cs.anu.edu.au/user/5022) in semester 2, 2014. I previously taught this with [Edwin Bonilla](http://people.cecs.anu.edu.au/user/4101) in 2011 and 2012, and with Aditya in 2013. I also co-lectured [Advanced Topics in Statistical Machine Learning (COMP8650)](http://cs.anu.edu.au/courses/info/comp8650/overview) in semester 2, 2012.
+I am developing and lecturing a new first year course, [The Craft of Computing (COMP1040)](http://programsandcourses.anu.edu.au/course/comp1040) with [Stephen Gould](http://users.cecs.anu.edu.au/~sgould/) in semester 2, 2015.
+I am also convening a course on [Information Theory (COMP2610)](http://cs.anu.edu.au/courses/COMP2610/) which will be delivered by [Aditya Menon](http://cs.anu.edu.au/user/5022) and [Xinhua Zhang](http://users.cecs.anu.edu.au/~xzhang/) in semester 2, 2015. 
+
+I previously taught COMP2610 with [Edwin Bonilla](http://people.cecs.anu.edu.au/user/4101) in 2011 and 2012, and with Aditya in 2013 and 2014. I also co-lectured [Advanced Topics in Statistical Machine Learning (COMP8650)](http://cs.anu.edu.au/courses/info/comp8650/overview) in semester 2, 2012.
 Some course material is available here:
 
 - [Information Theory (COMP2610/COMP6261)](/work/comp/2610/) – ANU, Semester 2, 2014.
@@ -70,7 +73,7 @@ Some course material is available here:
 <div class="section">
 Students
 ========
-I am currently primary supervisor for three PhD students:[Avi Ruderman][], [Nicolás Della Penna][], and Finn Lattimore. 
+I am currently primary supervisor for three PhD students: [Avi Ruderman][], [Nicolás Della Penna][], and Finn Lattimore. 
 I am also supervising two honours students: Andrew Wrigley (RSCS) and Zac Cranko (co-supervising with Simon Grant at RSE).
 
 I jointly supervised [Nam Ho](http://maths.anu.edu.au/about-us/people/nam-ho) honours project (with Dale Roberts at the [Mathematical Sciences Institute](http://maths.anu.edu.au)) in 2013.

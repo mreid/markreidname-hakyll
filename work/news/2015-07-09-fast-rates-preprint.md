@@ -1,0 +1,1 @@
+Tim van Erven, Peter Grünwald, Nishant Mehta, Bob Willimson, and I have just finished a long paper that relates various conditions for fast rates in online and statstical learning. The [pre-print is available](http://arxiv.org/abs/1507.02592) on arXiv.

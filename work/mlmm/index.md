@@ -26,6 +26,21 @@ for prediction markets and certain online learning algorithms.
 
 ## Project Outputs
 
+- Reid, M.D., Frongillo, R.M., Williamson, R.C., Mehta, N.,
+  _[Generalized Mixability via Entropic Duality][Reid:2014], COLT 2015.
+
+- Frongillo, R.M. and Reid, M.D.,
+  _[Randomized Subspace Descent][Frongillo:2014a]_,
+  [Workshop on Optimization for Machine Learning][OPTML14], NIPS 2014.
+
+- Frongillo, R.M. and Reid, M.D.,
+  _[Risk Dynamics in Trade Networks][Frongillo:2014b]_,
+  [Workshop on Transactional Machine Learning and E-Commerce][TMLEC14], NIPS 2014.
+
+- Premachandra, F.H.A.M., 
+  _Prediction Markets for Machine Learning: Equilibrium Behaviour through Sequential Markets_,
+  Ph.D. thesis, The Australian National University, September 2014.
+
 - van Rooyen, B. and Reid, M.D.,
   _[Conjugate Priors for Generalized MaxEnt Families][vanRooyen:2013]_,
   Proc. of MaxEnt, 2013.
@@ -38,10 +53,19 @@ for prediction markets and certain online learning algorithms.
   _[Aggregating Predictions via Sequential Mini-Trading][Premachandra:2013]_,
   Proc. of ACML, 2013.
 
+Some related work that was developed before the project officially started
+includes:
+
 - Frongillo, R. and Della Penna, N. and Reid, M.D., 
   _[Interpreting Prediction Markets: A Stochastic Approach][Frongillo:2012]_,
   Proc. of NIPS, 2012.
 
+[TMLEC14]: http://workshops.inf.ed.ac.uk/ml/nipstransactional/
+[OPTML14]: http://opt-ml.org/papers.html
+
+[Reid:2014]: http://mark.reid.name/bits/pubs/colt15.pdf
+[Frongillo:2014a]: http://mark.reid.name/bits/pubs/optml14.pdf
+[Frongillo:2014b]: http://mark.reid.name/bits/pubs/trans14.pdf
 [vanRooyen:2013]: http://mark.reid.name/bits/pubs/maxent13-update-gefs.pdf
 [Frongillo:2013]: http://mark.reid.name/bits/pubs/maxent13-convex-gefs.pdf
 [Premachandra:2013]: http://mark.reid.name/bits/pubs/acml13-minitrade.pdf

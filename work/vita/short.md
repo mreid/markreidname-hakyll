@@ -1,10 +1,10 @@
 ---
-title: Curriculum Vitæ
+title: Résumé
 section: Work
 css: vita
 ---
 
-# Mark Darren Reid - _Curriculum Vitæ_
+# Mark Darren Reid - _Résumé_
 
 Research School of Computer Science    
 College of Engineering and Computer Science    
@@ -69,7 +69,7 @@ The Australian National University, ACT 0200, Australia
 </div>
 
 
-## External Grants
+## Selected External Grants
 <div class="section">
 
 2013--2017
@@ -162,7 +162,7 @@ Editorships
 
 ## Selected Refereed Publications
 
-I have published 2 book chapters, 6 journal articles, 17 conference papers, and 5 
+I have published 2 book chapters, 6 journal articles, 20 conference papers, and 5 
 refereed workshop submissions. More detail at my 
 [publications page](http://mark.reid.name/work/pubs/) or 
 [Google Scholar](http://scholar.google.com.au/citations?user=H2dgqTYAAAAJ&hl=en).
@@ -260,7 +260,7 @@ affect whether learning can be done efficiently;
 ----
 <div class="quiet">
 <span class="print">Full CV at <http://mark.reid.name/work/vita/></span>
-<span class="right">Last Updated: 30th April 2014</span>
+<span class="right">Last Updated: 31st July 2015</span>
 </div>
 
 <script type="text/javascript" src="/js/jquery.js"> </script>

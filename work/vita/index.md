@@ -52,10 +52,11 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 :    Research Fellow, 
      _[Research School of Computer Science][], The Australian National University, Canberra_
 	 
-	 > As part of the Artificial Intelligence group I am investigating theoretical representations of and relationships between different types of machine learning problems. 
-     > To date, this work has led to some deep connections between various notions of risk, information and divergences for binary classification problems as well as potentially fruitful connections to prediction markets.   
-     > 
-	 > I have been contributed to the NICTA machine learning group since July 2009.
+	 > As part of my fellowship, I am investigating theoretical representations of and relationships between different types of machine learning problems and, more recently, their connectins to microeconomics. 
+     > To date, this work has led to some deep connections between various notions of risk, information, divergences, and convergence rates in online learning and sequential prediction markets.
+	 >
+	 > I was promoted to [Academic Level C](https://services.anu.edu.au/human-resources/enterprise-agreement/schedule-4-minimum-standards-for-academic-levels-msal) on January 1st, 2015. 
+     > I have been contributed to the [NICTA machine learning group](https://www.nicta.com.au/category/research/machine-learning/) since July 2009.
      
 
 [Research School of Computer Science]: http://cs.anu.edu.au/
@@ -145,6 +146,17 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 ## External Grants
 <div class="section">
 
+2014
+
+:	 Delegate, Australia-China Young Scientist Exchange Program (YSEP)
+     
+	 > _Funding_: Travel support
+	 >
+	 > I was selected as one out of 15 science delegates from Australian 
+	 > universities to spend two weeks interacting with researchers at
+	 > Chinese institutions. I spent my time in China visiting Prof. 
+	 > Jie Zhou and A/Prof. Jun Zhu at Tsinghua University.
+
 2013--2017
 
 :    Principal Investigator, ARC Discovery Early Career Researcher Award
@@ -229,7 +241,8 @@ To assist the wide-spread adoption of machine learning by: developing theory to 
 
 PhD (Primary)
 
-:    * Avraham Ruderman, _Transfer Learning and Divergences_ (2011--)
+:    * Finnian Lattimore, _Causal Models and Bandit Algorithms_, (2014--)
+	 * Avraham Ruderman, _Transfer Learning and Divergences_ (2011--)
      * Nicolás Della Penna, _Markets and Machine Learning_ (2011--)
      * Mindika Premachandra, _Mechanisms for Sequential Markets_ (2011--2014)
      * Fangfang Lu, _Multiclass Probability Estimation_ (2009)
@@ -237,7 +250,7 @@ PhD (Primary)
 PhD (Advisor)
 
 :    * Ehsan Abbasnejad, _Bayesian Decision Theory_ (2011--)
-     * Changyou Chen, _Bayesian Nonparametrics_ (2011--)
+     * Changyou Chen, _Bayesian Nonparametrics_ (2011--2014)
      <!-- * Wen Shao, _Large Alphabet Sequence Compression_ (2011--2013) -->
      * Peter Gammie, _Arrows for Knowledge-Based Circuits_ (2009--2013)
 
@@ -250,10 +263,15 @@ PhD (Host)
      * Peng Sun, _Multiclass Boosting_, (Oct. 2011--Apr. 2012)     
      (Visiting PhD student from Tsinghua University)
 
+Masters
+
+:    * Guyue Hu, _Option Pricing via Online Learning_ (2015)
 
 Undergraduate
 
-:    * Nam Ho, _Online Learning Theory_ (Honours, 2013)
+:    * Andrew Wrigley, _Prediction Markets & Graphical Models_ (Honours, 2015)
+     * Nam Ho, _Online Learning Theory_ (Honours, 2013)
+	 * Rohit Ram, _Aggregation in Markets & Machine Learning_ (COMP2550 Project)
      * Daniel Visentin, _Mapping Machine Learning_ (Adv. Studies Course, 2010)
 <!--
 Interns 
@@ -271,6 +289,15 @@ Work Experience
 
 ## Course Teaching and Convening
 <div class="section">
+
+2015 (S2)
+:	 Co-design & -lecturing _[The Craft of Computing (COMP1040)](http://programsandcourses.anu.edu.au/course/comp1040)_, ANU    
+	 
+     > _Enrolment_: 50 students
+	 
+:	 Convening _[Information Theory (COMP2610/COMP6261)](http://programsandcourses.anu.edu.au/course/comp2610)_, ANU     
+	 
+	 > _Enrolment_: 70 students
 
 2014 (S2)
 :    Convening and co-lecturing _[Information Theory (COMP2610/6261)](http://cs.anu.edu.au/courses/COMP2610/)_, ANU      
@@ -318,8 +345,12 @@ Work Experience
 ## Other Teaching Activities
 <div class="section">
 Summer School
+:    _[Prediction Markets](http://rp-www.cs.usyd.edu.au/~mlss/#home)_, 
+     Machine Learning Summer School, Sydney, 2015
+     
+
 :    _[Information, Divergence, and Risk for Binary Classification](http://mark.reid.name/iem/mlss-2009-lecture.html)_, 
-     Machine Learning Summer School, 2009.
+     Machine Learning Summer School, Canberra, 2009.
 
 Tutoring
 :    _Computer Graphics_, UNSW (1999); _Concurrent Computing_, UNSW (1998); 
@@ -543,6 +574,11 @@ Outreach
 
 ### Conferences
 <div class="section">
+2015
+:    _Generalized Mixability via Entropic Duality_,    
+	 Mark D. Reid, Rafael M. Frongillo, Robert C. Williamson and Nishant Mehta    
+     Conference on Learning Theory (COLT 2015)
+
 2013
 :    _Aggregating Predictions via Sequential Mini-Trading_,    
      Mindika Premachandra and Mark D. Reid    
@@ -697,6 +733,21 @@ Outreach
 <!--
 ### Workshops
 <div class="section">
+2014
+
+:	 _Risk Dynamics in Trade Networks_    
+     Rafael M. Frongillo and Mark D. Reid    
+     NIPS Workshop on Transactional Machine Learning and E-Commerce
+
+:    _Randomized Subspace Descent_
+     Rafael M. Frongillo and Mark D. Reid
+     NIPS Workshop on Optimization for Machine Learning
+
+2012
+
+:    Interpreting Prediction Markets: A Stochastic Approach
+     Rafael Frongillo, Nicolás Della Penna, and Mark D. Reid
+     ICML Workshop on Markets, Mechanisms, and Multi-Agent Models
 
 2011
 
@@ -776,7 +827,11 @@ Outreach
 
 ## Research Visits
 <div class="section">
+
 2014
+:	_[Tsinghua Univeristy](http://www.tsinghua.edu.cn/publish/csen/)_    
+    Beijing, China, November 20th-Decmeber 3rd
+
 :   _[Microsoft Research](http://research.microsoft.com/en-us/labs/newyork/)_    
     New York, USA, May 5th-30th
 
@@ -897,7 +952,7 @@ Outreach
 ----
 <div class="quiet">
 <span class="print">Web Version: <http://mark.reid.name/work/vita/></span>
-<span class="right">Last Updated: 7th October 2014</span>
+<span class="right">Last Updated: 31st July 2015</span>
 </div>
 
 <script type="text/javascript" src="/js/jquery.js"> </script>

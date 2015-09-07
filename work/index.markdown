@@ -73,8 +73,9 @@ Some course material is available here:
 <div class="section">
 Students
 ========
-I am currently primary supervisor for three PhD students: [Avi Ruderman][], [Nicolás Della Penna][], and Finn Lattimore. 
-I am also supervising two honours students: Andrew Wrigley (RSCS) and Zac Cranko (co-supervising with Simon Grant at RSE).
+I am currently primary supervisor for three PhD students --- [Avi Ruderman][], [Nicolás Della Penna][], and Finn Lattimore --- as well as one Masters student, Guyue Hu.
+
+I also supervise two honours students: Andrew Wrigley (RSCS) and Zac Cranko (co-supervising with Simon Grant at RSE).
 
 I jointly supervised [Nam Ho](http://maths.anu.edu.au/about-us/people/nam-ho) honours project (with Dale Roberts at the [Mathematical Sciences Institute](http://maths.anu.edu.au)) in 2013.
 

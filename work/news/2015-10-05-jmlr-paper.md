@@ -1,0 +1,1 @@
+Tim van Erven, Nishant Mehta, Peter Grünwald, Bob Williamson and I have a paper on _[Fast Rates in Statistical and Online Learning](http://jmlr.org/papers/v16/vanerven15a.html)_ in the JMLR special issue dedicated to the memory of [Alexey Chervonenkis](http://clrc.rhul.ac.uk/people/chervonenkis/).

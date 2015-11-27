@@ -1,0 +1,1 @@
+A paper titled _Rényi Divergence Minimization based Co-regularized Multiview Clustering_ that I worked on with Shalmali Joshi, Joydeep Ghosh, and Samni Koyejo has been accepted to the Machine Learning Journal ECML/PKDD 2015 Special Issue.

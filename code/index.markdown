@@ -6,8 +6,9 @@ title: Code
 
 # Code  ![Mark Reid in the Matrix](/pics/me_matrix.png)
 
-Eventually this page will contain links to most of the research and non-research
-related programming I've done.
+This page will contain links to some of the research and non-research
+related programming I've done. My [GitHub profile](https://github.com/mreid/) 
+has more of my code-related activities.
 
 <div class="section markdown="1">
 # ML as a Service
@@ -41,6 +42,11 @@ Tools
 <div class="section" markdown="1">
 Other Hacking
 =====================
+[Decision Trees in Haskell](https://github.com/mreid/HTrees)
+:   A very basic implementation of decision tree learning in 
+    Haskell. It makes of monoids for efficient aggreation and evaluation of
+	splits.
+
 [Plain Text Wiki](/code/plain-text-wiki.html)
 :	I extended Matt Webb's original [Plain Text Wiki][] with a few 
 	modifications of my own. I use it to manage the content on this
